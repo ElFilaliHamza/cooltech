@@ -19,6 +19,7 @@ function ThemeToggle() {
 				onChange={setThemeName}
 				data={OPTIONS}
 				size="sm"
+				color="primary"
 				aria-label="Choose theme color"
 			/>
 		</motion.div>

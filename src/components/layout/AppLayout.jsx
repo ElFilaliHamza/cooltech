@@ -1,4 +1,4 @@
-import { Box, Container } from "@mantine/core";
+import { Box, Container, useMantineTheme } from "@mantine/core";
 import ThemeToggle from "../ui/ThemeToggle";
 import HeroSection from "../HeroSection";
 import SearchBar from "../SearchBar";
@@ -7,6 +7,7 @@ import { useAISearch } from "../../search/useAISearch";
 import APPS from "../../data/apps";
 
 export default function AppLayout() {
+	const theme = useMantineTheme();
 	const {
 		query,
 		setQuery,
@@ -18,6 +19,18 @@ export default function AppLayout() {
 		semanticError,
 	} = useAISearch(APPS);
 
+	const primary = theme.colors[theme.primaryColor];
+	const primaryShade = theme.primaryShade ?? 5;
+	const headerBg = primary?.[9]
+		? (() => {
+				const hex = primary[9];
+				const r = parseInt(hex.slice(1, 3), 16);
+				const g = parseInt(hex.slice(3, 5), 16);
+				const b = parseInt(hex.slice(5, 7), 16);
+				return `rgba(${r},${g},${b},0.25)`;
+		  })()
+		: "rgba(0,0,0,0.2)";
+
 	return (
 		<Box component="main" style={{ minHeight: "100vh" }}>
 			<Box
@@ -28,7 +41,11 @@ export default function AppLayout() {
 					zIndex: 100,
 					display: "flex",
 					justifyContent: "flex-end",
+					alignItems: "center",
 					padding: "1rem 1.5rem",
+					backdropFilter: "blur(12px)",
+					backgroundColor: headerBg,
+					borderBottom: `1px solid ${primary?.[primaryShade] ?? theme.colors.dark[4]}40`,
 				}}
 			>
 				<ThemeToggle />

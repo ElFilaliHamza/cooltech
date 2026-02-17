@@ -43,13 +43,32 @@ const MotionCard = ({
 		},
 	};
 
+	const primary = theme.colors[theme.primaryColor];
+	const primaryShade = theme.primaryShade ?? 5;
+	const primaryBorder = primary?.[primaryShade] ?? theme.colors.blue[5];
+	const primaryDark = primary?.[9] ?? theme.colors.dark[8];
+	const hexToRgba = (hex, alpha) => {
+		const r = parseInt(hex.slice(1, 3), 16);
+		const g = parseInt(hex.slice(3, 5), 16);
+		const b = parseInt(hex.slice(5, 7), 16);
+		return `rgba(${r},${g},${b},${alpha})`;
+	};
+
 	const defaultWhileHover = {
 		y: -5,
 		scale: 1.03,
-		boxShadow: `0 20px 40px ${theme.colors.dark[6]}25`,
+		boxShadow: `0 20px 40px ${primaryBorder}40`,
 		transition: {
 			type: "spring",
 			stiffness: 300,
+		},
+	};
+
+	const cardStyles = {
+		root: {
+			borderColor: primaryBorder,
+			borderWidth: 1,
+			backgroundColor: hexToRgba(primaryDark, 0.15),
 		},
 	};
 
@@ -63,11 +82,12 @@ const MotionCard = ({
 			initial={initial}
 			animate={animate}
 			withBorder
+			styles={cardStyles}
 			{...props}
 		>
 			{children}
 			{/* Light Sweep Animation */}
-			{lightSweep && showSweep && (
+			{lightSweep && showSweep && primary && (
 				<motion.div
 					style={{
 						position: "absolute",
@@ -78,7 +98,7 @@ const MotionCard = ({
 						background: `linear-gradient(
 							90deg,
 							transparent,
-							rgba(255, 255, 255, 0.03),
+							${hexToRgba(primary[primaryShade] ?? primary[5], 0.06)},
 							transparent
 						)`,
 						transform: "skewX(-15deg)",

@@ -10,12 +10,12 @@ export default function AppCard({ app, similarity }) {
 					{app.name}
 				</Text>
 				{typeof similarity === "number" && (
-					<Badge size="sm" variant="light" color="gray">
+					<Badge size="sm" variant="light" color="primary">
 						{similarity}% match
 					</Badge>
 				)}
 			</Group>
-			<Badge size="xs" variant="outline" mb="xs">
+			<Badge size="xs" variant="light" color="primary" mb="xs">
 				{app.category}
 			</Badge>
 			<Text size="sm" c="dimmed" lineClamp={2}>

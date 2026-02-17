@@ -15,6 +15,8 @@ export default function HeroSection() {
 					fw={700}
 					size={{ base: "2.5rem", md: "3.5rem" }}
 					style={{ lineHeight: 1.2 }}
+					variant="gradient"
+					gradient={{ from: "primary.4", to: "primary.7", deg: 135 }}
 				>
 					CoolTech
 				</Title>
