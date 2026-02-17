@@ -28,7 +28,7 @@ export default function AppLayout() {
 				const g = parseInt(hex.slice(3, 5), 16);
 				const b = parseInt(hex.slice(5, 7), 16);
 				return `rgba(${r},${g},${b},0.25)`;
-		  })()
+			})()
 		: "rgba(0,0,0,0.2)";
 
 	return (

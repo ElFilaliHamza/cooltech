@@ -47,16 +47,23 @@ export const THEME_NAMES = {
 
 export function getTheme(primaryColorKey = THEME_NAMES.TECH_BLUE) {
 	return createTheme({
-		fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+		fontFamily:
+			"system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
 		fontFamilyMonospace: "monospace",
 		headings: {
-			fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+			fontFamily:
+				"system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
 		},
 		colors: {
 			techBlue: TECH_BLUE,
 			cyberPurple: CYBER_PURPLE,
 			oceanTeal: OCEAN_TEAL,
-			brand: primaryColorKey === "techBlue" ? TECH_BLUE : primaryColorKey === "cyberPurple" ? CYBER_PURPLE : OCEAN_TEAL,
+			brand:
+				primaryColorKey === "techBlue"
+					? TECH_BLUE
+					: primaryColorKey === "cyberPurple"
+						? CYBER_PURPLE
+						: OCEAN_TEAL,
 			dark: [
 				"#C1C2C5",
 				"#A6A7AB",

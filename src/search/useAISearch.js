@@ -107,7 +107,10 @@ export function useAISearch(apps, options = {}) {
 		const results = searchResults.map((r) => {
 			const score = r.score ?? 1;
 			const similarity = Math.round((1 - score) * 100);
-			similarityMap.set(r.item.id, Math.max(0, Math.min(100, similarity)));
+			similarityMap.set(
+				r.item.id,
+				Math.max(0, Math.min(100, similarity)),
+			);
 			return r.item;
 		});
 		return { results, similarityMap };
@@ -149,7 +152,12 @@ export function useAISearch(apps, options = {}) {
 			return m;
 		}
 		return fuzzyResults.similarityMap;
-	}, [useSemantic, semanticResults, semanticError, fuzzyResults.similarityMap]);
+	}, [
+		useSemantic,
+		semanticResults,
+		semanticError,
+		fuzzyResults.similarityMap,
+	]);
 
 	return {
 		query,

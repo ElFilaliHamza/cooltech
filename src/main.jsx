@@ -9,7 +9,10 @@ import "./index.css";
 import App from "./App";
 import { getTheme } from "./theme";
 import reportWebVitals from "./reportWebVitals";
-import { ThemeVariantProvider, useThemeVariant } from "./contexts/ThemeVariantContext";
+import {
+	ThemeVariantProvider,
+	useThemeVariant,
+} from "./contexts/ThemeVariantContext";
 import SimpleAnimatedBackground from "./components/ui/background/SimpleAnimatedBackground";
 
 function ThemedApp() {

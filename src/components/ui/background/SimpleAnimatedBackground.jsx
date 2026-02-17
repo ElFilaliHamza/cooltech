@@ -22,9 +22,7 @@ export default function SimpleAnimatedBackground() {
 	const r = parseInt(primaryRgb.slice(1, 3), 16);
 	const g = parseInt(primaryRgb.slice(3, 5), 16);
 	const b = parseInt(primaryRgb.slice(5, 7), 16);
-	const gridColor = isDark
-		? `rgba(${r},${g},${b},`
-		: `rgba(${r},${g},${b},`;
+	const gridColor = isDark ? `rgba(${r},${g},${b},` : `rgba(${r},${g},${b},`;
 
 	return (
 		<Box

@@ -90,8 +90,8 @@ const ErrorBoundaryFallback = ({
 							</Button>
 						</Group>
 						<Text size="xs" c={theme.colors.gray[6]} mt="md">
-							If this keeps happening, try a hard refresh or
-							clear cache.
+							If this keeps happening, try a hard refresh or clear
+							cache.
 						</Text>
 					</Stack>
 				</Paper>
