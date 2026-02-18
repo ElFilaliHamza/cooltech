@@ -1,4 +1,4 @@
-import { Box, Container, useMantineTheme, useMantineColorScheme } from "@mantine/core";
+import { Box, Container, useMantineTheme } from "@mantine/core";
 import ThemeToggle from "../ui/ThemeToggle";
 import HeroSection from "../HeroSection";
 import SearchBar from "../SearchBar";

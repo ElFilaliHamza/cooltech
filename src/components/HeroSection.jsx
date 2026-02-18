@@ -1,5 +1,6 @@
 import { Title, Text, Box } from "@mantine/core";
 import { motion } from "framer-motion";
+import TypingText from "./ui/TypingText";
 
 export default function HeroSection() {
 	return (
@@ -20,17 +21,19 @@ export default function HeroSection() {
 				>
 					CoolTech
 				</Title>
-				<Text
+				<TypingText
 					ta="center"
 					size="lg"
 					c="dark.1"
 					mt="md"
 					maw={560}
 					mx="auto"
+					speed={60}
+					delay={500}
 				>
 					Here you will find only cool and useful tech. That either
 					helps you or make your tech life easier and cool.
-				</Text>
+				</TypingText>
 			</motion.div>
 		</Box>
 	);

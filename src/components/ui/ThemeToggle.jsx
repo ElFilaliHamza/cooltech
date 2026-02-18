@@ -4,7 +4,6 @@ import {
 	Group,
 	Text,
 	ColorSwatch,
-	Tooltip,
 	Box,
 } from "@mantine/core";
 import { motion } from "framer-motion";
@@ -17,31 +16,46 @@ function ThemeToggle() {
 	const { themeName, setThemeName } = useThemeVariant();
 	const currentColor = THEME_SWATCH_COLORS[themeName];
 
+	const glassTrigger = (theme) => ({
+		display: "block",
+		borderRadius: theme.radius.md,
+		padding: "6px 10px",
+		backdropFilter: "blur(12px)",
+		WebkitBackdropFilter: "blur(12px)",
+		backgroundColor: "rgba(26, 27, 30, 0.5)",
+		border: "1px solid rgba(255, 255, 255, 0.08)",
+		boxShadow: "0 4px 24px rgba(0, 0, 0, 0.12)",
+	});
+
+	const glassDropdown = {
+		backdropFilter: "blur(16px)",
+		WebkitBackdropFilter: "blur(16px)",
+		backgroundColor: "rgba(26, 27, 30, 0.65)",
+		border: "1px solid rgba(255, 255, 255, 0.08)",
+		boxShadow: "0 8px 32px rgba(0, 0, 0, 0.24)",
+	};
+
 	return (
 		<Menu
-			shadow="lg"
+			shadow="none"
 			width={220}
 			position="bottom-end"
 			offset={8}
 			radius="md"
+			styles={{ dropdown: glassDropdown }}
 			transitionProps={{
 				transition: "pop-top-right",
 				duration: 150,
 			}}
 		>
 			<Menu.Target>
-				<Tooltip label="Theme" position="bottom" withArrow>
 					<UnstyledButton
 						component={motion.button}
 						whileHover={{ scale: 1.03 }}
 						whileTap={{ scale: 0.97 }}
 						aria-label="Choose theme"
 						style={(theme) => ({
-							display: "block",
-							borderRadius: theme.radius.md,
-							padding: "6px 10px",
-							border: `1px solid ${theme.colors.dark[4]}50`,
-							backgroundColor: theme.colors.dark[7],
+							...glassTrigger(theme),
 						})}
 					>
 						<Group gap="xs" wrap="nowrap">
@@ -62,7 +76,6 @@ function ThemeToggle() {
 							</Box>
 						</Group>
 					</UnstyledButton>
-				</Tooltip>
 			</Menu.Target>
 
 			<Menu.Dropdown>
