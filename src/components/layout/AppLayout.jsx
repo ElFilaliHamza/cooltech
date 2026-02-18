@@ -1,10 +1,13 @@
-import { Box, Container, useMantineTheme } from "@mantine/core";
+import { Box, Container, useMantineTheme, useMantineColorScheme } from "@mantine/core";
 import ThemeToggle from "../ui/ThemeToggle";
 import HeroSection from "../HeroSection";
 import SearchBar from "../SearchBar";
 import ResultsGrid from "../ResultsGrid";
 import { useAISearch } from "../../search/useAISearch";
 import APPS from "../../data/apps";
+
+const baseUrl = import.meta.env.BASE_URL;
+const headerLogoSrc = `${baseUrl}cooltech/cooltech-only.png`;
 
 export default function AppLayout() {
 	const theme = useMantineTheme();
@@ -40,7 +43,7 @@ export default function AppLayout() {
 					top: 0,
 					zIndex: 100,
 					display: "flex",
-					justifyContent: "flex-end",
+					justifyContent: "space-between",
 					alignItems: "center",
 					padding: "1rem 1.5rem",
 					backdropFilter: "blur(12px)",
@@ -48,6 +51,26 @@ export default function AppLayout() {
 					borderBottom: `1px solid ${primary?.[primaryShade] ?? theme.colors.dark[4]}40`,
 				}}
 			>
+				<Box
+					component="a"
+					href="#hero"
+					style={{
+						display: "block",
+						lineHeight: 0,
+						textDecoration: "none",
+					}}
+					aria-label="CoolTech home"
+				>
+					<img
+						src={headerLogoSrc}
+						alt=""
+						style={{
+							height: 32,
+							width: "auto",
+							display: "block",
+						}}
+					/>
+				</Box>
 				<ThemeToggle />
 			</Box>
 			<Container size="lg" py="xl">

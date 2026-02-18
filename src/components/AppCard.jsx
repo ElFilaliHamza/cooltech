@@ -18,7 +18,7 @@ export default function AppCard({ app, similarity }) {
 			<Badge size="xs" variant="light" color="primary" mb="xs">
 				{app.category}
 			</Badge>
-			<Text size="sm" c="dimmed" lineClamp={2}>
+			<Text size="sm" c="dark.1" lineClamp={2}>
 				{app.description}
 			</Text>
 		</MotionCard>

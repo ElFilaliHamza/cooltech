@@ -45,6 +45,19 @@ export const THEME_NAMES = {
 	OCEAN_TEAL: "oceanTeal",
 };
 
+/** Primary shade (5) hex per theme for swatches in theme switcher */
+export const THEME_SWATCH_COLORS = {
+	techBlue: TECH_BLUE[5],
+	cyberPurple: CYBER_PURPLE[5],
+	oceanTeal: OCEAN_TEAL[5],
+};
+
+export const THEME_OPTIONS = [
+	{ value: THEME_NAMES.TECH_BLUE, label: "Tech Blue" },
+	{ value: THEME_NAMES.CYBER_PURPLE, label: "Cyber Purple" },
+	{ value: THEME_NAMES.OCEAN_TEAL, label: "Ocean Teal" },
+];
+
 export function getTheme(primaryColorKey = THEME_NAMES.TECH_BLUE) {
 	return createTheme({
 		fontFamily:

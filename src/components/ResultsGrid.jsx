@@ -32,7 +32,7 @@ export default function ResultsGrid({ results, similarityMap }) {
 					animate={{ opacity: 1 }}
 					transition={{ duration: 0.3 }}
 				>
-					<Text ta="center" c="dimmed" size="md">
+					<Text ta="center" c="dark.1" size="md">
 						No results. Try a different query or clear the search.
 					</Text>
 				</motion.div>

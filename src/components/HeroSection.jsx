@@ -23,13 +23,13 @@ export default function HeroSection() {
 				<Text
 					ta="center"
 					size="lg"
-					c="dimmed"
+					c="dark.1"
 					mt="md"
 					maw={560}
 					mx="auto"
 				>
-					Minimal tech showcase. Search tools and frameworks by name,
-					category, or description.
+					Here you will find only cool and useful tech. That either
+					helps you or make your tech life easier and cool.
 				</Text>
 			</motion.div>
 		</Box>
