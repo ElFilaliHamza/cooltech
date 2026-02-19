@@ -58,7 +58,7 @@ export const THEME_OPTIONS = [
 	{ value: THEME_NAMES.OCEAN_TEAL, label: "Ocean Teal" },
 ];
 
-export function getTheme(primaryColorKey = THEME_NAMES.TECH_BLUE) {
+export function getTheme(primaryColorKey = THEME_NAMES.OCEAN_TEAL) {
 	return createTheme({
 		fontFamily:
 			"system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
