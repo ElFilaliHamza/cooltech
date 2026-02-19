@@ -1,0 +1,2564 @@
+[
+  {
+    "id": "bcuninstaller",
+    "name": "BCUninstaller",
+    "description": "BCUninstaller (Bulk Crap Uninstaller) is a free and open-source uninstaller for Windows that can also be used on Linux through Wine or similar compatibility layers.",
+    "category": "Uninstaller",
+    "categories": [
+      "Uninstaller"
+    ],
+    "tags": [
+      "Linux",
+      "Windows",
+      "FOSS"
+    ],
+    "details": {
+      "features": "Batch uninstall, leftover scanner, portable, forced uninstall, install tracking.",
+      "whenToUse": "Cleaning many programs at once, removing stubborn apps, or auditing installs.",
+      "whenNotToUse": "Single app removal via system settings is enough.",
+      "tips": "Run leftover scan after uninstalling to remove registry/leftover files."
+    }
+  },
+  {
+    "id": "wiztree",
+    "name": "WizTree",
+    "description": "WizTree is a free and open-source file manager.",
+    "category": "File Manager",
+    "categories": [
+      "File Manager",
+      "Disk Usage"
+    ],
+    "tags": [
+      "Linux",
+      "FOSS"
+    ],
+    "details": {
+      "features": "Fast disk scan (uses MFT), size by folder/file, treemap view.",
+      "whenToUse": "Finding what uses disk space quickly on large drives.",
+      "whenNotToUse": "For everyday file browsing use a normal file manager.",
+      "tips": "Run as admin for full drive access; sort by size to find big folders first."
+    }
+  },
+  {
+    "id": "protonvpn",
+    "name": "ProtonVPN",
+    "description": "ProtonVPN is a free and open-source virtual private network (VPN) service for Linux.",
+    "category": "VPN",
+    "categories": [
+      "VPN"
+    ],
+    "tags": [
+      "Linux",
+      "FOSS"
+    ],
+    "details": {
+      "features": "No-logs policy, kill switch, DNS leak protection, open-source clients.",
+      "whenToUse": "Public Wi‑Fi, privacy, or region-restricted content.",
+      "whenNotToUse": "When you need maximum throughput for large downloads.",
+      "tips": "Use split tunneling to only route specific apps through the VPN."
+    }
+  },
+  {
+    "id": "clamav",
+    "name": "ClamAV",
+    "description": "ClamAV is a free, open-source, cross-platform antimalware toolkit for viruses, trojans, and other threats. Originally for Unix/mail gateways; runs on Linux, macOS, Windows.",
+    "category": "Antivirus",
+    "categories": [
+      "Antivirus",
+      "Security"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform",
+      "FOSS"
+    ],
+    "details": {
+      "features": "On-demand and on-access scanning, signature updates, email scanning.",
+      "whenToUse": "Server/mail scanning, occasional file checks, compliance scans.",
+      "whenNotToUse": "As sole real-time AV on a high-risk Windows desktop.",
+      "tips": "Update signatures (freshclam) before big scans; use with a scheduler for automation."
+    }
+  },
+  {
+    "id": "topgrade",
+    "name": "Topgrade",
+    "description": "Topgrade detects all package managers, tools, and configs on your system and updates everything with a single command: topgrade.",
+    "category": "Package Manager",
+    "categories": [
+      "Package Manager",
+      "System"
+    ],
+    "tags": [
+      "Linux",
+      "FOSS"
+    ],
+    "details": {
+      "features": "Detects apt, brew, pip, cargo, npm, etc.; single command; customizable.",
+      "whenToUse": "After a break or when you want one command to update everything.",
+      "whenNotToUse": "When you need to update only one stack (e.g. only apt).",
+      "tips": "Review config in ~/.config/topgrade.toml to skip or add tools."
+    }
+  },
+  {
+    "id": "ventoy",
+    "name": "Ventoy",
+    "description": "Ventoy creates bootable USB drives that hold multiple ISO/WIM/IMG/VHD(x)/EFI files. Copy images as files and pick one from the boot menu.",
+    "category": "Bootable USB",
+    "categories": [
+      "Bootable USB",
+      "Boot Manager",
+      "System"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform",
+      "FOSS"
+    ],
+    "details": {
+      "features": "Multi-ISO on one stick, no re-flash per OS, UEFI/Legacy, persistence support.",
+      "whenToUse": "Multi-boot USBs, sysadmin toolkit, or trying several Linux distros.",
+      "whenNotToUse": "When you need a single, locked-down install stick for one OS.",
+      "tips": "Keep Ventoy updated; use a fast USB 3 drive for better boot speed."
+    }
+  },
+  {
+    "id": "playwright",
+    "name": "Playwright",
+    "description": "Free and open-source library for automating web browsers (testing, scraping).",
+    "category": "Automation",
+    "categories": [
+      "Automation",
+      "Testing",
+      "Dev tool"
+    ],
+    "tags": [
+      "Cross-platform",
+      "FOSS"
+    ],
+    "details": {
+      "features": "Cross-browser (Chromium, Firefox, WebKit), auto-wait, network control.",
+      "whenToUse": "E2E tests, browser automation, or reliable scraping.",
+      "whenNotToUse": "Quick one-off scripts where curl or simple HTTP is enough.",
+      "tips": "Use codegen to record actions and generate scripts; run in headed mode to debug."
+    }
+  },
+  {
+    "id": "flameshot",
+    "name": "Flameshot",
+    "description": "Powerful yet simple screenshot tool. Recently received its first major update in 3 years (v13).",
+    "category": "Screenshot Tool",
+    "categories": [
+      "Screenshot Tool"
+    ],
+    "tags": [
+      "Linux",
+      "FOSS"
+    ],
+    "details": {
+      "features": "Region/custom selection, annotations, blur, upload, shortcuts.",
+      "whenToUse": "Docs, bug reports, or any screenshot that needs markup.",
+      "whenNotToUse": "Full-screen captures only with no edits.",
+      "tips": "Assign a global shortcut (e.g. Print Screen) for quick capture."
+    },
+    "links": [
+      {
+        "label": "Flameshot Screenshot App Gets First Major Update in 3 Years",
+        "url": "https://www.omgubuntu.co.uk/2025/08/flameshot-13"
+      }
+    ],
+    "latestNews": {
+      "title": "Flameshot Screenshot App Gets First Major Update in 3 Years",
+      "url": "https://www.omgubuntu.co.uk/2025/08/flameshot-13",
+      "date": "2025-08"
+    }
+  },
+  {
+    "id": "obs-studio",
+    "name": "OBS Studio",
+    "description": "Free and open source software for video recording and live streaming.",
+    "category": "Streaming",
+    "categories": [
+      "Streaming",
+      "Recording"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "vlc",
+    "name": "VLC",
+    "description": "Free and open-source portable cross-platform media player and streaming media server.",
+    "category": "Media Player",
+    "categories": [
+      "Media Player"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform",
+      "FOSS"
+    ],
+    "details": {
+      "features": "Wide format support, streaming, conversions, subtitles, filters.",
+      "whenToUse": "Any local video/audio file or simple streaming.",
+      "whenNotToUse": "When you need heavy editing or professional NLE features.",
+      "tips": "Use Tools → Codec Information to debug playback issues."
+    }
+  },
+  {
+    "id": "discord",
+    "name": "Discord",
+    "description": "VoIP, instant messaging, and digital distribution platform for communities and gaming.",
+    "category": "Communication",
+    "categories": [
+      "Communication"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform",
+      "Web"
+    ]
+  },
+  {
+    "id": "telegram",
+    "name": "Telegram",
+    "description": "Cloud-based mobile and desktop messaging app with a focus on security and speed.",
+    "category": "Communication",
+    "categories": [
+      "Communication"
+    ],
+    "tags": [
+      "Linux",
+      "Android",
+      "Cross-platform"
+    ]
+  },
+  {
+    "id": "onlyoffice",
+    "name": "OnlyOffice",
+    "description": "Open-source office suite (text, spreadsheet, presentation). Recently added an 'AI Agent' for productivity.",
+    "category": "Office Suite",
+    "categories": [
+      "Office Suite"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform",
+      "FOSS"
+    ],
+    "links": [
+      {
+        "label": "ONLYOFFICE Adds an \"AI Agent\" to Help You Work \"Effortlessly\"",
+        "url": "https://www.omgubuntu.co.uk/2025/08/onlyoffice-desktop-editors-update-ai-agent"
+      }
+    ],
+    "latestNews": {
+      "title": "ONLYOFFICE Adds an \"AI Agent\" to Help You Work \"Effortlessly\"",
+      "url": "https://www.omgubuntu.co.uk/2025/08/onlyoffice-desktop-editors-update-ai-agent",
+      "date": "2025-08"
+    }
+  },
+  {
+    "id": "vs-code",
+    "name": "VS Code",
+    "description": "Free source-code editor by Microsoft for Windows, Linux, and macOS.",
+    "category": "Code Editor",
+    "categories": [
+      "Code Editor",
+      "Dev tool"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform"
+    ],
+    "details": {
+      "features": "Extensions, built-in terminal, Git, debug, multi-cursor, themes.",
+      "whenToUse": "General coding, quick edits, or extension-rich workflows.",
+      "whenNotToUse": "Heavy IDE features (e.g. full IntelliJ-style refactors).",
+      "tips": "Use workspace settings and profiles for different project types."
+    }
+  },
+  {
+    "id": "steam",
+    "name": "Steam",
+    "description": "Video game digital distribution service by Valve.",
+    "category": "Gaming Platform",
+    "categories": [
+      "Gaming Platform"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform"
+    ]
+  },
+  {
+    "id": "brave",
+    "name": "Brave",
+    "description": "Free and open-source web browser based on Chromium, with built-in privacy and ad blocking.",
+    "category": "Web Browser",
+    "categories": [
+      "Web Browser"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "insomnia",
+    "name": "Insomnia",
+    "description": "Open source API client and design platform for GraphQL, REST, and gRPC.",
+    "category": "API Client",
+    "categories": [
+      "API Client",
+      "Dev tool"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "firefox",
+    "name": "Firefox",
+    "description": "Free and open-source web browser developed by the Mozilla Foundation.",
+    "category": "Web Browser",
+    "categories": [
+      "Web Browser"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "inkscape",
+    "name": "Inkscape",
+    "description": "Free and open-source vector graphics editor.",
+    "category": "Vector Graphics Editor",
+    "categories": [
+      "Vector Graphics Editor"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "kde-plasma",
+    "name": "KDE Plasma",
+    "description": "Powerful, flexible desktop environment for Linux. Version 6.4 was recently released with new features.",
+    "category": "Desktop Environment",
+    "categories": [
+      "Desktop Environment"
+    ],
+    "tags": [
+      "Linux",
+      "FOSS"
+    ],
+    "links": [
+      {
+        "label": "KDE Plasma 6.4 Released, This is What's New",
+        "url": "https://www.omgubuntu.co.uk/2025/06/kde-plasma-6-4-review-new-features-linux-desktop"
+      }
+    ],
+    "latestNews": {
+      "title": "KDE Plasma 6.4 Released, This is What's New",
+      "url": "https://www.omgubuntu.co.uk/2025/06/kde-plasma-6-4-review-new-features-linux-desktop",
+      "date": "2025-06"
+    }
+  },
+  {
+    "id": "hyprland",
+    "name": "Hyprland",
+    "description": "Dynamic tiling Wayland compositor.",
+    "category": "Wayland Compositor",
+    "categories": [
+      "Wayland Compositor"
+    ],
+    "tags": [
+      "Linux",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "syncthing",
+    "name": "Syncthing",
+    "description": "Continuous file synchronization program. Version 2.0 launched with a major database overhaul.",
+    "category": "File Synchronization",
+    "categories": [
+      "File Synchronization"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform",
+      "FOSS"
+    ],
+    "links": [
+      {
+        "label": "Syncthing 2.0 Launches With Major Database Overhaul",
+        "url": "https://linuxiac.com/syncthing-2-0-launches-with-major-database-overhaul/"
+      }
+    ],
+    "latestNews": {
+      "title": "Syncthing 2.0 Launches With Major Database Overhaul",
+      "url": "https://linuxiac.com/syncthing-2-0-launches-with-major-database-overhaul/",
+      "date": "2025-08"
+    }
+  },
+  {
+    "id": "gradia",
+    "name": "Gradia",
+    "description": "A slick new screenshot annotation tool for Linux.",
+    "category": "Screenshot Annotation Tool",
+    "categories": [
+      "Screenshot Annotation Tool"
+    ],
+    "tags": [
+      "Linux",
+      "FOSS"
+    ],
+    "links": [
+      {
+        "label": "Gradia is a Slick New Screenshot Annotation Tool for Linux",
+        "url": "https://www.omgubuntu.co.uk/2025/06/gradia-linux-screenshot-annotation-tool-app"
+      }
+    ]
+  },
+  {
+    "id": "kapitano",
+    "name": "Kapitano",
+    "description": "Scans for Windows malware on Linux using ClamAV. The developer has recently abandoned the project.",
+    "category": "Antivirus",
+    "categories": [
+      "Antivirus",
+      "Security"
+    ],
+    "tags": [
+      "Linux",
+      "FOSS"
+    ],
+    "links": [
+      {
+        "label": "Kapitano (Linux Antivirus Scanner) Developer Abandons Ship",
+        "url": "https://www.omgubuntu.co.uk/2025/07/kapitano-linux-antivirus-abandoned-by-dev"
+      }
+    ],
+    "latestNews": {
+      "title": "Kapitano (Linux Antivirus Scanner) Developer Abandons Ship",
+      "url": "https://www.omgubuntu.co.uk/2025/07/kapitano-linux-antivirus-abandoned-by-dev",
+      "date": "2025-07"
+    }
+  },
+  {
+    "id": "dozzle",
+    "name": "Dozzle",
+    "description": "Real-time Docker log viewer. Version 8.13 has been released.",
+    "category": "Docker Log Viewer",
+    "categories": [
+      "Docker Log Viewer",
+      "Dev tool"
+    ],
+    "tags": [
+      "Linux",
+      "FOSS",
+      "Web"
+    ],
+    "links": [
+      {
+        "label": "Dozzle 8.13 Real‑Time Docker Log Viewer Released",
+        "url": "https://linuxiac.com/dozzle-8-13-realtime-docker-log-viewer-released/"
+      }
+    ]
+  },
+  {
+    "id": "retroarch",
+    "name": "RetroArch",
+    "description": "Frontend for emulators, game engines, and media players; one of the best ways to play classic games on Linux.",
+    "category": "Emulator Frontend",
+    "categories": [
+      "Emulator Frontend",
+      "Gaming"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform",
+      "FOSS"
+    ],
+    "links": [
+      {
+        "label": "RetroArch is The Best Way to Play Classic Games on Linux",
+        "url": "https://news.itsfoss.com/retroarch/"
+      }
+    ]
+  },
+  {
+    "id": "packet",
+    "name": "Packet",
+    "description": "Linux app for fast Android file transfers.",
+    "category": "File Transfer",
+    "categories": [
+      "File Transfer"
+    ],
+    "tags": [
+      "Linux",
+      "Android",
+      "FOSS"
+    ],
+    "links": [
+      {
+        "label": "Packet is the Linux App You Didn't Know You Needed for Fast Android File Transfers",
+        "url": "https://itsfoss.com/linux-android-file-transfer/"
+      }
+    ]
+  },
+  {
+    "id": "rescuezilla",
+    "name": "Rescuezilla",
+    "description": "'Swiss Army Knife' of system recovery. Version 2.6.1 released with Ubuntu 25.04 base.",
+    "category": "Disk Imaging",
+    "categories": [
+      "Disk Imaging",
+      "Cloning",
+      "System"
+    ],
+    "tags": [
+      "Linux",
+      "FOSS"
+    ],
+    "links": [
+      {
+        "label": "Rescuezilla 2.6.1 Released with Ubuntu 25.04 Base",
+        "url": "https://linuxiac.com/rescuezilla-2-6-1-released-with-ubuntu-25-04-base/"
+      }
+    ],
+    "latestNews": {
+      "title": "Rescuezilla 2.6.1 Released with Ubuntu 25.04 Base",
+      "url": "https://linuxiac.com/rescuezilla-2-6-1-released-with-ubuntu-25-04-base/",
+      "date": "2025-07"
+    }
+  },
+  {
+    "id": "fwupd",
+    "name": "Fwupd",
+    "description": "Daemon to update firmware on Linux. Version 2.0.13 released with faster startup and lower memory use.",
+    "category": "Firmware Updater",
+    "categories": [
+      "Firmware Updater",
+      "System"
+    ],
+    "tags": [
+      "Linux",
+      "FOSS"
+    ],
+    "links": [
+      {
+        "label": "Fwupd 2.0.13 Released with Faster Startup and Lower Memory Use",
+        "url": "https://linuxiac.com/fwupd-2-0-13-released-with-faster-startup-and-lower-memory-use/"
+      }
+    ],
+    "latestNews": {
+      "title": "Fwupd 2.0.13 Released with Faster Startup and Lower Memory Use",
+      "url": "https://linuxiac.com/fwupd-2-0-13-released-with-faster-startup-and-lower-memory-use/",
+      "date": "2025-07"
+    }
+  },
+  {
+    "id": "ipfire",
+    "name": "IPFire",
+    "description": "Hardened Linux distribution that functions as a router and firewall. Core Update 196 improves WireGuard and console graphics stack.",
+    "category": "Firewall",
+    "categories": [
+      "Firewall",
+      "System"
+    ],
+    "tags": [
+      "Linux",
+      "FOSS"
+    ],
+    "links": [
+      {
+        "label": "IPFire 2.29 Core Update 196 Improves WireGuard Support, Console Graphics Stack",
+        "url": "https://9to5linux.com/ipfire-2-29-core-update-196-improves-wireguard-support-console-graphics-stack"
+      }
+    ],
+    "latestNews": {
+      "title": "IPFire 2.29 Core Update 196 Improves WireGuard Support, Console Graphics Stack",
+      "url": "https://9to5linux.com/ipfire-2-29-core-update-196-improves-wireguard-support-console-graphics-stack",
+      "date": "2025-07"
+    }
+  },
+  {
+    "id": "disk-usage-analyser",
+    "name": "Disk Usage Analyser",
+    "description": "Simple yet powerful disk usage analyzer for Linux.",
+    "category": "Disk Usage Analyzer",
+    "categories": [
+      "Disk Usage Analyzer"
+    ],
+    "tags": [
+      "Linux",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "barrier",
+    "name": "Barrier",
+    "description": "Simple, privacy-focused app for sharing mouse and keyboard across machines.",
+    "category": "Share Screening",
+    "categories": [
+      "Share Screening",
+      "Utility"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "snapsafe",
+    "name": "SnapSafe",
+    "description": "Simple, privacy-focused camera app.",
+    "category": "Camera App",
+    "categories": [
+      "Camera App"
+    ],
+    "tags": [
+      "Android",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "aurora-store",
+    "name": "Aurora Store",
+    "description": "Unofficial FOSS client for Google Play Store.",
+    "category": "App Store Alternative",
+    "categories": [
+      "App Store Alternative"
+    ],
+    "tags": [
+      "Android",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "auxio",
+    "name": "Auxio",
+    "description": "Simple, powerful music player for Android.",
+    "category": "Music Player",
+    "categories": [
+      "Music Player"
+    ],
+    "tags": [
+      "Android",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "app-lock",
+    "name": "App Lock",
+    "description": "Simple, privacy-focused app lock.",
+    "category": "Security",
+    "categories": [
+      "Security"
+    ],
+    "tags": [
+      "Android",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "limpazap",
+    "name": "Limpazap",
+    "description": "Cleaner for WhatsApp media files.",
+    "category": "Utility",
+    "categories": [
+      "Utility"
+    ],
+    "tags": [
+      "Android",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "tracker-controller",
+    "name": "Tracker Controller",
+    "description": "Control app trackers and permissions.",
+    "category": "Privacy",
+    "categories": [
+      "Privacy",
+      "Security"
+    ],
+    "tags": [
+      "Android",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "tuta",
+    "name": "Tuta",
+    "description": "Secure, encrypted email client.",
+    "category": "Email Client",
+    "categories": [
+      "Email Client"
+    ],
+    "tags": [
+      "Android",
+      "Cross-platform",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "simple",
+    "name": "Simple",
+    "description": "Mobile app to track training programs and workouts.",
+    "category": "Fitness Tracker",
+    "categories": [
+      "Fitness Tracker"
+    ],
+    "tags": [
+      "Android",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "tasks",
+    "name": "Tasks",
+    "description": "Simple open-source todo list app.",
+    "category": "Task Management",
+    "categories": [
+      "Task Management"
+    ],
+    "tags": [
+      "Android",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "grit",
+    "name": "Grit",
+    "description": "Open-source Mastodon client.",
+    "category": "Social Media Client",
+    "categories": [
+      "Social Media Client"
+    ],
+    "tags": [
+      "Android",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "openfood-facts",
+    "name": "OpenFood Facts",
+    "description": "Scan food products to make informed choices.",
+    "category": "Food Information",
+    "categories": [
+      "Food Information"
+    ],
+    "tags": [
+      "Android",
+      "Cross-platform",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "invizible-pro",
+    "name": "InviZible Pro",
+    "description": "Online privacy and security for Android.",
+    "category": "Privacy",
+    "categories": [
+      "Privacy",
+      "Security"
+    ],
+    "tags": [
+      "Android",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "netguard",
+    "name": "NetGuard",
+    "description": "Block internet access per application.",
+    "category": "Firewall",
+    "categories": [
+      "Firewall",
+      "Security"
+    ],
+    "tags": [
+      "Android",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "f-droid",
+    "name": "F-Droid",
+    "description": "Installable catalogue of FOSS applications for Android.",
+    "category": "App Store",
+    "categories": [
+      "App Store"
+    ],
+    "tags": [
+      "Android",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "money-manager-ex",
+    "name": "Money Manager Ex",
+    "description": "Personal finance manager application.",
+    "category": "Finance",
+    "categories": [
+      "Finance"
+    ],
+    "tags": [
+      "Android",
+      "Cross-platform",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "newpipe",
+    "name": "NewPipe",
+    "description": "Lightweight YouTube front-end for Android.",
+    "category": "Media Player",
+    "categories": [
+      "Media Player",
+      "Downloader"
+    ],
+    "tags": [
+      "Android",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "anime-slayer",
+    "name": "Anime Slayer",
+    "description": "Application for watching and downloading anime.",
+    "category": "Entertainment",
+    "categories": [
+      "Entertainment"
+    ],
+    "tags": [
+      "Android",
+      "Favorite"
+    ]
+  },
+  {
+    "id": "onstream",
+    "name": "OnStream",
+    "description": "Streaming app for movies and TV shows.",
+    "category": "Streaming",
+    "categories": [
+      "Streaming",
+      "Entertainment"
+    ],
+    "tags": [
+      "Android",
+      "Favorite"
+    ]
+  },
+  {
+    "id": "streamio",
+    "name": "Streamio",
+    "description": "Streaming platform for movies and series.",
+    "category": "Streaming",
+    "categories": [
+      "Streaming",
+      "Entertainment"
+    ],
+    "tags": [
+      "Android",
+      "Favorite"
+    ]
+  },
+  {
+    "id": "boycott-x",
+    "name": "Boycott X",
+    "description": "App for identifying and boycotting products.",
+    "category": "Social Awareness",
+    "categories": [
+      "Social Awareness"
+    ],
+    "tags": [
+      "Android",
+      "Favorite"
+    ]
+  },
+  {
+    "id": "salatuk",
+    "name": "Salatuk",
+    "description": "Prayer times and Qibla direction.",
+    "category": "Religion",
+    "categories": [
+      "Religion"
+    ],
+    "tags": [
+      "Android",
+      "Favorite"
+    ]
+  },
+  {
+    "id": "bitwarden",
+    "name": "BitWarden",
+    "description": "Free and open-source password management service.",
+    "category": "Password Manager",
+    "categories": [
+      "Password Manager",
+      "Security"
+    ],
+    "tags": [
+      "Cross-platform",
+      "FOSS",
+      "Favorite"
+    ],
+    "details": {
+      "features": "Vault, sync, 2FA, sharing, browser extensions, CLI.",
+      "whenToUse": "Any device; need sync and open-source trust.",
+      "whenNotToUse": "When you only need a single-device, offline store.",
+      "tips": "Use Bitwarden Send for one-time secure sharing."
+    }
+  },
+  {
+    "id": "fing",
+    "name": "Fing",
+    "description": "Network tools and Wi-Fi scanner.",
+    "category": "Network Scanner",
+    "categories": [
+      "Network Scanner"
+    ],
+    "tags": [
+      "Android",
+      "Cross-platform",
+      "Favorite"
+    ]
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "description": "Channel-based messaging platform.",
+    "category": "Communication",
+    "categories": [
+      "Communication"
+    ],
+    "tags": [
+      "Cross-platform",
+      "Web",
+      "Favorite"
+    ]
+  },
+  {
+    "id": "linkedin",
+    "name": "LinkedIn",
+    "description": "Business and employment-oriented online service.",
+    "category": "Professional Networking",
+    "categories": [
+      "Professional Networking"
+    ],
+    "tags": [
+      "Cross-platform",
+      "Web",
+      "Favorite"
+    ]
+  },
+  {
+    "id": "coursera",
+    "name": "Coursera",
+    "description": "Online courses and degrees from universities and companies.",
+    "category": "E-learning",
+    "categories": [
+      "E-learning"
+    ],
+    "tags": [
+      "Cross-platform",
+      "Web",
+      "Favorite"
+    ]
+  },
+  {
+    "id": "zedge",
+    "name": "Zedge",
+    "description": "Ringtones, wallpapers, and other mobile content.",
+    "category": "Customization",
+    "categories": [
+      "Customization"
+    ],
+    "tags": [
+      "Android",
+      "Favorite"
+    ]
+  },
+  {
+    "id": "secure-vpn",
+    "name": "Secure VPN",
+    "description": "Virtual private network service for secure browsing.",
+    "category": "VPN",
+    "categories": [
+      "VPN"
+    ],
+    "tags": [
+      "Android",
+      "Favorite"
+    ]
+  },
+  {
+    "id": "localsend",
+    "name": "LocalSend",
+    "description": "Free, open-source app to securely share files and messages on your local network.",
+    "category": "File Transfer",
+    "categories": [
+      "File Transfer"
+    ],
+    "tags": [
+      "Linux",
+      "Android",
+      "Cross-platform",
+      "FOSS",
+      "Favorite"
+    ],
+    "details": {
+      "features": "No account, LAN only, cross-platform, optional encryption.",
+      "whenToUse": "Quick device-to-device transfer without cloud.",
+      "whenNotToUse": "When you need cloud backup or remote access.",
+      "tips": "Ensure devices are on the same network and discovery is enabled."
+    }
+  },
+  {
+    "id": "bitchat",
+    "name": "Bitchat",
+    "description": "Decentralized, peer-to-peer instant messenger.",
+    "category": "Communication",
+    "categories": [
+      "Communication"
+    ],
+    "tags": [
+      "Android",
+      "Favorite",
+      "FOSS"
+    ]
+  },
+  {
+    "id": "anydesk",
+    "name": "AnyDesk",
+    "description": "Remote control, file transfer, and VPN functions.",
+    "category": "Remote Desktop",
+    "categories": [
+      "Remote Desktop"
+    ],
+    "tags": [
+      "Cross-platform",
+      "Favorite"
+    ]
+  },
+  {
+    "id": "lumo",
+    "name": "Lumo",
+    "description": "App for controlling smart lights.",
+    "category": "Utility",
+    "categories": [
+      "Utility"
+    ],
+    "tags": [
+      "Android",
+      "Favorite"
+    ]
+  },
+  {
+    "id": "t-rex-counting-by-visual-prompting",
+    "name": "T-Rex: Counting by Visual Prompting",
+    "description": "Interactive object counting model to detect and count any objects.",
+    "category": "Object Counting",
+    "categories": [
+      "Object Counting",
+      "Research"
+    ],
+    "tags": [
+      "Research",
+      "AI/ML"
+    ],
+    "links": [
+      {
+        "label": "review",
+        "url": "https://t.ly/4SfFX"
+      },
+      {
+        "label": "project",
+        "url": "https://lnkd.in/dVtEndHv"
+      },
+      {
+        "label": "paper",
+        "url": "https://lnkd.in/dBGQsbdP"
+      },
+      {
+        "label": "code repo",
+        "url": "https://lnkd.in/dnZnGRUn"
+      }
+    ]
+  },
+  {
+    "id": "seele-moving-the-subjects",
+    "name": "SEELE: Moving the Subjects",
+    "description": "Single diffusion model to reposition a subject in an image to a desired location while preserving fidelity.",
+    "category": "Image Manipulation",
+    "categories": [
+      "Image Manipulation",
+      "Research"
+    ],
+    "tags": [
+      "Research",
+      "AI/ML"
+    ],
+    "links": [
+      {
+        "label": "review",
+        "url": "https://t.ly/4FS4H"
+      },
+      {
+        "label": "paper",
+        "url": "https://arxiv.org/pdf/2401.16861.pdf"
+      },
+      {
+        "label": "project",
+        "url": "https://yikai-wang.github.io/seele/"
+      }
+    ]
+  },
+  {
+    "id": "multi-lora-composition",
+    "name": "Multi-LoRA Composition",
+    "description": "Training-free image composition: LoRA Switch and LoRA Composite for multi-LoRA composition.",
+    "category": "Image Composition",
+    "categories": [
+      "Image Composition",
+      "Research"
+    ],
+    "tags": [
+      "Research",
+      "AI/ML"
+    ],
+    "links": [
+      {
+        "label": "review",
+        "url": "https://t.ly/GFy3Z"
+      },
+      {
+        "label": "paper",
+        "url": "https://arxiv.org/pdf/2402.16843.pdf"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/maszhongming/Multi-LoRA-Composition"
+      }
+    ]
+  },
+  {
+    "id": "langfuse",
+    "name": "Langfuse",
+    "description": "Analytics platform for LLMs; now open source.",
+    "category": "LLM Analytics",
+    "categories": [
+      "LLM Analytics",
+      "Dev tool"
+    ],
+    "tags": [
+      "Web",
+      "FOSS",
+      "Dev tool"
+    ],
+    "links": [
+      {
+        "label": "LLM Analytics Platform Langfuse Goes Open Source",
+        "url": "https://news.itsfoss.com/langfuse-open-source/"
+      }
+    ]
+  },
+  {
+    "id": "gitea",
+    "name": "Gitea",
+    "description": "Lightweight code hosting. Version 1.24 includes new APIs, smarter Markdown, and better admin tools.",
+    "category": "Git Service",
+    "categories": [
+      "Git Service",
+      "Dev tool"
+    ],
+    "tags": [
+      "Self-hosted",
+      "FOSS",
+      "Dev tool"
+    ],
+    "links": [
+      {
+        "label": "Gitea 1.24: New APIs, Smarter Markdown, and Better Admin Tools",
+        "url": "https://linuxiac.com/gitea-1-24-new-apis-smarter-markdown-and-better-admin-tools/"
+      }
+    ]
+  },
+  {
+    "id": "vagrant",
+    "name": "Vagrant",
+    "description": "Build and manage VM environments; useful for testing exploits or sandboxing.",
+    "category": "Virtual Machine Management",
+    "categories": [
+      "Virtual Machine Management",
+      "Dev tool"
+    ],
+    "tags": [
+      "Cross-platform",
+      "Dev tool",
+      "Security"
+    ],
+    "guide": "Learn How to Use Vagrant to Build Your Cyber Testing Environment"
+  },
+  {
+    "id": "nextcloud-apps",
+    "name": "Nextcloud Apps",
+    "description": "Apps that supercharge home lab productivity when used with a self-hosted Nextcloud server.",
+    "category": "Self-hosted Productivity",
+    "categories": [
+      "Self-hosted Productivity",
+      "Dev tool"
+    ],
+    "tags": [
+      "Self-hosted",
+      "FOSS",
+      "Dev tool"
+    ],
+    "links": [
+      {
+        "label": "These 5 Nextcloud apps have supercharged my home lab productivity",
+        "url": "https://www.xda-developers.com/nextcloud-apps-supercharged-home-lab-productivity/"
+      }
+    ]
+  },
+  {
+    "id": "dehashed",
+    "name": "DeHashed",
+    "description": "Database of leaked credentials and personal information for OSINT.",
+    "category": "OSINT",
+    "categories": [
+      "OSINT",
+      "Leaked Credentials"
+    ],
+    "tags": [
+      "Security",
+      "OSINT"
+    ]
+  },
+  {
+    "id": "isearchfrom",
+    "name": "iSearchFrom",
+    "description": "Collection of OSINT tools and resources.",
+    "category": "OSINT",
+    "categories": [
+      "OSINT"
+    ],
+    "tags": [
+      "Web",
+      "OSINT"
+    ]
+  },
+  {
+    "id": "emploleaks",
+    "name": "EmploLeaks",
+    "description": "Detect company members with leaked credentials.",
+    "category": "OSINT",
+    "categories": [
+      "OSINT",
+      "Leaked Credentials"
+    ],
+    "tags": [
+      "Security",
+      "OSINT"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/infobyte/emploleaks"
+      }
+    ]
+  },
+  {
+    "id": "gitsint",
+    "name": "GitSint",
+    "description": "Open source info via GitHub username/organization/email; uses GitHub APIs.",
+    "category": "OSINT",
+    "categories": [
+      "OSINT",
+      "GitHub"
+    ],
+    "tags": [
+      "Security",
+      "OSINT",
+      "FOSS"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/N0rz3/GitSint"
+      }
+    ]
+  },
+  {
+    "id": "mailfinder",
+    "name": "MailFinder",
+    "description": "Find email by first and last name.",
+    "category": "OSINT",
+    "categories": [
+      "OSINT",
+      "Email Search"
+    ],
+    "tags": [
+      "OSINT",
+      "FOSS"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/mishakorzik/MailFinder"
+      }
+    ]
+  },
+  {
+    "id": "instagrammonitor",
+    "name": "instagram_monitor",
+    "description": "Open-source OSINT tool for real-time monitoring of Instagram bio and profile updates.",
+    "category": "OSINT",
+    "categories": [
+      "OSINT",
+      "Instagram Monitoring"
+    ],
+    "tags": [
+      "OSINT",
+      "FOSS"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/misiektoja/instagram_monitor"
+      }
+    ]
+  },
+  {
+    "id": "hashcat",
+    "name": "Hashcat",
+    "description": "Advanced password recovery utility. Version 7.0.0 released with significant changes.",
+    "category": "Password Cracking",
+    "categories": [
+      "Password Cracking",
+      "Security"
+    ],
+    "tags": [
+      "Linux",
+      "Cross-platform",
+      "Security"
+    ],
+    "details": {
+      "features": "GPU cracking, many hash types, rules, masks, distributed cracking.",
+      "whenToUse": "Authorized password recovery, CTFs, security audits.",
+      "whenNotToUse": "Unauthorized access; ensure you have permission.",
+      "tips": "Use --show to list cracked hashes; combine wordlists with rules for better coverage."
+    },
+    "links": [
+      {
+        "label": "hashcat v7.0.0 released!",
+        "url": "https://hashcat.net/forum/thread-13330.html"
+      }
+    ],
+    "latestNews": {
+      "title": "hashcat v7.0.0 released!",
+      "url": "https://hashcat.net/forum/thread-13330.html"
+    }
+  },
+  {
+    "id": "android-system-component-vulnerability",
+    "name": "Android System Component Vulnerability",
+    "description": "Critical vulnerability allowing remote code execution without user interaction.",
+    "category": "Security News",
+    "categories": [
+      "Security News",
+      "Vulnerability"
+    ],
+    "tags": [
+      "Android",
+      "Security"
+    ],
+    "links": [
+      {
+        "label": "Critical Android System Component Vulnerability Let Attackers Execute Remote Code without User Interaction",
+        "url": "https://cybersecuritynews.com/android-system-component-vulnerability/"
+      }
+    ]
+  },
+  {
+    "id": "police-and-military-radio-encryption",
+    "name": "Police and Military Radio Encryption",
+    "description": "Encryption used for police and military radios may be easily cracked.",
+    "category": "Security News",
+    "categories": [
+      "Security News"
+    ],
+    "tags": [
+      "Security"
+    ],
+    "links": [
+      {
+        "label": "Encryption made for police and military radios may be easily cracked",
+        "url": "https://arstechnica.com/security/2025/08/encryption-made-for-police-and-military-radios-may-be-easily-cracked/"
+      }
+    ]
+  },
+  {
+    "id": "linux-kernel-vulnerability",
+    "name": "Linux Kernel Vulnerability",
+    "description": "New Linux kernel vulnerability directly exploited from Chrome Renderer Sandbox.",
+    "category": "Security News",
+    "categories": [
+      "Security News",
+      "Vulnerability"
+    ],
+    "tags": [
+      "Linux",
+      "Security"
+    ],
+    "links": [
+      {
+        "label": "New Linux Kernel Vulnerability Directly Exploited from Chrome Renderer Sandbox",
+        "url": "https://cybersecuritynews.com/new-linux-kernel-vulnerability/"
+      }
+    ]
+  },
+  {
+    "id": "top-10-active-directory-attack",
+    "name": "Top 10 Active Directory Attack",
+    "description": "Information on the top 10 Active Directory attack vectors.",
+    "category": "Security Guide",
+    "categories": [
+      "Security Guide"
+    ],
+    "tags": [
+      "Security",
+      "Guide"
+    ]
+  },
+  {
+    "id": "how-to-harden-active-directory-to-prevent-cyber-attacks",
+    "name": "How To Harden Active Directory To Prevent Cyber Attacks",
+    "description": "Guidance on hardening Active Directory to prevent cyber attacks.",
+    "category": "Security Guide",
+    "categories": [
+      "Security Guide"
+    ],
+    "tags": [
+      "Security",
+      "Guide"
+    ]
+  },
+  {
+    "id": "a-gentle-introduction-to-ncurses-for-the-terminally-impatient",
+    "name": "A Gentle Introduction To Ncurses For The Terminally Impatient",
+    "description": "Gentle introduction to Ncurses for terminal UIs.",
+    "category": "Linux Guide",
+    "categories": [
+      "Linux Guide",
+      "Programming"
+    ],
+    "tags": [
+      "Linux",
+      "Guide"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "url": "https://hackaday.com/2025/06/17/a-gentle-introduction-to-ncurses-for-the-terminally-impati"
+      }
+    ]
+  },
+  {
+    "id": "bash-script-to-monitor-linux-health-daily-with-cron",
+    "name": "Bash Script to Monitor Linux Health Daily with Cron",
+    "description": "Automate system health checks with Bash and Cron.",
+    "category": "Linux Guide",
+    "categories": [
+      "Linux Guide",
+      "System"
+    ],
+    "tags": [
+      "Linux",
+      "Guide"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "url": "https://www.tecmint.com/bash-script-automate-system-health-checks/"
+      }
+    ]
+  },
+  {
+    "id": "5-open-source-apps-for-file-transfer-between-linux-and-android",
+    "name": "5 Open Source Apps for File Transfer Between Linux and Android",
+    "description": "Open source apps for seamless file transfer between Linux and Android.",
+    "category": "Linux Guide",
+    "categories": [
+      "Linux Guide"
+    ],
+    "tags": [
+      "Linux",
+      "Android",
+      "Guide",
+      "FOSS"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "url": "https://itsfoss.com/file-transfer-apps-linux-android/"
+      }
+    ]
+  },
+  {
+    "id": "youtube-security-trybe-0",
+    "name": "Security Trybe",
+    "description": "YouTube channel: Cybersecurity.",
+    "category": "Cybersecurity",
+    "categories": [
+      "Cybersecurity"
+    ],
+    "tags": [
+      "YouTube",
+      "Security"
+    ]
+  },
+  {
+    "id": "youtube-network-chuck-1",
+    "name": "Network Chuck",
+    "description": "YouTube channel: Cybersecurity.",
+    "category": "Cybersecurity",
+    "categories": [
+      "Cybersecurity"
+    ],
+    "tags": [
+      "YouTube",
+      "Security"
+    ]
+  },
+  {
+    "id": "youtube-outpost-gray-2",
+    "name": "Outpost Gray",
+    "description": "YouTube channel: Cybersecurity.",
+    "category": "Cybersecurity",
+    "categories": [
+      "Cybersecurity"
+    ],
+    "tags": [
+      "YouTube",
+      "Security"
+    ]
+  },
+  {
+    "id": "youtube-david-bombal-3",
+    "name": "David Bombal",
+    "description": "YouTube channel: Cybersecurity.",
+    "category": "Cybersecurity",
+    "categories": [
+      "Cybersecurity"
+    ],
+    "tags": [
+      "YouTube",
+      "Security"
+    ]
+  },
+  {
+    "id": "youtube-the-xss-rat-4",
+    "name": "The XSS Rat",
+    "description": "YouTube channel: Cybersecurity.",
+    "category": "Cybersecurity",
+    "categories": [
+      "Cybersecurity"
+    ],
+    "tags": [
+      "YouTube",
+      "Security"
+    ]
+  },
+  {
+    "id": "youtube-cyrill-gossi-5",
+    "name": "Cyrill Gossi",
+    "description": "YouTube channel: Cybersecurity.",
+    "category": "Cybersecurity",
+    "categories": [
+      "Cybersecurity"
+    ],
+    "tags": [
+      "YouTube",
+      "Security"
+    ]
+  },
+  {
+    "id": "youtube-stok-6",
+    "name": "STOK",
+    "description": "YouTube channel: Cybersecurity.",
+    "category": "Cybersecurity",
+    "categories": [
+      "Cybersecurity"
+    ],
+    "tags": [
+      "YouTube",
+      "Security"
+    ]
+  },
+  {
+    "id": "youtube-professor-messer-7",
+    "name": "Professor Messer",
+    "description": "YouTube channel: CompTIA Certifications.",
+    "category": "CompTIA Certifications",
+    "categories": [
+      "CompTIA Certifications"
+    ],
+    "tags": [
+      "YouTube",
+      "Security"
+    ]
+  },
+  {
+    "id": "youtube-hak5-8",
+    "name": "Hak5",
+    "description": "YouTube channel: Penetration Testing, Ethical Hacking.",
+    "category": "Penetration Testing, Ethical Hacking",
+    "categories": [
+      "Penetration Testing, Ethical Hacking"
+    ],
+    "tags": [
+      "YouTube",
+      "Security"
+    ]
+  },
+  {
+    "id": "youtube-hackersploit-9",
+    "name": "HackerSploit",
+    "description": "YouTube channel: Ethical Hacking, Penetration Testing.",
+    "category": "Ethical Hacking, Penetration Testing",
+    "categories": [
+      "Ethical Hacking, Penetration Testing"
+    ],
+    "tags": [
+      "YouTube",
+      "Security"
+    ]
+  },
+  {
+    "id": "youtube-liveoverflow-10",
+    "name": "LiveOverFlow",
+    "description": "YouTube channel: Reverse Engineering, CTFs.",
+    "category": "Reverse Engineering, CTFs",
+    "categories": [
+      "Reverse Engineering, CTFs"
+    ],
+    "tags": [
+      "YouTube",
+      "Security"
+    ]
+  },
+  {
+    "id": "youtube-thecherno-11",
+    "name": "TheCherno",
+    "description": "YouTube channel: C++.",
+    "category": "C++",
+    "categories": [
+      "C++"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-amigoscode-12",
+    "name": "amigoscode",
+    "description": "YouTube channel: Java, Spring Boot.",
+    "category": "Java, Spring Boot",
+    "categories": [
+      "Java, Spring Boot"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-kudvenkat-13",
+    "name": "kudvenkat",
+    "description": "YouTube channel: C#.",
+    "category": "C#",
+    "categories": [
+      "C#"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-corey-schafer-14",
+    "name": "Corey Schafer",
+    "description": "YouTube channel: Python.",
+    "category": "Python",
+    "categories": [
+      "Python"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-developedbyed-15",
+    "name": "developedbyed",
+    "description": "YouTube channel: JavaScript, UI Design.",
+    "category": "JavaScript, UI Design",
+    "categories": [
+      "JavaScript, UI Design"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-jon-calhoun-16",
+    "name": "Jon Calhoun",
+    "description": "YouTube channel: Golang.",
+    "category": "Golang",
+    "categories": [
+      "Golang"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-codewithchris-17",
+    "name": "CodeWithChris",
+    "description": "YouTube channel: Swift.",
+    "category": "Swift",
+    "categories": [
+      "Swift"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-philipplackner-18",
+    "name": "PhilippLackner",
+    "description": "YouTube channel: Kotlin.",
+    "category": "Kotlin",
+    "categories": [
+      "Kotlin"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-programwithgio-19",
+    "name": "ProgramWithGio",
+    "description": "YouTube channel: PHP.",
+    "category": "PHP",
+    "categories": [
+      "PHP"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-driftingruby-20",
+    "name": "DriftingRuby",
+    "description": "YouTube channel: Ruby.",
+    "category": "Ruby",
+    "categories": [
+      "Ruby"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-noboilerplate-21",
+    "name": "NoBoilerplate",
+    "description": "YouTube channel: Rust.",
+    "category": "Rust",
+    "categories": [
+      "Rust"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-steves-teacher-22",
+    "name": "Steve's teacher",
+    "description": "YouTube channel: Lua.",
+    "category": "Lua",
+    "categories": [
+      "Lua"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-marinstatlectures-23",
+    "name": "marinstatlectures",
+    "description": "YouTube channel: R.",
+    "category": "R",
+    "categories": [
+      "R"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-joey-blue-24",
+    "name": "Joey Blue",
+    "description": "YouTube channel: SQL.",
+    "category": "SQL",
+    "categories": [
+      "SQL"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-akshay-saini-25",
+    "name": "Akshay Saini",
+    "description": "YouTube channel: JavaScript.",
+    "category": "JavaScript",
+    "categories": [
+      "JavaScript"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-basarat-26",
+    "name": "basarat",
+    "description": "YouTube channel: TypeScript.",
+    "category": "TypeScript",
+    "categories": [
+      "TypeScript"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-typescripttv-27",
+    "name": "TypeScriptTV",
+    "description": "YouTube channel: TypeScript.",
+    "category": "TypeScript",
+    "categories": [
+      "TypeScript"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-microsoft-developer-bob-tabor-28",
+    "name": "Microsoft Developer [Bob Tabor]",
+    "description": "YouTube channel: C#.",
+    "category": "C#",
+    "categories": [
+      "C#"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-dotnet-scottkendra-29",
+    "name": "dotnet [Scott/Kendra]",
+    "description": "YouTube channel: C#.",
+    "category": "C#",
+    "categories": [
+      "C#"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-traversy-media-30",
+    "name": "Traversy Media",
+    "description": "YouTube channel: Node.js, Web Development.",
+    "category": "Node.js, Web Development",
+    "categories": [
+      "Node.js, Web Development"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-dave-gray-31",
+    "name": "Dave Gray",
+    "description": "YouTube channel: React, Web Development.",
+    "category": "React, Web Development",
+    "categories": [
+      "React, Web Development"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-vue-mastery-32",
+    "name": "Vue Mastery",
+    "description": "YouTube channel: Vue.",
+    "category": "Vue",
+    "categories": [
+      "Vue"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-codingentrepreneurs-33",
+    "name": "CodingEntrepreneurs",
+    "description": "YouTube channel: Django.",
+    "category": "Django",
+    "categories": [
+      "Django"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-laraveldaily-34",
+    "name": "LaravelDaily",
+    "description": "YouTube channel: Laravel.",
+    "category": "Laravel",
+    "categories": [
+      "Laravel"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-james-montemagno-35",
+    "name": "James Montemagno",
+    "description": "YouTube channel: Blazor.",
+    "category": "Blazor",
+    "categories": [
+      "Blazor"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-springsourcedev-36",
+    "name": "SpringSourceDev",
+    "description": "YouTube channel: Spring.",
+    "category": "Spring",
+    "categories": [
+      "Spring"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-gorailstv-37",
+    "name": "GorailsTV",
+    "description": "YouTube channel: Ruby on Rails.",
+    "category": "Ruby on Rails",
+    "categories": [
+      "Ruby on Rails"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-kevin-powell-38",
+    "name": "Kevin Powell",
+    "description": "YouTube channel: HTML/CSS.",
+    "category": "HTML/CSS",
+    "categories": [
+      "HTML/CSS"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-mycodeschool-39",
+    "name": "mycodeschool",
+    "description": "YouTube channel: Data Structures and Algorithms.",
+    "category": "Data Structures and Algorithms",
+    "categories": [
+      "Data Structures and Algorithms"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-abdul-bari-40",
+    "name": "Abdul Bari",
+    "description": "YouTube channel: Data Structures and Algorithms.",
+    "category": "Data Structures and Algorithms",
+    "categories": [
+      "Data Structures and Algorithms"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-kunal-kushwaha-41",
+    "name": "Kunal Kushwaha",
+    "description": "YouTube channel: Data Structures and Algorithms, DevOps.",
+    "category": "Data Structures and Algorithms, DevOps",
+    "categories": [
+      "Data Structures and Algorithms, DevOps"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-jennys-lectures-cs-it-42",
+    "name": "Jenny's Lectures CS IT",
+    "description": "YouTube channel: Data Structures and Algorithms, CS IT.",
+    "category": "Data Structures and Algorithms, CS IT",
+    "categories": [
+      "Data Structures and Algorithms, CS IT"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-codewithharry-43",
+    "name": "CodeWithHarry",
+    "description": "YouTube channel: Data Structures and Algorithms, Programming.",
+    "category": "Data Structures and Algorithms, Programming",
+    "categories": [
+      "Data Structures and Algorithms, Programming"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-netninja-44",
+    "name": "NetNinja",
+    "description": "YouTube channel: Full Stack Web Development.",
+    "category": "Full Stack Web Development",
+    "categories": [
+      "Full Stack Web Development"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-webdevsimplified-45",
+    "name": "WebDevSimplified",
+    "description": "YouTube channel: Web Development Projects.",
+    "category": "Web Development Projects",
+    "categories": [
+      "Web Development Projects"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-designcourse-46",
+    "name": "DesignCourse",
+    "description": "YouTube channel: UI Design.",
+    "category": "UI Design",
+    "categories": [
+      "UI Design"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-the-modern-coder-47",
+    "name": "The Modern Coder",
+    "description": "YouTube channel: GIT.",
+    "category": "GIT",
+    "categories": [
+      "GIT"
+    ],
+    "tags": [
+      "YouTube",
+      "DevOps"
+    ]
+  },
+  {
+    "id": "youtube-learn-linux-tv-48",
+    "name": "Learn Linux TV",
+    "description": "YouTube channel: Linux, Ansible.",
+    "category": "Linux, Ansible",
+    "categories": [
+      "Linux, Ansible"
+    ],
+    "tags": [
+      "YouTube",
+      "DevOps",
+      "Linux"
+    ]
+  },
+  {
+    "id": "youtube-devopstoolkit-49",
+    "name": "DevOpsToolkit",
+    "description": "YouTube channel: DevOps.",
+    "category": "DevOps",
+    "categories": [
+      "DevOps"
+    ],
+    "tags": [
+      "YouTube",
+      "DevOps"
+    ]
+  },
+  {
+    "id": "youtube-techworld-with-nana-50",
+    "name": "TechWorld with Nana",
+    "description": "YouTube channel: CI/CD, DevOps.",
+    "category": "CI/CD, DevOps",
+    "categories": [
+      "CI/CD, DevOps"
+    ],
+    "tags": [
+      "YouTube",
+      "DevOps"
+    ]
+  },
+  {
+    "id": "youtube-bret-fisher-51",
+    "name": "Bret Fisher",
+    "description": "YouTube channel: Docker.",
+    "category": "Docker",
+    "categories": [
+      "Docker"
+    ],
+    "tags": [
+      "YouTube",
+      "DevOps"
+    ]
+  },
+  {
+    "id": "youtube-kubesimplify-52",
+    "name": "Kubesimplify",
+    "description": "YouTube channel: Kubernetes.",
+    "category": "Kubernetes",
+    "categories": [
+      "Kubernetes"
+    ],
+    "tags": [
+      "YouTube",
+      "DevOps"
+    ]
+  },
+  {
+    "id": "youtube-freecodecamp-53",
+    "name": "freeCodeCamp",
+    "description": "YouTube channel: Microservices.",
+    "category": "Microservices",
+    "categories": [
+      "Microservices"
+    ],
+    "tags": [
+      "YouTube",
+      "DevOps"
+    ]
+  },
+  {
+    "id": "youtube-edureka-54",
+    "name": "edureka!",
+    "description": "YouTube channel: Selenium.",
+    "category": "Selenium",
+    "categories": [
+      "Selenium"
+    ],
+    "tags": [
+      "YouTube",
+      "DevOps"
+    ]
+  },
+  {
+    "id": "youtube-jaydeep-karale-55",
+    "name": "Jaydeep Karale",
+    "description": "YouTube channel: Playwright.",
+    "category": "Playwright",
+    "categories": [
+      "Playwright"
+    ],
+    "tags": [
+      "YouTube",
+      "DevOps"
+    ]
+  },
+  {
+    "id": "youtube-amazonwebservices-56",
+    "name": "amazonwebservices",
+    "description": "YouTube channel: AWS.",
+    "category": "AWS",
+    "categories": [
+      "AWS"
+    ],
+    "tags": [
+      "YouTube",
+      "Cloud"
+    ]
+  },
+  {
+    "id": "youtube-adam-marczak-57",
+    "name": "Adam Marczak",
+    "description": "YouTube channel: Azure.",
+    "category": "Azure",
+    "categories": [
+      "Azure"
+    ],
+    "tags": [
+      "YouTube",
+      "Cloud"
+    ]
+  },
+  {
+    "id": "youtube-serverless-58",
+    "name": "Serverless",
+    "description": "YouTube channel: Serverless Computing.",
+    "category": "Serverless Computing",
+    "categories": [
+      "Serverless Computing"
+    ],
+    "tags": [
+      "YouTube",
+      "Cloud"
+    ]
+  },
+  {
+    "id": "youtube-devops-journey-59",
+    "name": "DevOps Journey",
+    "description": "YouTube channel: Jenkins.",
+    "category": "Jenkins",
+    "categories": [
+      "Jenkins"
+    ],
+    "tags": [
+      "YouTube",
+      "DevOps"
+    ]
+  },
+  {
+    "id": "youtube-simplilearn-60",
+    "name": "simplilearn",
+    "description": "YouTube channel: Puppet, Chef, Cloud Computing.",
+    "category": "Puppet, Chef, Cloud Computing",
+    "categories": [
+      "Puppet, Chef, Cloud Computing"
+    ],
+    "tags": [
+      "YouTube",
+      "Cloud"
+    ]
+  },
+  {
+    "id": "youtube-3blue1brown-61",
+    "name": "3Blue1Brown",
+    "description": "YouTube channel: Mathematics (Visual Explanations).",
+    "category": "Mathematics (Visual Explanations)",
+    "categories": [
+      "Mathematics (Visual Explanations)"
+    ],
+    "tags": [
+      "YouTube",
+      "Data Science"
+    ]
+  },
+  {
+    "id": "youtube-profrobbob-62",
+    "name": "ProfRobBob",
+    "description": "YouTube channel: Mathematics.",
+    "category": "Mathematics",
+    "categories": [
+      "Mathematics"
+    ],
+    "tags": [
+      "YouTube",
+      "Data Science"
+    ]
+  },
+  {
+    "id": "youtube-ghrist-math-63",
+    "name": "Ghrist Math",
+    "description": "YouTube channel: Mathematics.",
+    "category": "Mathematics",
+    "categories": [
+      "Mathematics"
+    ],
+    "tags": [
+      "YouTube",
+      "Data Science"
+    ]
+  },
+  {
+    "id": "youtube-sentdex-64",
+    "name": "sentdex",
+    "description": "YouTube channel: Machine Learning, Python.",
+    "category": "Machine Learning, Python",
+    "categories": [
+      "Machine Learning, Python"
+    ],
+    "tags": [
+      "YouTube",
+      "Data Science"
+    ]
+  },
+  {
+    "id": "youtube-deeplearningai-65",
+    "name": "DeepLearningAI",
+    "description": "YouTube channel: Deep Learning.",
+    "category": "Deep Learning",
+    "categories": [
+      "Deep Learning"
+    ],
+    "tags": [
+      "YouTube",
+      "Data Science"
+    ]
+  },
+  {
+    "id": "youtube-statquest-66",
+    "name": "StatQuest",
+    "description": "YouTube channel: Statistics, Machine Learning.",
+    "category": "Statistics, Machine Learning",
+    "categories": [
+      "Statistics, Machine Learning"
+    ],
+    "tags": [
+      "YouTube",
+      "Data Science"
+    ]
+  },
+  {
+    "id": "youtube-excelisfun-67",
+    "name": "ExcelIsFun",
+    "description": "YouTube channel: Excel.",
+    "category": "Excel",
+    "categories": [
+      "Excel"
+    ],
+    "tags": [
+      "YouTube",
+      "Data Science"
+    ]
+  },
+  {
+    "id": "youtube-tableau-tim-68",
+    "name": "Tableau Tim",
+    "description": "YouTube channel: Tableau.",
+    "category": "Tableau",
+    "categories": [
+      "Tableau"
+    ],
+    "tags": [
+      "YouTube",
+      "Data Science"
+    ]
+  },
+  {
+    "id": "youtube-guy-in-a-cube-69",
+    "name": "Guy in a Cube",
+    "description": "YouTube channel: PowerBI.",
+    "category": "PowerBI",
+    "categories": [
+      "PowerBI"
+    ],
+    "tags": [
+      "YouTube",
+      "Data Science"
+    ]
+  },
+  {
+    "id": "youtube-simplilearn-70",
+    "name": "Simplilearn",
+    "description": "YouTube channel: Various Certifications & Tech.",
+    "category": "Various Certifications & Tech",
+    "categories": [
+      "Various Certifications & Tech"
+    ],
+    "tags": [
+      "YouTube",
+      "Education"
+    ]
+  },
+  {
+    "id": "youtube-techwithtim-71",
+    "name": "TechWithTim",
+    "description": "YouTube channel: Programming, Python.",
+    "category": "Programming, Python",
+    "categories": [
+      "Programming, Python"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-programmingwithmosh-72",
+    "name": "programmingwithmosh",
+    "description": "YouTube channel: Programming Best Practices.",
+    "category": "Programming Best Practices",
+    "categories": [
+      "Programming Best Practices"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-brocodez-73",
+    "name": "BroCodez",
+    "description": "YouTube channel: Programming.",
+    "category": "Programming",
+    "categories": [
+      "Programming"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-thenewboston-74",
+    "name": "thenewboston",
+    "description": "YouTube channel: Various Programming.",
+    "category": "Various Programming",
+    "categories": [
+      "Various Programming"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-telusko-75",
+    "name": "Telusko",
+    "description": "YouTube channel: Java, Python, AI.",
+    "category": "Java, Python, AI",
+    "categories": [
+      "Java, Python, AI"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-derek-banas-76",
+    "name": "Derek Banas",
+    "description": "YouTube channel: Programming Tutorials.",
+    "category": "Programming Tutorials",
+    "categories": [
+      "Programming Tutorials"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-mysirg-com-77",
+    "name": "MySirG .com",
+    "description": "YouTube channel: Programming (C, C++, Java).",
+    "category": "Programming (C, C++, Java)",
+    "categories": [
+      "Programming (C, C++, Java)"
+    ],
+    "tags": [
+      "YouTube",
+      "Programming"
+    ]
+  },
+  {
+    "id": "youtube-leila-gharani-78",
+    "name": "Leila Gharani",
+    "description": "YouTube channel: Excel, Power BI.",
+    "category": "Excel, Power BI",
+    "categories": [
+      "Excel, Power BI"
+    ],
+    "tags": [
+      "YouTube",
+      "Data Science"
+    ]
+  },
+  {
+    "id": "youtube-kodekloud-79",
+    "name": "KodeKloud",
+    "description": "YouTube channel: DevOps, Kubernetes.",
+    "category": "DevOps, Kubernetes",
+    "categories": [
+      "DevOps, Kubernetes"
+    ],
+    "tags": [
+      "YouTube",
+      "DevOps"
+    ]
+  }
+]

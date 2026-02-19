@@ -1,29 +1,14 @@
+import { useState, memo } from "react";
 import { Grid, Text, Box } from "@mantine/core";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import AppCard from "./AppCard";
+import TechDetailModal from "./TechDetailModal";
 
-const container = {
-	hidden: { opacity: 0 },
-	visible: (i = 1) => ({
-		opacity: 1,
-		transition: {
-			staggerChildren: 0.06,
-			delayChildren: 0.1,
-		},
-	}),
-};
+function ResultsGrid({ results, similarityMap }) {
+	const [selectedApp, setSelectedApp] = useState(null);
+	const modalOpened = selectedApp != null;
 
-const item = {
-	hidden: { y: 16, opacity: 0 },
-	visible: {
-		y: 0,
-		opacity: 1,
-		transition: { type: "spring", stiffness: 120, damping: 18 },
-	},
-};
-
-export default function ResultsGrid({ results, similarityMap }) {
 	if (!results?.length) {
 		return (
 			<Box id="results" py={48} as="section">
@@ -42,32 +27,47 @@ export default function ResultsGrid({ results, similarityMap }) {
 
 	return (
 		<Box id="results" py={24} as="section">
-			<motion.div
-				variants={container}
-				initial="hidden"
-				animate="visible"
-				style={{ width: "100%" }}
-			>
+			<motion.div style={{ width: "100%" }}>
 				<Grid>
-					{results.map((app, index) => (
+					{results.map((app) => (
 						<Grid.Col
 							key={app.id}
 							span={{ base: 12, sm: 6, lg: 4 }}
-							style={{ display: "flex" }}
+							style={{ display: "flex", minHeight: 0 }}
 						>
 							<motion.div
-								variants={item}
-								style={{ width: "100%", minWidth: 0 }}
+								initial={{ y: 24, opacity: 0 }}
+								whileInView={{ y: 0, opacity: 1 }}
+								viewport={{ once: true, amount: 0.2 }}
+								transition={{
+									type: "spring",
+									stiffness: 120,
+									damping: 18,
+								}}
+								style={{
+									width: "100%",
+									minWidth: 0,
+									minHeight: 260,
+									flex: 1,
+									display: "flex",
+									flexDirection: "column",
+								}}
 							>
 								<AppCard
 									app={app}
 									similarity={similarityMap?.get(app.id)}
+									onClick={() => setSelectedApp(app)}
 								/>
 							</motion.div>
 						</Grid.Col>
 					))}
 				</Grid>
 			</motion.div>
+			<TechDetailModal
+				app={selectedApp}
+				opened={modalOpened}
+				onClose={() => setSelectedApp(null)}
+			/>
 		</Box>
 	);
 }
@@ -83,3 +83,5 @@ ResultsGrid.propTypes = {
 	),
 	similarityMap: PropTypes.instanceOf(Map),
 };
+
+export default memo(ResultsGrid);

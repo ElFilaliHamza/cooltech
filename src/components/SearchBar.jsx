@@ -8,7 +8,6 @@ import {
 	Text,
 	Loader,
 	useMantineTheme,
-	Paper,
 } from "@mantine/core";
 import { motion, AnimatePresence } from "framer-motion";
 import MorphingCircle from "./ui/MorphingCircle";
@@ -21,14 +20,14 @@ function hexToRgba(hex, alpha) {
 }
 
 export default function SearchBar({
-	query,
-	setQuery,
+	setSearchQuery,
 	useSemantic,
 	setUseSemantic,
 	isSemanticLoading,
 	semanticError,
 }) {
 	const inputRef = useRef(null);
+	const [inputValue, setInputValue] = useState("");
 	const theme = useMantineTheme();
 	const [isFocused, setIsFocused] = useState(false);
 	const [isHovered, setIsHovered] = useState(false);
@@ -51,8 +50,8 @@ export default function SearchBar({
 
 	// Animation variants for the search container
 	const containerVariants = {
-		initial: { opacity: 0, y: 20 },
-		animate: { opacity: 1, y: 0 },
+		initial: { opacity: 0, y: 20, scale: 0.9 },
+		animate: { opacity: 1, y: 0, scale: 1 },
 		hover: {
 			scale: 1.02,
 			transition: { duration: 0.3, ease: "easeOut" },
@@ -144,8 +143,12 @@ export default function SearchBar({
 				<TextInput
 					ref={inputRef}
 					placeholder="Type a keyword..."
-					value={query}
-					onChange={(e) => setQuery(e.currentTarget.value)}
+					value={inputValue}
+					onChange={(e) => {
+						const v = e.currentTarget.value;
+						setInputValue(v);
+						setSearchQuery(v);
+					}}
 					onFocus={() => setIsFocused(true)}
 					onBlur={() => setIsFocused(false)}
 					size="lg"
@@ -173,7 +176,7 @@ export default function SearchBar({
 						},
 					}}
 					rightSection={
-						query ? (
+						inputValue ? (
 							<motion.div
 								initial={{ scale: 0, opacity: 0 }}
 								animate={{ scale: 1, opacity: 1 }}
@@ -187,7 +190,10 @@ export default function SearchBar({
 								<Box
 									component="button"
 									type="button"
-									onClick={() => setQuery("")}
+									onClick={() => {
+										setInputValue("");
+										setSearchQuery("");
+									}}
 									style={{
 										background: "none",
 										border: "none",

@@ -4,23 +4,26 @@ import HeroSection from "../HeroSection";
 import SearchBar from "../SearchBar";
 import ResultsGrid from "../ResultsGrid";
 import { useAISearch } from "../../search/useAISearch";
-import APPS from "../../data/apps";
+import TECH_DATA from "../../data/apps";
+import ScrollToTop from "../ui/ScrollToTop";
+import { useWindowScroll } from "@mantine/hooks";
 
 const baseUrl = import.meta.env.BASE_URL;
 const headerLogoSrc = `${baseUrl}cooltech/cooltech-only.png`;
 
 export default function AppLayout() {
 	const theme = useMantineTheme();
+	const [scroll] = useWindowScroll();
+	const showScrollTop = scroll.y > 400;
 	const {
-		query,
-		setQuery,
+		setSearchQuery,
 		results,
 		similarityMap,
 		useSemantic,
 		setUseSemantic,
 		isSemanticLoading,
 		semanticError,
-	} = useAISearch(APPS);
+	} = useAISearch(TECH_DATA);
 
 	const primary = theme.colors[theme.primaryColor];
 	const primaryShade = theme.primaryShade ?? 5;
@@ -76,8 +79,7 @@ export default function AppLayout() {
 			<Container size="lg" py="xl">
 				<HeroSection />
 				<SearchBar
-					query={query}
-					setQuery={setQuery}
+					setSearchQuery={setSearchQuery}
 					useSemantic={useSemantic}
 					setUseSemantic={setUseSemantic}
 					isSemanticLoading={isSemanticLoading}
@@ -85,6 +87,7 @@ export default function AppLayout() {
 				/>
 				<ResultsGrid results={results} similarityMap={similarityMap} />
 			</Container>
+			<ScrollToTop visible={showScrollTop} />
 		</Box>
 	);
 }

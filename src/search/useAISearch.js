@@ -18,7 +18,20 @@ function cosineSimilarity(a, b) {
 }
 
 function textForApp(app) {
-	return [app.name, app.category, app.description].filter(Boolean).join(" ");
+	const parts = [
+		app.name,
+		app.category,
+		app.description,
+		...(Array.isArray(app.categories) ? app.categories : []),
+		...(Array.isArray(app.tags) ? app.tags : []),
+	];
+	const d = app.details;
+	if (d) {
+		if (d.features) parts.push(d.features);
+		if (d.whenToUse) parts.push(d.whenToUse);
+		if (d.tips) parts.push(d.tips);
+	}
+	return parts.filter(Boolean).join(" ");
 }
 
 /**
@@ -67,7 +80,6 @@ async function runSemanticSearch(apps, query) {
  * - similarityMap: Map<id, 0-100> when in search mode
  */
 export function useAISearch(apps, options = {}) {
-	const [query, setQuery] = useState("");
 	const [debouncedQuery, setDebouncedQuery] = useState("");
 	const [useSemantic, setUseSemantic] = useState(false);
 	const [semanticResults, setSemanticResults] = useState(null);
@@ -75,21 +87,17 @@ export function useAISearch(apps, options = {}) {
 	const [semanticError, setSemanticError] = useState(null);
 	const debounceRef = useRef(null);
 
-	useEffect(() => {
+	const setSearchQuery = useCallback((value) => {
 		if (debounceRef.current) clearTimeout(debounceRef.current);
 		debounceRef.current = setTimeout(() => {
-			setDebouncedQuery(query);
-			debounceRef.current = null;
+			setDebouncedQuery(value);
 		}, DEBOUNCE_MS);
-		return () => {
-			if (debounceRef.current) clearTimeout(debounceRef.current);
-		};
-	}, [query]);
+	}, []);
 
 	const fuse = useMemo(() => {
 		if (!apps?.length) return null;
 		return new Fuse(apps, {
-			keys: ["name", "category", "description"],
+			keys: ["name", "category", "description", "categories", "tags"],
 			includeScore: true,
 			threshold: 0.4,
 		});
@@ -160,8 +168,7 @@ export function useAISearch(apps, options = {}) {
 	]);
 
 	return {
-		query,
-		setQuery,
+		setSearchQuery,
 		debouncedQuery,
 		results,
 		similarityMap,

@@ -49,33 +49,38 @@ function ThemeToggle() {
 			}}
 		>
 			<Menu.Target>
-					<UnstyledButton
-						component={motion.button}
-						whileHover={{ scale: 1.03 }}
-						whileTap={{ scale: 0.97 }}
-						aria-label="Choose theme"
-						style={(theme) => ({
-							...glassTrigger(theme),
-						})}
-					>
-						<Group gap="xs" wrap="nowrap">
-							<ColorSwatch
-								color={currentColor}
-								size={22}
-								radius="sm"
-								withShadow={false}
-								style={{ border: "2px solid var(--mantine-color-dark-3)" }}
+				<UnstyledButton
+					component={motion.button}
+					whileHover={{ scale: 1.03 }}
+					whileTap={{ scale: 0.97 }}
+					aria-label="Choose theme"
+					style={(theme) => ({
+						...glassTrigger(theme),
+					})}
+				>
+					<Group gap="xs" wrap="nowrap">
+						<ColorSwatch
+							color={currentColor}
+							size={22}
+							radius="sm"
+							withShadow={false}
+							style={{
+								border: "2px solid var(--mantine-color-dark-3)",
+							}}
+						/>
+						<Box visibleFrom="xs">
+							<Text size="sm" fw={500} c="dimmed">
+								Theme
+							</Text>
+						</Box>
+						<Box component="span" style={{ opacity: 0.6 }}>
+							<FontAwesomeIcon
+								icon={faChevronDown}
+								style={{ fontSize: 10 }}
 							/>
-							<Box visibleFrom="xs">
-								<Text size="sm" fw={500} c="dimmed">
-									Theme
-								</Text>
-							</Box>
-							<Box component="span" style={{ opacity: 0.6 }}>
-								<FontAwesomeIcon icon={faChevronDown} style={{ fontSize: 10 }} />
-							</Box>
-						</Group>
-					</UnstyledButton>
+						</Box>
+					</Group>
+				</UnstyledButton>
 			</Menu.Target>
 
 			<Menu.Dropdown>
@@ -98,14 +103,18 @@ function ThemeToggle() {
 								isActive ? (
 									<FontAwesomeIcon
 										icon={faCheck}
-										style={{ fontSize: 12, color: "var(--mantine-primary-color-5)" }}
+										style={{
+											fontSize: 12,
+											color: "var(--mantine-primary-color-5)",
+										}}
 									/>
 								) : null
 							}
 							style={
 								isActive
 									? {
-											backgroundColor: "var(--mantine-primary-color-9)",
+											backgroundColor:
+												"var(--mantine-primary-color-9)",
 										}
 									: undefined
 							}
