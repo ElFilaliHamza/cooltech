@@ -4,6 +4,9 @@ import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
 	base: "/cooltech/",
+	worker: {
+		format: "es",
+	},
 	plugins: [
 		react(),
 		visualizer({

@@ -285,7 +285,7 @@ export default function SearchBar({
 SearchBar.propTypes = {
 	setSearchQuery: PropTypes.func.isRequired,
 	useSemantic: PropTypes.bool,
-	setUseSemantic: PropTypes.func,
+	handleSemanticChange: PropTypes.func.isRequired,
 	isSemanticLoading: PropTypes.bool,
 	semanticError: PropTypes.shape({ message: PropTypes.string }),
 };

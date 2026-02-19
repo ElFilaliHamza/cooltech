@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Modal, Progress, Stack, Text, Group, Button } from "@mantine/core";
 
 export function SemanticConfirmModal({
@@ -64,3 +65,13 @@ export function SemanticConfirmModal({
 		</Modal>
 	);
 }
+
+SemanticConfirmModal.propTypes = {
+	opened: PropTypes.bool.isRequired,
+	onClose: PropTypes.func.isRequired,
+	onConfirm: PropTypes.func.isRequired,
+	progress: PropTypes.number,
+	status: PropTypes.string,
+	error: PropTypes.shape({ message: PropTypes.string }),
+	loading: PropTypes.bool,
+};
