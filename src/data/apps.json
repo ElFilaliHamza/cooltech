@@ -22,7 +22,7 @@
   {
     "id": "wiztree",
     "name": "WizTree",
-    "description": "WizTree is a free and open-source file manager.",
+    "description": "WizTree is a free, open-source disk space analyzer for Windows that reads the Master File Table (MFT) directly for extremely fast scans. It shows folder and file sizes in a treemap view so you can quickly identify what is consuming disk space.",
     "category": "File Manager",
     "categories": [
       "File Manager",
@@ -42,7 +42,7 @@
   {
     "id": "protonvpn",
     "name": "ProtonVPN",
-    "description": "ProtonVPN is a free and open-source virtual private network (VPN) service for Linux.",
+    "description": "ProtonVPN is a free and open-source virtual private network (VPN) service from the makers of Proton Mail. It offers a no-logs policy, kill switch, DNS leak protection, and open-source clients for Linux and other platforms.",
     "category": "VPN",
     "categories": [
       "VPN"
@@ -61,7 +61,7 @@
   {
     "id": "clamav",
     "name": "ClamAV",
-    "description": "ClamAV is a free, open-source, cross-platform antimalware toolkit for viruses, trojans, and other threats. Originally for Unix/mail gateways; runs on Linux, macOS, Windows.",
+    "description": "ClamAV is a free, open-source, cross-platform antimalware engine for detecting viruses, trojans, and other malware. Originally designed for Unix and mail gateways; it runs on Linux, macOS, and Windows and is used for on-demand and on-access scanning.",
     "category": "Antivirus",
     "categories": [
       "Antivirus",
@@ -124,7 +124,7 @@
   {
     "id": "playwright",
     "name": "Playwright",
-    "description": "Free and open-source library for automating web browsers (testing, scraping).",
+    "description": "Playwright is a free, open-source library for automating Chromium, Firefox, and WebKit. It is used for end-to-end testing, browser automation, and reliable web scraping with auto-wait and network control.",
     "category": "Automation",
     "categories": [
       "Automation",
@@ -175,7 +175,7 @@
   {
     "id": "obs-studio",
     "name": "OBS Studio",
-    "description": "Free and open source software for video recording and live streaming.",
+    "description": "OBS Studio is a free, open-source application for video recording and live streaming. It supports multiple sources (displays, windows, cameras, browser overlays), real-time encoding, and streaming to platforms like Twitch, YouTube, and custom RTMP servers.",
     "category": "Streaming",
     "categories": [
       "Streaming",
@@ -185,7 +185,13 @@
       "Linux",
       "Cross-platform",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Multiple sources, scenes, filters, streaming to Twitch/YouTube/RTMP, recording to file, low latency.",
+      "whenToUse": "Live streaming, screen recording, game capture, or multi-source video production.",
+      "whenNotToUse": "Simple one-window screen capture; use OS or lighter tools instead.",
+      "tips": "Use Scene Collections to switch between different stream setups; enable hardware encoding (NVENC/AMF) for lower CPU load."
+    }
   },
   {
     "id": "vlc",
@@ -210,7 +216,7 @@
   {
     "id": "discord",
     "name": "Discord",
-    "description": "VoIP, instant messaging, and digital distribution platform for communities and gaming.",
+    "description": "Discord is a voice, video, and text communication platform popular with gamers and communities. It offers servers, channels, screen sharing, bots, and optional Nitro subscriptions. Available on desktop, mobile, and web.",
     "category": "Communication",
     "categories": [
       "Communication"
@@ -219,12 +225,18 @@
       "Linux",
       "Cross-platform",
       "Web"
-    ]
+    ],
+    "details": {
+      "features": "Voice/video calls, text channels, screen share, bots, server roles, integrations.",
+      "whenToUse": "Community chat, gaming voice, team coordination, or streaming with viewers.",
+      "whenNotToUse": "When you need end-to-end encryption or fully open protocols.",
+      "tips": "Use server folders and notification settings to manage multiple communities without overload."
+    }
   },
   {
     "id": "telegram",
     "name": "Telegram",
-    "description": "Cloud-based mobile and desktop messaging app with a focus on security and speed.",
+    "description": "Telegram is a cloud-based instant messaging app with a focus on speed and optional end-to-end encryption (Secret Chats). It supports channels, bots, large file sharing, and syncs across mobile and desktop. API and clients are open.",
     "category": "Communication",
     "categories": [
       "Communication"
@@ -233,12 +245,18 @@
       "Linux",
       "Android",
       "Cross-platform"
-    ]
+    ],
+    "details": {
+      "features": "Cloud sync, secret chats (E2EE), channels, bots, large files, multi-device.",
+      "whenToUse": "Fast messaging, channels, or groups with optional privacy features.",
+      "whenNotToUse": "When you require E2EE by default for all chats (use Signal-style apps).",
+      "tips": "Enable Secret Chats for sensitive conversations; use folders to organize channels and groups."
+    }
   },
   {
     "id": "onlyoffice",
     "name": "OnlyOffice",
-    "description": "Open-source office suite (text, spreadsheet, presentation). Recently added an 'AI Agent' for productivity.",
+    "description": "OnlyOffice is an open-source office suite with document, spreadsheet, and presentation editors. It is compatible with Microsoft Office formats and recently added an 'AI Agent' for productivity. Available for desktop and self-hosted collaboration.",
     "category": "Office Suite",
     "categories": [
       "Office Suite"
@@ -248,6 +266,12 @@
       "Cross-platform",
       "FOSS"
     ],
+    "details": {
+      "features": "Writer, Calc, Presentation, OOXML compatibility, AI Agent, collaboration.",
+      "whenToUse": "Editing Office documents without Microsoft 365 or with self-hosted collaboration.",
+      "whenNotToUse": "When you need advanced Excel macros or 100% MSO compatibility.",
+      "tips": "Use the AI Agent for drafting and summaries; connect to a server for real-time co-editing."
+    },
     "links": [
       {
         "label": "ONLYOFFICE Adds an \"AI Agent\" to Help You Work \"Effortlessly\"",
@@ -263,7 +287,7 @@
   {
     "id": "vs-code",
     "name": "VS Code",
-    "description": "Free source-code editor by Microsoft for Windows, Linux, and macOS.",
+    "description": "Visual Studio Code is a free, lightweight source-code editor by Microsoft for Windows, Linux, and macOS. It supports extensions, built-in Git, debugging, and a rich ecosystem for almost any language or framework.",
     "category": "Code Editor",
     "categories": [
       "Code Editor",
@@ -283,7 +307,7 @@
   {
     "id": "steam",
     "name": "Steam",
-    "description": "Video game digital distribution service by Valve.",
+    "description": "Steam is Valve's digital distribution platform for PC games. It offers a store, library, automatic updates, cloud saves, achievements, and Steam Deck support. Many titles run on Linux via Proton.",
     "category": "Gaming Platform",
     "categories": [
       "Gaming Platform"
@@ -291,12 +315,18 @@
     "tags": [
       "Linux",
       "Cross-platform"
-    ]
+    ],
+    "details": {
+      "features": "Game store, library, cloud saves, achievements, Proton (Linux gaming), Steam Deck.",
+      "whenToUse": "Buying and playing PC games, especially with Linux or Steam Deck.",
+      "whenNotToUse": "When you only play from other stores (Epic, GOG) or console.",
+      "tips": "Enable Steam Play (Proton) in Settings for broader Linux game compatibility."
+    }
   },
   {
     "id": "brave",
     "name": "Brave",
-    "description": "Free and open-source web browser based on Chromium, with built-in privacy and ad blocking.",
+    "description": "Brave is a free, open-source browser based on Chromium with built-in privacy and ad blocking. It blocks trackers and ads by default, offers optional Brave Rewards (BAT), and supports Tor for private tabs.",
     "category": "Web Browser",
     "categories": [
       "Web Browser"
@@ -305,12 +335,18 @@
       "Linux",
       "Cross-platform",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Built-in ad/tracker blocking, Brave Shields, optional BAT rewards, Tor private tabs.",
+      "whenToUse": "Privacy-focused browsing without extra extensions; Chromium compatibility.",
+      "whenNotToUse": "When you rely on specific Chrome extensions that conflict with Brave.",
+      "tips": "Adjust Shields per-site if a page breaks; use Private Window with Tor for maximum anonymity."
+    }
   },
   {
     "id": "insomnia",
     "name": "Insomnia",
-    "description": "Open source API client and design platform for GraphQL, REST, and gRPC.",
+    "description": "Insomnia is an open-source API client and design platform for REST, GraphQL, and gRPC. It supports environments, code generation, and organizing requests into workspaces for development and testing.",
     "category": "API Client",
     "categories": [
       "API Client",
@@ -320,12 +356,18 @@
       "Linux",
       "Cross-platform",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "REST/GraphQL/gRPC, environments, code gen, request history, plugins.",
+      "whenToUse": "API development, testing endpoints, or documenting APIs.",
+      "whenNotToUse": "When you only need quick one-off curl-style requests.",
+      "tips": "Use environments for dev/staging/prod and environment variables for tokens and URLs."
+    }
   },
   {
     "id": "firefox",
     "name": "Firefox",
-    "description": "Free and open-source web browser developed by the Mozilla Foundation.",
+    "description": "Firefox is a free, open-source web browser by the Mozilla Foundation. It emphasizes privacy, customizability, and a non-Chromium engine. Supports extensions, containers, and strong privacy controls.",
     "category": "Web Browser",
     "categories": [
       "Web Browser"
@@ -334,12 +376,18 @@
       "Linux",
       "Cross-platform",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Privacy controls, extensions, multi-account containers, sync, Pocket.",
+      "whenToUse": "Privacy-first browsing, avoiding Chromium monoculture, or extension-rich workflows.",
+      "whenNotToUse": "When a site or workflow requires Chrome-specific APIs.",
+      "tips": "Use Multi-Account Containers to isolate logins (e.g. work vs personal)."
+    }
   },
   {
     "id": "inkscape",
     "name": "Inkscape",
-    "description": "Free and open-source vector graphics editor.",
+    "description": "Inkscape is a free, open-source vector graphics editor. It uses SVG natively and supports paths, text, gradients, clones, and extensions. Suitable for logos, illustrations, and print-ready artwork.",
     "category": "Vector Graphics Editor",
     "categories": [
       "Vector Graphics Editor"
@@ -348,12 +396,18 @@
       "Linux",
       "Cross-platform",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "SVG-native, paths, text, gradients, extensions, trace bitmap, PDF export.",
+      "whenToUse": "Logos, icons, illustrations, or any scalable vector artwork.",
+      "whenNotToUse": "Raster image editing or heavy bitmap work; use GIMP instead.",
+      "tips": "Use layers and object grouping; export PNG at target resolution for web or print."
+    }
   },
   {
     "id": "kde-plasma",
     "name": "KDE Plasma",
-    "description": "Powerful, flexible desktop environment for Linux. Version 6.4 was recently released with new features.",
+    "description": "KDE Plasma is a powerful, flexible desktop environment for Linux with a modern look and extensive customization. It includes a panel, widgets, activities, and strong accessibility. Version 6.4 added new features and polish.",
     "category": "Desktop Environment",
     "categories": [
       "Desktop Environment"
@@ -362,6 +416,12 @@
       "Linux",
       "FOSS"
     ],
+    "details": {
+      "features": "Panel, widgets, activities, KWin, system settings, Qt-based apps.",
+      "whenToUse": "A full-featured, customizable Linux desktop with a polished UI.",
+      "whenNotToUse": "When you prefer a minimal or non-Qt desktop (e.g. GNOME, Xfce).",
+      "tips": "Explore System Settings for themes and shortcuts; use Activities for separate workspaces."
+    },
     "links": [
       {
         "label": "KDE Plasma 6.4 Released, This is What's New",
@@ -377,7 +437,7 @@
   {
     "id": "hyprland",
     "name": "Hyprland",
-    "description": "Dynamic tiling Wayland compositor.",
+    "description": "Hyprland is a dynamic tiling Wayland compositor with a focus on eye candy, animations, and keyboard-driven workflow. It supports gaps, rounded corners, and a config-driven setup for power users.",
     "category": "Wayland Compositor",
     "categories": [
       "Wayland Compositor"
@@ -385,12 +445,18 @@
     "tags": [
       "Linux",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Dynamic tiling, gaps, rounded corners, animations, keybinds, hyprlang config.",
+      "whenToUse": "Wayland-based tiling setup with a polished, customizable desktop.",
+      "whenNotToUse": "When you prefer X11 or a traditional floating desktop.",
+      "tips": "Configure in ~/.config/hypr/hyprland.conf; use the wiki for keybinds and plugins."
+    }
   },
   {
     "id": "syncthing",
     "name": "Syncthing",
-    "description": "Continuous file synchronization program. Version 2.0 launched with a major database overhaul.",
+    "description": "Syncthing is a continuous, decentralized file synchronization program. It syncs folders between your own devices over the local network or the internet without a central server. Version 2.0 brought a major database overhaul for better performance.",
     "category": "File Synchronization",
     "categories": [
       "File Synchronization"
@@ -400,6 +466,12 @@
       "Cross-platform",
       "FOSS"
     ],
+    "details": {
+      "features": "P2P sync, no central server, versioning, conflict handling, encryption, Web UI.",
+      "whenToUse": "Syncing files across your own devices (PC, laptop, NAS) privately.",
+      "whenNotToUse": "When you need cloud backup or shared team folders with access control.",
+      "tips": "Use folder ignore patterns to skip large or temporary files; enable versioning for important folders."
+    },
     "links": [
       {
         "label": "Syncthing 2.0 Launches With Major Database Overhaul",
@@ -415,7 +487,7 @@
   {
     "id": "gradia",
     "name": "Gradia",
-    "description": "A slick new screenshot annotation tool for Linux.",
+    "description": "Gradia is a modern, slick screenshot and annotation tool for Linux. It offers a clean interface for capturing regions or windows and adding arrows, text, and shapes for documentation or bug reports.",
     "category": "Screenshot Annotation Tool",
     "categories": [
       "Screenshot Annotation Tool"
@@ -424,6 +496,12 @@
       "Linux",
       "FOSS"
     ],
+    "details": {
+      "features": "Region/window capture, annotations, arrows, text, shapes, clean UI.",
+      "whenToUse": "Documentation, bug reports, or quick annotated screenshots on Linux.",
+      "whenNotToUse": "Heavy screen recording or multi-page markup; use OBS or dedicated tools.",
+      "tips": "Assign a global shortcut for quick capture and annotation workflow."
+    },
     "links": [
       {
         "label": "Gradia is a Slick New Screenshot Annotation Tool for Linux",
@@ -459,7 +537,7 @@
   {
     "id": "dozzle",
     "name": "Dozzle",
-    "description": "Real-time Docker log viewer. Version 8.13 has been released.",
+    "description": "Dozzle is a real-time Docker log viewer that runs in the browser. It lets you stream and search container logs without using the CLI. Version 8.13 added improvements and fixes.",
     "category": "Docker Log Viewer",
     "categories": [
       "Docker Log Viewer",
@@ -470,6 +548,12 @@
       "FOSS",
       "Web"
     ],
+    "details": {
+      "features": "Real-time log streaming, search, multiple containers, lightweight web UI.",
+      "whenToUse": "Monitoring Docker container logs without opening a terminal.",
+      "whenNotToUse": "When you need log aggregation across hosts or long-term storage.",
+      "tips": "Run as a container and mount the Docker socket for full container list access."
+    },
     "links": [
       {
         "label": "Dozzle 8.13 Real‑Time Docker Log Viewer Released",
@@ -480,7 +564,7 @@
   {
     "id": "retroarch",
     "name": "RetroArch",
-    "description": "Frontend for emulators, game engines, and media players; one of the best ways to play classic games on Linux.",
+    "description": "RetroArch is a frontend for emulators, game engines, and media players. It unifies cores (libretro) for many classic systems (NES, SNES, Genesis, etc.) with a single interface, shaders, and netplay. One of the best ways to play classic games on Linux.",
     "category": "Emulator Frontend",
     "categories": [
       "Emulator Frontend",
@@ -491,6 +575,12 @@
       "Cross-platform",
       "FOSS"
     ],
+    "details": {
+      "features": "Libretro cores, shaders, netplay, save states, rewind, unified config.",
+      "whenToUse": "Playing retro games from multiple systems with one app.",
+      "whenNotToUse": "When you only need a single system and prefer a simpler standalone emulator.",
+      "tips": "Download cores from the built-in Core Downloader; use shaders for CRT-style display."
+    },
     "links": [
       {
         "label": "RetroArch is The Best Way to Play Classic Games on Linux",
@@ -501,7 +591,7 @@
   {
     "id": "packet",
     "name": "Packet",
-    "description": "Linux app for fast Android file transfers.",
+    "description": "Packet is a Linux application for fast file transfers between your PC and Android device over the local network. It uses a simple connection flow and avoids cloud services for direct device-to-device transfer.",
     "category": "File Transfer",
     "categories": [
       "File Transfer"
@@ -511,6 +601,12 @@
       "Android",
       "FOSS"
     ],
+    "details": {
+      "features": "LAN transfer, no cloud, simple pairing, fast transfer.",
+      "whenToUse": "Moving files between Linux and Android on the same network quickly.",
+      "whenNotToUse": "When you need remote access or cross-platform beyond Linux/Android.",
+      "tips": "Ensure both devices are on the same Wi-Fi; use the Android app to connect to the Linux daemon."
+    },
     "links": [
       {
         "label": "Packet is the Linux App You Didn't Know You Needed for Fast Android File Transfers",
@@ -521,7 +617,7 @@
   {
     "id": "rescuezilla",
     "name": "Rescuezilla",
-    "description": "'Swiss Army Knife' of system recovery. Version 2.6.1 released with Ubuntu 25.04 base.",
+    "description": "Rescuezilla is a 'Swiss Army Knife' live Linux toolkit for system recovery, disk imaging, and cloning. It is based on Ubuntu and supports Clonezilla-style imaging, backup, and restore. Version 2.6.1 uses an Ubuntu 25.04 base.",
     "category": "Disk Imaging",
     "categories": [
       "Disk Imaging",
@@ -532,6 +628,12 @@
       "Linux",
       "FOSS"
     ],
+    "details": {
+      "features": "Disk image, clone, backup, restore, live boot, GUI, Clonezilla-compatible.",
+      "whenToUse": "Full disk backup, system clone, or recovery after failure.",
+      "whenNotToUse": "When you only need file-level backup (use rsync or similar).",
+      "tips": "Boot from USB; store images on an external drive; verify images after creation."
+    },
     "links": [
       {
         "label": "Rescuezilla 2.6.1 Released with Ubuntu 25.04 Base",
@@ -547,7 +649,7 @@
   {
     "id": "fwupd",
     "name": "Fwupd",
-    "description": "Daemon to update firmware on Linux. Version 2.0.13 released with faster startup and lower memory use.",
+    "description": "Fwupd is a daemon that provides firmware updates on Linux for supported hardware (BIOS/UEFI, drives, peripherals). It integrates with GNOME Software and the command line. Version 2.0.13 improved startup time and memory use.",
     "category": "Firmware Updater",
     "categories": [
       "Firmware Updater",
@@ -557,6 +659,12 @@
       "Linux",
       "FOSS"
     ],
+    "details": {
+      "features": "BIOS/UEFI and device firmware updates, LVFS, CLI and GUI.",
+      "whenToUse": "Updating firmware on Linux for supported laptops and peripherals.",
+      "whenNotToUse": "When your hardware is not on the LVFS compatibility list.",
+      "tips": "Check fwupdmgr get-devices; ensure battery is charged before firmware updates."
+    },
     "links": [
       {
         "label": "Fwupd 2.0.13 Released with Faster Startup and Lower Memory Use",
@@ -572,7 +680,7 @@
   {
     "id": "ipfire",
     "name": "IPFire",
-    "description": "Hardened Linux distribution that functions as a router and firewall. Core Update 196 improves WireGuard and console graphics stack.",
+    "description": "IPFire is a hardened Linux distribution designed as a router and firewall. It offers stateful packet filtering, VPN (including WireGuard), proxy, and intrusion detection. Core Update 196 improved WireGuard and the console graphics stack.",
     "category": "Firewall",
     "categories": [
       "Firewall",
@@ -582,6 +690,12 @@
       "Linux",
       "FOSS"
     ],
+    "details": {
+      "features": "Firewall, VPN (WireGuard, OpenVPN), proxy, IDS, green/orange/blue zones.",
+      "whenToUse": "Home or small-office firewall, VPN gateway, or network segmentation.",
+      "whenNotToUse": "When you need a general-purpose server OS (use a normal distro).",
+      "tips": "Configure zones (e.g. DMZ) and keep add-ons updated for security."
+    },
     "links": [
       {
         "label": "IPFire 2.29 Core Update 196 Improves WireGuard Support, Console Graphics Stack",
@@ -597,7 +711,7 @@
   {
     "id": "disk-usage-analyser",
     "name": "Disk Usage Analyser",
-    "description": "Simple yet powerful disk usage analyzer for Linux.",
+    "description": "Disk Usage Analyser (e.g. Baobab on GNOME) is a simple yet powerful tool that visualizes disk usage in a treemap or list. It helps you see which folders and files consume the most space on Linux.",
     "category": "Disk Usage Analyzer",
     "categories": [
       "Disk Usage Analyzer"
@@ -605,12 +719,18 @@
     "tags": [
       "Linux",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Treemap and list view, scan any directory, quick summary.",
+      "whenToUse": "Finding what is using disk space on your system.",
+      "whenNotToUse": "For very large drives where MFT-based tools (e.g. WizTree) are faster on Windows.",
+      "tips": "Scan your home directory and common locations like .cache and snap to find big consumers."
+    }
   },
   {
     "id": "barrier",
     "name": "Barrier",
-    "description": "Simple, privacy-focused app for sharing mouse and keyboard across machines.",
+    "description": "Barrier is a free, open-source application that lets you share one mouse and keyboard across multiple computers on your local network. It is a software KVM alternative without extra hardware.",
     "category": "Share Screening",
     "categories": [
       "Share Screening",
@@ -620,12 +740,18 @@
       "Linux",
       "Cross-platform",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Mouse/keyboard sharing, multi-machine, configurable screen layout, SSL.",
+      "whenToUse": "Using several PCs on one desk with a single keyboard and mouse.",
+      "whenNotToUse": "When you need to share only the screen (use RDP/VNC) or require commercial support.",
+      "tips": "Configure the screen positions to match your physical monitor layout for smooth cursor movement."
+    }
   },
   {
     "id": "snapsafe",
     "name": "SnapSafe",
-    "description": "Simple, privacy-focused camera app.",
+    "description": "SnapSafe is a simple, privacy-focused camera app for Android. It avoids unnecessary permissions and cloud uploads so you can take photos and videos without sharing data with third parties.",
     "category": "Camera App",
     "categories": [
       "Camera App"
@@ -633,12 +759,18 @@
     "tags": [
       "Android",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Minimal permissions, no cloud, simple capture, privacy-first.",
+      "whenToUse": "When you want a camera app that does not send data to the cloud.",
+      "whenNotToUse": "When you need advanced editing or built-in cloud backup.",
+      "tips": "Grant only storage permission if you want to save to device only."
+    }
   },
   {
     "id": "aurora-store",
     "name": "Aurora Store",
-    "description": "Unofficial FOSS client for Google Play Store.",
+    "description": "Aurora Store is an unofficial, open-source client for the Google Play Store. It lets you browse and install apps without a Google account and offers anonymous or session-based access.",
     "category": "App Store Alternative",
     "categories": [
       "App Store Alternative"
@@ -646,12 +778,18 @@
     "tags": [
       "Android",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Play Store access without account, anonymous installs, updates, FOSS.",
+      "whenToUse": "Installing Play apps without a Google account or with minimal tracking.",
+      "whenNotToUse": "When you need paid apps or in-app purchases tied to a Google account.",
+      "tips": "Use anonymous session for one-off installs; keep the app updated for compatibility."
+    }
   },
   {
     "id": "auxio",
     "name": "Auxio",
-    "description": "Simple, powerful music player for Android.",
+    "description": "Auxio is a simple, powerful, open-source music player for Android. It focuses on local playback with a clean interface, no ads, and support for common audio formats and playlists.",
     "category": "Music Player",
     "categories": [
       "Music Player"
@@ -659,12 +797,18 @@
     "tags": [
       "Android",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Local playback, playlists, album art, no ads, lightweight.",
+      "whenToUse": "Listening to local music files on Android without bloat.",
+      "whenNotToUse": "When you need streaming or cloud library sync.",
+      "tips": "Point the app to your music folder; use playlists for quick access."
+    }
   },
   {
     "id": "app-lock",
     "name": "App Lock",
-    "description": "Simple, privacy-focused app lock.",
+    "description": "App Lock is a simple, privacy-focused app that lets you lock selected apps with a PIN, pattern, or biometrics so others cannot open them without your permission.",
     "category": "Security",
     "categories": [
       "Security"
@@ -672,12 +816,18 @@
     "tags": [
       "Android",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Per-app lock, PIN/pattern/biometric, minimal permissions.",
+      "whenToUse": "Preventing others from opening sensitive apps (banking, messages).",
+      "whenNotToUse": "When you need full device encryption only (use system lock).",
+      "tips": "Lock messaging and finance apps; use a strong pattern or PIN."
+    }
   },
   {
     "id": "limpazap",
     "name": "Limpazap",
-    "description": "Cleaner for WhatsApp media files.",
+    "description": "Limpazap is a utility that cleans WhatsApp media files from your device. It helps you free space by removing old photos, videos, and voice notes stored by WhatsApp while keeping your chats intact.",
     "category": "Utility",
     "categories": [
       "Utility"
@@ -685,12 +835,18 @@
     "tags": [
       "Android",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Scan WhatsApp media, selective delete, free space, chats preserved.",
+      "whenToUse": "When WhatsApp is using too much storage and you want to remove media only.",
+      "whenNotToUse": "When you want to delete entire chats or backup to cloud.",
+      "tips": "Review the list before deleting; backup important media elsewhere first."
+    }
   },
   {
     "id": "tracker-controller",
     "name": "Tracker Controller",
-    "description": "Control app trackers and permissions.",
+    "description": "Tracker Controller is an open-source app that lets you see and control which trackers and permissions other apps use. It helps you block or limit tracking and unnecessary permissions on Android.",
     "category": "Privacy",
     "categories": [
       "Privacy",
@@ -699,12 +855,18 @@
     "tags": [
       "Android",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "View trackers per app, block/allow, permission control, FOSS.",
+      "whenToUse": "Reducing tracking and tightening app permissions on Android.",
+      "whenNotToUse": "When you need system-wide VPN-based blocking (use NetGuard or similar).",
+      "tips": "Check tracker list after installing new apps; some blocking may affect app functionality."
+    }
   },
   {
     "id": "tuta",
     "name": "Tuta",
-    "description": "Secure, encrypted email client.",
+    "description": "Tuta (formerly Tutanota) is a secure, open-source email service and client with built-in end-to-end encryption. It offers encrypted mail, calendar, and contacts on Android and other platforms.",
     "category": "Email Client",
     "categories": [
       "Email Client"
@@ -713,12 +875,18 @@
       "Android",
       "Cross-platform",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "E2EE email, calendar, contacts, secure password recovery, no ads.",
+      "whenToUse": "When you want encrypted email and calendar without relying on big providers.",
+      "whenNotToUse": "When you need full IMAP/SMTP with third-party clients.",
+      "tips": "Use the built-in calendar and contacts for full encrypted sync."
+    }
   },
   {
     "id": "simple",
     "name": "Simple",
-    "description": "Mobile app to track training programs and workouts.",
+    "description": "Simple is an open-source mobile app to track training programs and workouts. It helps you log exercises, sets, and progress without cloud lock-in or unnecessary permissions.",
     "category": "Fitness Tracker",
     "categories": [
       "Fitness Tracker"
@@ -726,12 +894,18 @@
     "tags": [
       "Android",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Workout logging, exercises, sets/reps, progress, no account required.",
+      "whenToUse": "Tracking gym or home workouts with minimal fuss.",
+      "whenNotToUse": "When you need wearables sync or social features.",
+      "tips": "Create routines for repeated workouts; export data if you switch apps."
+    }
   },
   {
     "id": "tasks",
     "name": "Tasks",
-    "description": "Simple open-source todo list app.",
+    "description": "Tasks is a simple, open-source todo list app that syncs with CalDAV (e.g. Nextcloud). It supports lists, due dates, and reminders while keeping your data on your own server if you use CalDAV.",
     "category": "Task Management",
     "categories": [
       "Task Management"
@@ -739,12 +913,18 @@
     "tags": [
       "Android",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Todo lists, due dates, reminders, CalDAV sync, widgets.",
+      "whenToUse": "Managing tasks with optional self-hosted sync via CalDAV.",
+      "whenNotToUse": "When you need complex project management or team features.",
+      "tips": "Connect to a CalDAV server (Nextcloud, Radicale) for sync across devices."
+    }
   },
   {
     "id": "grit",
     "name": "Grit",
-    "description": "Open-source Mastodon client.",
+    "description": "Grit is an open-source Mastodon client for Android. It provides a native interface for reading the timeline, posting, and interacting with the fediverse (Mastodon and compatible instances).",
     "category": "Social Media Client",
     "categories": [
       "Social Media Client"
@@ -752,12 +932,18 @@
     "tags": [
       "Android",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Timeline, post, boost, reply, notifications, multi-account.",
+      "whenToUse": "Using Mastodon or the fediverse on Android with a FOSS client.",
+      "whenNotToUse": "When you need Twitter/X or other proprietary networks.",
+      "tips": "Add your Mastodon instance; use multiple accounts for different servers."
+    }
   },
   {
     "id": "openfood-facts",
     "name": "OpenFood Facts",
-    "description": "Scan food products to make informed choices.",
+    "description": "OpenFood Facts is a free, open-source database and app. Scan barcodes to see ingredients, nutrition, and environmental impact so you can make informed food choices. Community-driven and available on multiple platforms.",
     "category": "Food Information",
     "categories": [
       "Food Information"
@@ -766,12 +952,18 @@
       "Android",
       "Cross-platform",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Barcode scan, nutrition, ingredients, Nutri-Score, community data.",
+      "whenToUse": "Checking what is in packaged food or comparing products.",
+      "whenNotToUse": "When you need diet planning or medical advice (use with professional guidance).",
+      "tips": "Contribute by adding or editing products to improve the database."
+    }
   },
   {
     "id": "invizible-pro",
     "name": "InviZible Pro",
-    "description": "Online privacy and security for Android.",
+    "description": "InviZible Pro is an open-source app that combines Tor, DNS over HTTPS, and a firewall to improve online privacy and security on Android. It routes traffic through Tor and blocks unwanted connections.",
     "category": "Privacy",
     "categories": [
       "Privacy",
@@ -780,12 +972,18 @@
     "tags": [
       "Android",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Tor integration, DNS over HTTPS, firewall, privacy controls.",
+      "whenToUse": "Strong anonymity (Tor) or encrypted DNS on Android.",
+      "whenNotToUse": "When you need maximum speed; Tor can be slower.",
+      "tips": "Use Orbot for full Tor; configure DNS and firewall per your needs."
+    }
   },
   {
     "id": "netguard",
     "name": "NetGuard",
-    "description": "Block internet access per application.",
+    "description": "NetGuard is an open-source firewall for Android that blocks internet access per application without root. You can allow or block Wi-Fi and/or mobile data per app to reduce tracking and data usage.",
     "category": "Firewall",
     "categories": [
       "Firewall",
@@ -794,12 +992,18 @@
     "tags": [
       "Android",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Per-app block (Wi-Fi/mobile), no root, traffic log, optional VPN mode.",
+      "whenToUse": "Blocking specific apps from the internet or reducing background data.",
+      "whenNotToUse": "When you need system-wide Tor or complex routing (use Orbot/InviZible).",
+      "tips": "Enable 'Block when roaming' for apps you do not want using mobile data abroad."
+    }
   },
   {
     "id": "f-droid",
     "name": "F-Droid",
-    "description": "Installable catalogue of FOSS applications for Android.",
+    "description": "F-Droid is an installable catalogue of free and open-source applications for Android. It provides a repository and client so you can discover and install FOSS apps without the Google Play Store.",
     "category": "App Store",
     "categories": [
       "App Store"
@@ -807,12 +1011,18 @@
     "tags": [
       "Android",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "FOSS app repository, no account, optional anti-feature labels, updates.",
+      "whenToUse": "Finding and installing open-source Android apps without Google.",
+      "whenNotToUse": "When you need proprietary or Play-only apps (use Aurora Store for those).",
+      "tips": "Enable 'Unstable' or third-party repos for more apps; check anti-features in app listings."
+    }
   },
   {
     "id": "money-manager-ex",
     "name": "Money Manager Ex",
-    "description": "Personal finance manager application.",
+    "description": "Money Manager Ex is a free, open-source personal finance manager. It helps you track accounts, income, expenses, and budgets. Data is stored locally and can be synced across Android, Windows, and other platforms.",
     "category": "Finance",
     "categories": [
       "Finance"
@@ -821,12 +1031,18 @@
       "Android",
       "Cross-platform",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "Accounts, transactions, budgets, reports, multi-currency, local/sync.",
+      "whenToUse": "Tracking personal or family finances without cloud lock-in.",
+      "whenNotToUse": "When you need bank sync or investment tracking with live data.",
+      "tips": "Back up the database regularly; use categories and payees for consistent reporting."
+    }
   },
   {
     "id": "newpipe",
     "name": "NewPipe",
-    "description": "Lightweight YouTube front-end for Android.",
+    "description": "NewPipe is a lightweight, open-source YouTube front-end for Android. It does not use the official API or Google services, supports background playback and picture-in-picture, and can download audio or video.",
     "category": "Media Player",
     "categories": [
       "Media Player",
@@ -835,12 +1051,18 @@
     "tags": [
       "Android",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "No Google API, background/PiP, download audio/video, subscriptions, no ads.",
+      "whenToUse": "Watching YouTube without Google account or with download/background support.",
+      "whenNotToUse": "When you need official YouTube features like live chat or memberships.",
+      "tips": "Export subscriptions from YouTube and import into NewPipe; use SponsorBlock for skip segments."
+    }
   },
   {
     "id": "anime-slayer",
     "name": "Anime Slayer",
-    "description": "Application for watching and downloading anime.",
+    "description": "Anime Slayer is an application for watching and downloading anime on Android. It aggregates streams and allows offline viewing. Popular among anime fans for a wide catalog and download support.",
     "category": "Entertainment",
     "categories": [
       "Entertainment"
@@ -848,12 +1070,18 @@
     "tags": [
       "Android",
       "Favorite"
-    ]
+    ],
+    "details": {
+      "features": "Stream anime, download for offline, catalog, multiple sources.",
+      "whenToUse": "Watching and downloading anime on Android.",
+      "whenNotToUse": "When you prefer official licensors (Crunchyroll, etc.) for supported regions.",
+      "tips": "Check regional availability; use downloads for offline viewing."
+    }
   },
   {
     "id": "onstream",
     "name": "OnStream",
-    "description": "Streaming app for movies and TV shows.",
+    "description": "OnStream is a streaming application for movies and TV shows on Android. It offers a catalog of titles with streaming and optional download for offline viewing. Popular for entertainment on the go.",
     "category": "Streaming",
     "categories": [
       "Streaming",
@@ -862,12 +1090,18 @@
     "tags": [
       "Android",
       "Favorite"
-    ]
+    ],
+    "details": {
+      "features": "Movie and TV catalog, streaming, download, search.",
+      "whenToUse": "Watching movies and TV shows on Android.",
+      "whenNotToUse": "When you prefer only licensed services (Netflix, etc.).",
+      "tips": "Use on a trusted network; check local laws regarding streaming content."
+    }
   },
   {
     "id": "streamio",
     "name": "Streamio",
-    "description": "Streaming platform for movies and series.",
+    "description": "Streamio is a streaming platform for movies and series on Android. It provides a catalog of content for streaming and download. Used by many for entertainment and offline viewing.",
     "category": "Streaming",
     "categories": [
       "Streaming",
@@ -876,12 +1110,18 @@
     "tags": [
       "Android",
       "Favorite"
-    ]
+    ],
+    "details": {
+      "features": "Movies and series catalog, streaming, download, search.",
+      "whenToUse": "Streaming or downloading movies and series on Android.",
+      "whenNotToUse": "When you only use official subscription services.",
+      "tips": "Use on a secure connection; be aware of regional and legal considerations."
+    }
   },
   {
     "id": "boycott-x",
     "name": "Boycott X",
-    "description": "App for identifying and boycotting products.",
+    "description": "Boycott X is an app that helps you identify products and brands so you can make informed purchasing decisions based on ethics, politics, or social awareness. Scan barcodes or search to see brand information.",
     "category": "Social Awareness",
     "categories": [
       "Social Awareness"
@@ -889,12 +1129,18 @@
     "tags": [
       "Android",
       "Favorite"
-    ]
+    ],
+    "details": {
+      "features": "Barcode scan, brand info, boycott lists, community-driven.",
+      "whenToUse": "Checking whether a product aligns with your values before buying.",
+      "whenNotToUse": "When you only need nutrition or ingredient info (use OpenFood Facts).",
+      "tips": "Contribute by adding or updating brand data to help others."
+    }
   },
   {
     "id": "salatuk",
     "name": "Salatuk",
-    "description": "Prayer times and Qibla direction.",
+    "description": "Salatuk is an app that provides accurate prayer times and Qibla direction for Muslims. It uses your location to calculate prayer times and shows the direction to Mecca for salah. Often includes adhan and optional widgets.",
     "category": "Religion",
     "categories": [
       "Religion"
@@ -902,7 +1148,13 @@
     "tags": [
       "Android",
       "Favorite"
-    ]
+    ],
+    "details": {
+      "features": "Prayer times, Qibla compass, location-based, adhan, widgets.",
+      "whenToUse": "Finding prayer times and Qibla direction on the go.",
+      "whenNotToUse": "When you need only a simple clock or timezone tool.",
+      "tips": "Allow location for accurate times; set notification for adhan if desired."
+    }
   },
   {
     "id": "bitwarden",
@@ -928,7 +1180,7 @@
   {
     "id": "fing",
     "name": "Fing",
-    "description": "Network tools and Wi-Fi scanner.",
+    "description": "Fing is a set of network tools and a Wi-Fi scanner for discovering devices on your network, checking connectivity, and running basic diagnostics. Available on Android and other platforms.",
     "category": "Network Scanner",
     "categories": [
       "Network Scanner"
@@ -937,12 +1189,18 @@
       "Android",
       "Cross-platform",
       "Favorite"
-    ]
+    ],
+    "details": {
+      "features": "Device discovery, port scan, ping, DNS lookup, network info.",
+      "whenToUse": "Seeing what devices are on your Wi-Fi or troubleshooting connectivity.",
+      "whenNotToUse": "When you need deep packet inspection or enterprise monitoring.",
+      "tips": "Use on your home network to audit connected devices and open ports."
+    }
   },
   {
     "id": "slack",
     "name": "Slack",
-    "description": "Channel-based messaging platform.",
+    "description": "Slack is a channel-based messaging and collaboration platform for teams. It offers channels, direct messages, file sharing, integrations (e.g. GitHub, Jira), and search. Available on desktop, mobile, and web.",
     "category": "Communication",
     "categories": [
       "Communication"
@@ -951,12 +1209,18 @@
       "Cross-platform",
       "Web",
       "Favorite"
-    ]
+    ],
+    "details": {
+      "features": "Channels, DMs, threads, file share, integrations, search, workflows.",
+      "whenToUse": "Team communication, project channels, or integration-heavy workflows.",
+      "whenNotToUse": "When you need E2EE or fully self-hosted chat (consider Mattermost).",
+      "tips": "Use channels per project or topic; set notification preferences per channel."
+    }
   },
   {
     "id": "linkedin",
     "name": "LinkedIn",
-    "description": "Business and employment-oriented online service.",
+    "description": "LinkedIn is a business and employment-oriented online service for professional networking, job hunting, and recruiting. Users maintain profiles, connect with colleagues, and access courses and job listings.",
     "category": "Professional Networking",
     "categories": [
       "Professional Networking"
@@ -965,12 +1229,18 @@
       "Cross-platform",
       "Web",
       "Favorite"
-    ]
+    ],
+    "details": {
+      "features": "Profile, connections, jobs, messaging, learning, recruiting.",
+      "whenToUse": "Job search, professional branding, or industry networking.",
+      "whenNotToUse": "When you want purely social or non-professional networking.",
+      "tips": "Keep your profile updated; use recommendations and skills for visibility."
+    }
   },
   {
     "id": "coursera",
     "name": "Coursera",
-    "description": "Online courses and degrees from universities and companies.",
+    "description": "Coursera is an online learning platform offering courses, specializations, and degrees from universities and companies worldwide. Topics range from tech and business to arts and health, with certificates and optional paid credentials.",
     "category": "E-learning",
     "categories": [
       "E-learning"
@@ -979,12 +1249,18 @@
       "Cross-platform",
       "Web",
       "Favorite"
-    ]
+    ],
+    "details": {
+      "features": "Courses, specializations, degrees, certificates, quizzes, peer review.",
+      "whenToUse": "Structured learning from top institutions or career-focused credentials.",
+      "whenNotToUse": "When you prefer short, informal tutorials (e.g. YouTube).",
+      "tips": "Audit courses for free; pay only if you need a certificate or graded assignments."
+    }
   },
   {
     "id": "zedge",
     "name": "Zedge",
-    "description": "Ringtones, wallpapers, and other mobile content.",
+    "description": "Zedge is a popular app for ringtones, wallpapers, notification sounds, and other mobile customization content. Users can browse and download millions of items to personalize their devices.",
     "category": "Customization",
     "categories": [
       "Customization"
@@ -992,12 +1268,18 @@
     "tags": [
       "Android",
       "Favorite"
-    ]
+    ],
+    "details": {
+      "features": "Ringtones, wallpapers, notification sounds, lock screens, themes.",
+      "whenToUse": "Personalizing ringtones, wallpapers, or notification sounds.",
+      "whenNotToUse": "When you only need system defaults or fully FOSS customization.",
+      "tips": "Browse by category; check file size and permissions before installing."
+    }
   },
   {
     "id": "secure-vpn",
     "name": "Secure VPN",
-    "description": "Virtual private network service for secure browsing.",
+    "description": "Secure VPN is a virtual private network service that encrypts your connection and can change your apparent location for more private or region-unlocked browsing on mobile and other devices.",
     "category": "VPN",
     "categories": [
       "VPN"
@@ -1005,7 +1287,13 @@
     "tags": [
       "Android",
       "Favorite"
-    ]
+    ],
+    "details": {
+      "features": "Encrypted tunnel, multiple regions, secure browsing.",
+      "whenToUse": "Public Wi-Fi, privacy, or accessing region-restricted content.",
+      "whenNotToUse": "When you need maximum throughput or verified no-logs (check provider policy).",
+      "tips": "Read the privacy policy; prefer providers with clear no-logs and open-source clients when possible."
+    }
   },
   {
     "id": "localsend",
@@ -1032,7 +1320,7 @@
   {
     "id": "bitchat",
     "name": "Bitchat",
-    "description": "Decentralized, peer-to-peer instant messenger.",
+    "description": "Bitchat is a decentralized, peer-to-peer instant messenger that does not rely on a central server. Messages are exchanged directly between users for privacy and censorship resistance.",
     "category": "Communication",
     "categories": [
       "Communication"
@@ -1041,12 +1329,18 @@
       "Android",
       "Favorite",
       "FOSS"
-    ]
+    ],
+    "details": {
+      "features": "P2P messaging, no central server, decentralized, FOSS.",
+      "whenToUse": "When you want serverless, decentralized chat.",
+      "whenNotToUse": "When you need guaranteed delivery or multi-device sync with a central service.",
+      "tips": "Ensure both parties are online or use relay for offline delivery if supported."
+    }
   },
   {
     "id": "anydesk",
     "name": "AnyDesk",
-    "description": "Remote control, file transfer, and VPN functions.",
+    "description": "AnyDesk is a remote desktop application that lets you control another computer over the internet. It supports screen sharing, file transfer, and low-latency connections for support and access from anywhere.",
     "category": "Remote Desktop",
     "categories": [
       "Remote Desktop"
@@ -1054,12 +1348,18 @@
     "tags": [
       "Cross-platform",
       "Favorite"
-    ]
+    ],
+    "details": {
+      "features": "Remote control, file transfer, unattended access, multi-platform.",
+      "whenToUse": "Remote support, accessing your PC from elsewhere, or helping others.",
+      "whenNotToUse": "When you need full E2EE or self-hosted only (consider RustDesk).",
+      "tips": "Use a strong password for unattended access; restrict to trusted networks when possible."
+    }
   },
   {
     "id": "lumo",
     "name": "Lumo",
-    "description": "App for controlling smart lights.",
+    "description": "Lumo is an app for controlling compatible smart lights and lighting systems. It lets you adjust brightness, color, and schedules from your phone for supported devices and ecosystems.",
     "category": "Utility",
     "categories": [
       "Utility"
@@ -1067,12 +1367,18 @@
     "tags": [
       "Android",
       "Favorite"
-    ]
+    ],
+    "details": {
+      "features": "On/off, brightness, color, schedules, scenes.",
+      "whenToUse": "Controlling smart lights that are compatible with the app.",
+      "whenNotToUse": "When your lights use a different ecosystem (check compatibility).",
+      "tips": "Ensure lights and phone are on the same network; use schedules for automation."
+    }
   },
   {
     "id": "t-rex-counting-by-visual-prompting",
     "name": "T-Rex: Counting by Visual Prompting",
-    "description": "Interactive object counting model to detect and count any objects.",
+    "description": "T-Rex is an interactive object-counting model that uses visual prompting to detect and count arbitrary objects in images. It combines flexibility with accuracy for research and practical counting tasks.",
     "category": "Object Counting",
     "categories": [
       "Object Counting",
@@ -1160,7 +1466,7 @@
   {
     "id": "langfuse",
     "name": "Langfuse",
-    "description": "Analytics platform for LLMs; now open source.",
+    "description": "Langfuse is an analytics and observability platform for LLM applications. It provides tracing, evaluation, and monitoring for prompts and model usage. The platform is now open source and can be self-hosted.",
     "category": "LLM Analytics",
     "categories": [
       "LLM Analytics",
@@ -1181,7 +1487,7 @@
   {
     "id": "gitea",
     "name": "Gitea",
-    "description": "Lightweight code hosting. Version 1.24 includes new APIs, smarter Markdown, and better admin tools.",
+    "description": "Gitea is a lightweight, self-hosted Git service for code hosting. It provides Git repositories, issues, pull requests, and a simple web UI. Version 1.24 added new APIs, smarter Markdown, and improved admin tools.",
     "category": "Git Service",
     "categories": [
       "Git Service",
@@ -1202,7 +1508,7 @@
   {
     "id": "vagrant",
     "name": "Vagrant",
-    "description": "Build and manage VM environments; useful for testing exploits or sandboxing.",
+    "description": "Vagrant is a tool for building and managing portable virtual machine environments. It works with providers like VirtualBox and VMware and is useful for dev environments, testing exploits, or sandboxing. Often used with provisioning (e.g. Ansible).",
     "category": "Virtual Machine Management",
     "categories": [
       "Virtual Machine Management",
@@ -1218,7 +1524,7 @@
   {
     "id": "nextcloud-apps",
     "name": "Nextcloud Apps",
-    "description": "Apps that supercharge home lab productivity when used with a self-hosted Nextcloud server.",
+    "description": "A curated list of Nextcloud apps that supercharge home lab and self-hosted productivity when used with a self-hosted Nextcloud server. Covers sync, collaboration, and automation.",
     "category": "Self-hosted Productivity",
     "categories": [
       "Self-hosted Productivity",
@@ -1239,7 +1545,7 @@
   {
     "id": "dehashed",
     "name": "DeHashed",
-    "description": "Database of leaked credentials and personal information for OSINT.",
+    "description": "DeHashed is a searchable database of leaked credentials and personal information used in OSINT and authorized security research. It helps identify compromised accounts and assess exposure. Use only for legal, authorized purposes.",
     "category": "OSINT",
     "categories": [
       "OSINT",
@@ -1253,7 +1559,7 @@
   {
     "id": "isearchfrom",
     "name": "iSearchFrom",
-    "description": "Collection of OSINT tools and resources.",
+    "description": "iSearchFrom is a curated collection of OSINT (Open-Source Intelligence) tools and resources for gathering and analyzing publicly available information. Useful for researchers and authorized investigations.",
     "category": "OSINT",
     "categories": [
       "OSINT"
@@ -1266,7 +1572,7 @@
   {
     "id": "emploleaks",
     "name": "EmploLeaks",
-    "description": "Detect company members with leaked credentials.",
+    "description": "EmploLeaks is an OSINT tool that helps detect company members whose credentials have appeared in leaks. It uses public leak data to assess organizational exposure. For authorized security and awareness use only.",
     "category": "OSINT",
     "categories": [
       "OSINT",
@@ -1286,7 +1592,7 @@
   {
     "id": "gitsint",
     "name": "GitSint",
-    "description": "Open source info via GitHub username/organization/email; uses GitHub APIs.",
+    "description": "GitSint is an open-source OSINT tool that gathers public information from GitHub by username, organization, or email. It uses GitHub APIs to map developers, repos, and affiliations for authorized research.",
     "category": "OSINT",
     "categories": [
       "OSINT",
@@ -1307,7 +1613,7 @@
   {
     "id": "mailfinder",
     "name": "MailFinder",
-    "description": "Find email by first and last name.",
+    "description": "MailFinder is an OSINT tool that helps find email addresses from first and last names using public sources and patterns. Used in authorized reconnaissance and contact discovery. Use responsibly and within legal bounds.",
     "category": "OSINT",
     "categories": [
       "OSINT",
@@ -1378,7 +1684,7 @@
   {
     "id": "android-system-component-vulnerability",
     "name": "Android System Component Vulnerability",
-    "description": "Critical vulnerability allowing remote code execution without user interaction.",
+    "description": "Security news about a critical Android system component vulnerability that allows remote code execution without user interaction. Highlights the importance of timely updates and vendor patches.",
     "category": "Security News",
     "categories": [
       "Security News",
@@ -1398,7 +1704,7 @@
   {
     "id": "police-and-military-radio-encryption",
     "name": "Police and Military Radio Encryption",
-    "description": "Encryption used for police and military radios may be easily cracked.",
+    "description": "Security news reporting that encryption used for some police and military radios may be easily cracked, raising concerns about the confidentiality of tactical communications.",
     "category": "Security News",
     "categories": [
       "Security News"
@@ -1416,7 +1722,7 @@
   {
     "id": "linux-kernel-vulnerability",
     "name": "Linux Kernel Vulnerability",
-    "description": "New Linux kernel vulnerability directly exploited from Chrome Renderer Sandbox.",
+    "description": "Security news about a new Linux kernel vulnerability that can be directly exploited from the Chrome Renderer Sandbox, underlining the importance of kernel and browser updates.",
     "category": "Security News",
     "categories": [
       "Security News",
@@ -1436,7 +1742,7 @@
   {
     "id": "top-10-active-directory-attack",
     "name": "Top 10 Active Directory Attack",
-    "description": "Information on the top 10 Active Directory attack vectors.",
+    "description": "A reference guide covering the top 10 Active Directory attack vectors used in penetration testing and red-team exercises. Includes Kerberos, NTLM, lateral movement, and mitigation context. For authorized security testing and defense only.",
     "category": "Security Guide",
     "categories": [
       "Security Guide"
@@ -1449,7 +1755,7 @@
   {
     "id": "how-to-harden-active-directory-to-prevent-cyber-attacks",
     "name": "How To Harden Active Directory To Prevent Cyber Attacks",
-    "description": "Guidance on hardening Active Directory to prevent cyber attacks.",
+    "description": "Practical guidance on hardening Active Directory (AD) to reduce the risk of cyber attacks. Covers secure configuration, least privilege, monitoring, and common misconfigurations to fix. For defenders and security teams.",
     "category": "Security Guide",
     "categories": [
       "Security Guide"
@@ -1462,7 +1768,7 @@
   {
     "id": "a-gentle-introduction-to-ncurses-for-the-terminally-impatient",
     "name": "A Gentle Introduction To Ncurses For The Terminally Impatient",
-    "description": "Gentle introduction to Ncurses for terminal UIs.",
+    "description": "A gentle, hands-on introduction to Ncurses for building text-based terminal user interfaces (TUIs) on Linux. Covers basics for the terminally impatient who want to get started quickly.",
     "category": "Linux Guide",
     "categories": [
       "Linux Guide",
@@ -1482,7 +1788,7 @@
   {
     "id": "bash-script-to-monitor-linux-health-daily-with-cron",
     "name": "Bash Script to Monitor Linux Health Daily with Cron",
-    "description": "Automate system health checks with Bash and Cron.",
+    "description": "A guide to automating daily Linux system health checks using Bash scripts and Cron. Covers disk, memory, load, and basic monitoring so you can catch issues early.",
     "category": "Linux Guide",
     "categories": [
       "Linux Guide",
@@ -1502,7 +1808,7 @@
   {
     "id": "5-open-source-apps-for-file-transfer-between-linux-and-android",
     "name": "5 Open Source Apps for File Transfer Between Linux and Android",
-    "description": "Open source apps for seamless file transfer between Linux and Android.",
+    "description": "A roundup of five open-source apps that enable seamless file transfer between Linux and Android over USB or network, without relying on proprietary cloud services.",
     "category": "Linux Guide",
     "categories": [
       "Linux Guide"
@@ -1523,7 +1829,7 @@
   {
     "id": "youtube-security-trybe-0",
     "name": "Security Trybe",
-    "description": "YouTube channel: Cybersecurity.",
+    "description": "Security Trybe is a YouTube channel focused on cybersecurity education. It covers topics like ethical hacking, network security, and career advice for aspiring security professionals in an accessible format.",
     "category": "Cybersecurity",
     "categories": [
       "Cybersecurity"
@@ -1531,12 +1837,18 @@
     "tags": [
       "YouTube",
       "Security"
-    ]
+    ],
+    "details": {
+      "features": "Cybersecurity basics, ethical hacking, career guidance, tutorials.",
+      "whenToUse": "Learning cybersecurity fundamentals or exploring security as a career.",
+      "whenNotToUse": "When you need vendor-specific or advanced research content.",
+      "tips": "Start with playlists for structured learning; combine with hands-on practice."
+    }
   },
   {
     "id": "youtube-network-chuck-1",
     "name": "Network Chuck",
-    "description": "YouTube channel: Cybersecurity.",
+    "description": "Network Chuck is a popular YouTube channel that makes networking and cybersecurity fun and approachable. Covers homelabs, Linux, cloud, hacking demos, and tech career advice with high energy and clarity.",
     "category": "Cybersecurity",
     "categories": [
       "Cybersecurity"
@@ -1544,12 +1856,18 @@
     "tags": [
       "YouTube",
       "Security"
-    ]
+    ],
+    "details": {
+      "features": "Networking, homelab, Linux, cybersecurity demos, career tips.",
+      "whenToUse": "Learning networking or security in an engaging, beginner-friendly way.",
+      "whenNotToUse": "When you need deep, academic or certification-only content.",
+      "tips": "Check homelab and CCNA-style playlists for structured series."
+    }
   },
   {
     "id": "youtube-outpost-gray-2",
     "name": "Outpost Gray",
-    "description": "YouTube channel: Cybersecurity.",
+    "description": "Outpost Gray is a YouTube channel dedicated to cybersecurity, red teaming, and defensive security. Covers practical techniques, tool usage, and real-world security scenarios for practitioners and learners.",
     "category": "Cybersecurity",
     "categories": [
       "Cybersecurity"
@@ -1557,12 +1875,18 @@
     "tags": [
       "YouTube",
       "Security"
-    ]
+    ],
+    "details": {
+      "features": "Red team, blue team, tool walkthroughs, practical security.",
+      "whenToUse": "Learning offensive or defensive security techniques and tools.",
+      "whenNotToUse": "When you need only certification prep or theory.",
+      "tips": "Use playlists to follow specific topics; practice in lab environments only."
+    }
   },
   {
     "id": "youtube-david-bombal-3",
     "name": "David Bombal",
-    "description": "YouTube channel: Cybersecurity.",
+    "description": "David Bombal's YouTube channel covers networking, Python, and cybersecurity with a focus on Cisco, GNS3, and practical labs. Includes interviews, tutorials, and career advice for network and security professionals.",
     "category": "Cybersecurity",
     "categories": [
       "Cybersecurity"
@@ -1570,12 +1894,18 @@
     "tags": [
       "YouTube",
       "Security"
-    ]
+    ],
+    "details": {
+      "features": "Networking, Cisco, GNS3, Python for networking, security, interviews.",
+      "whenToUse": "Learning networking, automation, or preparing for Cisco/security roles.",
+      "whenNotToUse": "When you need only cloud-native or non-Cisco content.",
+      "tips": "Use GNS3 and Python playlists for hands-on labs and automation."
+    }
   },
   {
     "id": "youtube-the-xss-rat-4",
     "name": "The XSS Rat",
-    "description": "YouTube channel: Cybersecurity.",
+    "description": "The XSS Rat is a YouTube channel focused on web security, bug bounty, and penetration testing. Covers XSS, injection, and other web vulnerabilities with practical demonstrations and bug-hunting tips.",
     "category": "Cybersecurity",
     "categories": [
       "Cybersecurity"
@@ -1583,12 +1913,18 @@
     "tags": [
       "YouTube",
       "Security"
-    ]
+    ],
+    "details": {
+      "features": "Web security, XSS, bug bounty, penetration testing, walkthroughs.",
+      "whenToUse": "Learning web app security or bug bounty hunting.",
+      "whenNotToUse": "When you need infrastructure or binary exploitation content.",
+      "tips": "Practice only on authorized targets or dedicated lab platforms."
+    }
   },
   {
     "id": "youtube-cyrill-gossi-5",
     "name": "Cyrill Gossi",
-    "description": "YouTube channel: Cybersecurity.",
+    "description": "Cyrill Gossi's YouTube channel covers cybersecurity, penetration testing, and ethical hacking. Known for clear explanations of attack techniques and defensive measures, suitable for learners and practitioners.",
     "category": "Cybersecurity",
     "categories": [
       "Cybersecurity"
@@ -1596,12 +1932,18 @@
     "tags": [
       "YouTube",
       "Security"
-    ]
+    ],
+    "details": {
+      "features": "Penetration testing, ethical hacking, attack/defense techniques.",
+      "whenToUse": "Learning pentesting or security fundamentals.",
+      "whenNotToUse": "When you need only compliance or management content.",
+      "tips": "Follow along in your own lab; never test on systems without permission."
+    }
   },
   {
     "id": "youtube-stok-6",
     "name": "STOK",
-    "description": "YouTube channel: Cybersecurity.",
+    "description": "STOK is a YouTube channel focused on cybersecurity, bug bounty, and offensive security. Features real-world bug bounty writeups, methodology, and tips for finding and reporting vulnerabilities responsibly.",
     "category": "Cybersecurity",
     "categories": [
       "Cybersecurity"
@@ -1609,12 +1951,18 @@
     "tags": [
       "YouTube",
       "Security"
-    ]
+    ],
+    "details": {
+      "features": "Bug bounty, vulnerability research, writeups, methodology.",
+      "whenToUse": "Learning bug bounty hunting or vulnerability research.",
+      "whenNotToUse": "When you need only defensive or compliance content.",
+      "tips": "Study writeups and methodology; always stay within program rules."
+    }
   },
   {
     "id": "youtube-professor-messer-7",
     "name": "Professor Messer",
-    "description": "YouTube channel: CompTIA Certifications.",
+    "description": "Professor Messer is a leading free resource for CompTIA certification prep (A+, Network+, Security+, and more). Structured, concise videos and study groups help you pass certification exams.",
     "category": "CompTIA Certifications",
     "categories": [
       "CompTIA Certifications"
@@ -1622,12 +1970,18 @@
     "tags": [
       "YouTube",
       "Security"
-    ]
+    ],
+    "details": {
+      "features": "CompTIA A+, Network+, Security+, structured courses, study groups.",
+      "whenToUse": "Preparing for CompTIA exams or learning IT fundamentals.",
+      "whenNotToUse": "When you need hands-on labs or advanced offensive content.",
+      "tips": "Watch in order; use his notes and study groups for exam prep."
+    }
   },
   {
     "id": "youtube-hak5-8",
     "name": "Hak5",
-    "description": "YouTube channel: Penetration Testing, Ethical Hacking.",
+    "description": "Hak5 is a long-running YouTube channel and brand covering penetration testing, ethical hacking, and security hardware (e.g. USB Rubber Ducky, WiFi Pineapple). Demos, tutorials, and community for security enthusiasts.",
     "category": "Penetration Testing, Ethical Hacking",
     "categories": [
       "Penetration Testing, Ethical Hacking"
@@ -1635,12 +1989,18 @@
     "tags": [
       "YouTube",
       "Security"
-    ]
+    ],
+    "details": {
+      "features": "Pentesting, Hak5 gear demos, tutorials, community.",
+      "whenToUse": "Learning ethical hacking or using Hak5 hardware in authorized tests.",
+      "whenNotToUse": "When you need only theory or certification-only content.",
+      "tips": "Use only on systems you own or have explicit permission to test."
+    }
   },
   {
     "id": "youtube-hackersploit-9",
     "name": "HackerSploit",
-    "description": "YouTube channel: Ethical Hacking, Penetration Testing.",
+    "description": "HackerSploit is a YouTube channel focused on ethical hacking and penetration testing. Covers reconnaissance, exploitation, web security, and tool usage with step-by-step tutorials for learners.",
     "category": "Ethical Hacking, Penetration Testing",
     "categories": [
       "Ethical Hacking, Penetration Testing"
@@ -1648,12 +2008,18 @@
     "tags": [
       "YouTube",
       "Security"
-    ]
+    ],
+    "details": {
+      "features": "Ethical hacking, pentesting, reconnaissance, exploitation, tool tutorials.",
+      "whenToUse": "Learning penetration testing methodology and tools.",
+      "whenNotToUse": "When you need only blue team or compliance content.",
+      "tips": "Practice in a lab (e.g. TryHackMe, HackTheBox); never attack without authorization."
+    }
   },
   {
     "id": "youtube-liveoverflow-10",
     "name": "LiveOverFlow",
-    "description": "YouTube channel: Reverse Engineering, CTFs.",
+    "description": "LiveOverFlow is a YouTube channel focused on binary exploitation, reverse engineering, and capture-the-flag (CTF) challenges. Deep dives into memory, assembly, and real-world vulnerabilities with a technical, no-fluff style.",
     "category": "Reverse Engineering, CTFs",
     "categories": [
       "Reverse Engineering, CTFs"
@@ -1661,12 +2027,18 @@
     "tags": [
       "YouTube",
       "Security"
-    ]
+    ],
+    "details": {
+      "features": "Binary exploitation, reverse engineering, CTF writeups, assembly.",
+      "whenToUse": "Learning binary exploitation, RE, or CTF techniques.",
+      "whenNotToUse": "When you need only web security or high-level overviews.",
+      "tips": "Start with his beginner-friendly series; try CTFs to practice."
+    }
   },
   {
     "id": "youtube-thecherno-11",
     "name": "TheCherno",
-    "description": "YouTube channel: C++.",
+    "description": "TheCherno is a YouTube channel focused on C++ and game engine development. Features in-depth series on C++, OpenGL, and building a game engine from scratch with clear, structured tutorials.",
     "category": "C++",
     "categories": [
       "C++"
@@ -1674,12 +2046,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "C++ fundamentals, game engine series, OpenGL, project-based learning.",
+      "whenToUse": "Learning C++ or game engine architecture from scratch.",
+      "whenNotToUse": "When you need only high-level or web development content.",
+      "tips": "Follow the C++ and game engine playlists in order for best results."
+    }
   },
   {
     "id": "youtube-amigoscode-12",
     "name": "amigoscode",
-    "description": "YouTube channel: Java, Spring Boot.",
+    "description": "amigoscode is a YouTube channel focused on Java, Spring Boot, and backend development. Covers microservices, Docker, Kubernetes, and full-stack topics with clear, project-based tutorials.",
     "category": "Java, Spring Boot",
     "categories": [
       "Java, Spring Boot"
@@ -1687,12 +2065,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Java, Spring Boot, microservices, Docker, Kubernetes, full-stack.",
+      "whenToUse": "Learning Java/Spring or backend and DevOps fundamentals.",
+      "whenNotToUse": "When you need only frontend or non-JVM content.",
+      "tips": "Use his course playlists for structured learning; code along for practice."
+    }
   },
   {
     "id": "youtube-kudvenkat-13",
     "name": "kudvenkat",
-    "description": "YouTube channel: C#.",
+    "description": "kudvenkat is a YouTube channel focused on C#, .NET, and ASP.NET. Known for clear, step-by-step tutorials on .NET Core, Entity Framework, and web APIs for beginners and intermediate developers.",
     "category": "C#",
     "categories": [
       "C#"
@@ -1700,12 +2084,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "C#, .NET, ASP.NET Core, Entity Framework, Web API.",
+      "whenToUse": "Learning C# and .NET web development.",
+      "whenNotToUse": "When you need only Xamarin/MAUI or advanced game dev.",
+      "tips": "Follow his series in order; his style is methodical and thorough."
+    }
   },
   {
     "id": "youtube-corey-schafer-14",
     "name": "Corey Schafer",
-    "description": "YouTube channel: Python.",
+    "description": "Corey Schafer is a YouTube channel focused on Python, Git, and developer tools. Covers Python basics to advanced topics, Django, Flask, and environment setup with clear, professional tutorials.",
     "category": "Python",
     "categories": [
       "Python"
@@ -1713,12 +2103,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Python, Git, Django, Flask, virtual environments, developer workflow.",
+      "whenToUse": "Learning Python or Git from basics to intermediate level.",
+      "whenNotToUse": "When you need only data science or ML-focused Python.",
+      "tips": "His Python and Git series are excellent starting points; code along."
+    }
   },
   {
     "id": "youtube-developedbyed-15",
     "name": "developedbyed",
-    "description": "YouTube channel: JavaScript, UI Design.",
+    "description": "developedbyed is a YouTube channel focused on JavaScript, React, and UI design. Covers full-stack projects, creative coding, and modern web development with an approachable, project-driven style.",
     "category": "JavaScript, UI Design",
     "categories": [
       "JavaScript, UI Design"
@@ -1726,12 +2122,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "JavaScript, React, UI design, full-stack projects, creative coding.",
+      "whenToUse": "Learning web dev or building full-stack/UI projects.",
+      "whenNotToUse": "When you need only backend or systems programming.",
+      "tips": "Check his project-based playlists for complete app builds."
+    }
   },
   {
     "id": "youtube-jon-calhoun-16",
     "name": "Jon Calhoun",
-    "description": "YouTube channel: Golang.",
+    "description": "Jon Calhoun is a YouTube channel focused on Go (Golang). Covers Go fundamentals, web development, concurrency, and best practices with clear explanations and practical examples.",
     "category": "Golang",
     "categories": [
       "Golang"
@@ -1739,12 +2141,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Go basics, web services, concurrency, testing, best practices.",
+      "whenToUse": "Learning Go or building Go web services.",
+      "whenNotToUse": "When you need only frontend or other language content.",
+      "tips": "His Go course and web dev series are great for structured learning."
+    }
   },
   {
     "id": "youtube-codewithchris-17",
     "name": "CodeWithChris",
-    "description": "YouTube channel: Swift.",
+    "description": "CodeWithChris is a YouTube channel focused on Swift and iOS development. Covers SwiftUI, UIKit, and building iOS apps from beginner to advanced with clear, step-by-step tutorials.",
     "category": "Swift",
     "categories": [
       "Swift"
@@ -1752,12 +2160,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Swift, SwiftUI, UIKit, iOS app development, Xcode.",
+      "whenToUse": "Learning Swift or building iOS apps.",
+      "whenNotToUse": "When you need only Android or cross-platform content.",
+      "tips": "Follow his beginner series first; use his app project playlists for practice."
+    }
   },
   {
     "id": "youtube-philipplackner-18",
     "name": "PhilippLackner",
-    "description": "YouTube channel: Kotlin.",
+    "description": "PhilippLackner is a YouTube channel focused on Kotlin and Android development. Covers Jetpack Compose, MVVM, and modern Android best practices with clean architecture and clear tutorials.",
     "category": "Kotlin",
     "categories": [
       "Kotlin"
@@ -1765,12 +2179,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Kotlin, Android, Jetpack Compose, MVVM, clean architecture.",
+      "whenToUse": "Learning Kotlin or modern Android development.",
+      "whenNotToUse": "When you need only backend or non-Android content.",
+      "tips": "His Android and Compose playlists are great for structured learning."
+    }
   },
   {
     "id": "youtube-programwithgio-19",
     "name": "ProgramWithGio",
-    "description": "YouTube channel: PHP.",
+    "description": "ProgramWithGio is a YouTube channel focused on PHP and Laravel. Covers PHP fundamentals, Laravel, APIs, and full-stack development with practical, project-based tutorials.",
     "category": "PHP",
     "categories": [
       "PHP"
@@ -1778,12 +2198,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "PHP, Laravel, APIs, full-stack, best practices.",
+      "whenToUse": "Learning PHP or Laravel web development.",
+      "whenNotToUse": "When you need only frontend or non-PHP content.",
+      "tips": "Use his Laravel and PHP playlists for step-by-step learning."
+    }
   },
   {
     "id": "youtube-driftingruby-20",
     "name": "DriftingRuby",
-    "description": "YouTube channel: Ruby.",
+    "description": "DriftingRuby is a YouTube channel focused on Ruby and Ruby on Rails. Covers Rails development, testing, and best practices with screencasts and practical examples for Ruby developers.",
     "category": "Ruby",
     "categories": [
       "Ruby"
@@ -1791,12 +2217,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Ruby, Rails, testing, screencasts, best practices.",
+      "whenToUse": "Learning Ruby or Rails development.",
+      "whenNotToUse": "When you need only frontend or other language content.",
+      "tips": "Screencasts are detailed; follow along with the same Rails version when possible."
+    }
   },
   {
     "id": "youtube-noboilerplate-21",
     "name": "NoBoilerplate",
-    "description": "YouTube channel: Rust.",
+    "description": "NoBoilerplate is a YouTube channel focused on Rust and systems programming. Covers Rust basics, performance, and practical projects with a concise, no-fluff style and strong production focus.",
     "category": "Rust",
     "categories": [
       "Rust"
@@ -1804,12 +2236,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Rust, systems programming, performance, practical projects.",
+      "whenToUse": "Learning Rust or systems/performance-focused development.",
+      "whenNotToUse": "When you need only web or high-level application content.",
+      "tips": "Videos are short and dense; rewatch and code along to absorb concepts."
+    }
   },
   {
     "id": "youtube-steves-teacher-22",
     "name": "Steve's teacher",
-    "description": "YouTube channel: Lua.",
+    "description": "Steve's teacher is a YouTube channel focused on Lua programming. Covers Lua basics and usage in game scripting (e.g. Roblox) with clear tutorials for beginners and intermediate learners.",
     "category": "Lua",
     "categories": [
       "Lua"
@@ -1817,12 +2255,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Lua fundamentals, scripting, game scripting (e.g. Roblox).",
+      "whenToUse": "Learning Lua or game scripting with Lua.",
+      "whenNotToUse": "When you need only general game engine or non-Lua content.",
+      "tips": "Good starting point for Lua; combine with Roblox docs if doing game dev."
+    }
   },
   {
     "id": "youtube-marinstatlectures-23",
     "name": "marinstatlectures",
-    "description": "YouTube channel: R.",
+    "description": "marinstatlectures is a YouTube channel focused on R for statistics and data analysis. Covers R programming, statistical methods, and data visualization for students and researchers.",
     "category": "R",
     "categories": [
       "R"
@@ -1830,12 +2274,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "R programming, statistics, data analysis, visualization.",
+      "whenToUse": "Learning R for statistics or data analysis.",
+      "whenNotToUse": "When you need only Python-based data science or ML.",
+      "tips": "Follow playlists for structured stats and R learning."
+    }
   },
   {
     "id": "youtube-joey-blue-24",
     "name": "Joey Blue",
-    "description": "YouTube channel: SQL.",
+    "description": "Joey Blue is a YouTube channel focused on SQL and database development. Covers SQL fundamentals, queries, and database design with practical examples for analysts and developers.",
     "category": "SQL",
     "categories": [
       "SQL"
@@ -1843,12 +2293,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "SQL basics, queries, joins, database design, practical examples.",
+      "whenToUse": "Learning SQL or improving database query skills.",
+      "whenNotToUse": "When you need only NoSQL or ORM/framework-specific content.",
+      "tips": "Practice queries along with the videos; use sample databases for hands-on."
+    }
   },
   {
     "id": "youtube-akshay-saini-25",
     "name": "Akshay Saini",
-    "description": "YouTube channel: JavaScript.",
+    "description": "Akshay Saini is a YouTube channel focused on JavaScript, especially closures, prototypes, and how JavaScript works. Famous for the Namaste JavaScript series—in-depth, conceptual explanations.",
     "category": "JavaScript",
     "categories": [
       "JavaScript"
@@ -1856,12 +2312,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "JavaScript deep dives, closures, prototypes, event loop, Namaste JS.",
+      "whenToUse": "Understanding JavaScript fundamentals and internals.",
+      "whenNotToUse": "When you need only framework tutorials or quick recipes.",
+      "tips": "Watch Namaste JavaScript in order for a solid JS foundation."
+    }
   },
   {
     "id": "youtube-basarat-26",
     "name": "basarat",
-    "description": "YouTube channel: TypeScript.",
+    "description": "basarat (Basarat Ali Syed) is a YouTube channel focused on TypeScript. Creator of the free TypeScript Deep Dive book; covers TypeScript fundamentals and advanced types with clear explanations.",
     "category": "TypeScript",
     "categories": [
       "TypeScript"
@@ -1869,12 +2331,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "TypeScript fundamentals, advanced types, TypeScript Deep Dive.",
+      "whenToUse": "Learning TypeScript or deepening type system understanding.",
+      "whenNotToUse": "When you need only React/Vue framework-specific content.",
+      "tips": "Pair videos with the TypeScript Deep Dive book (free online) for best results."
+    }
   },
   {
     "id": "youtube-typescripttv-27",
     "name": "TypeScriptTV",
-    "description": "YouTube channel: TypeScript.",
+    "description": "TypeScriptTV is a YouTube channel focused on TypeScript and related tooling. Covers TypeScript features, config, and integration with modern JavaScript frameworks and build tools.",
     "category": "TypeScript",
     "categories": [
       "TypeScript"
@@ -1882,12 +2350,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "TypeScript, tsconfig, framework integration, tooling.",
+      "whenToUse": "Learning TypeScript or keeping up with TS features.",
+      "whenNotToUse": "When you need only backend or non-TS content.",
+      "tips": "Use for TS updates and config; combine with basarat for deep dives."
+    }
   },
   {
     "id": "youtube-microsoft-developer-bob-tabor-28",
     "name": "Microsoft Developer [Bob Tabor]",
-    "description": "YouTube channel: C#.",
+    "description": "Microsoft Developer (Bob Tabor) is a YouTube channel focused on C# and .NET. Official Microsoft content covering C# fundamentals, .NET, and getting started with Microsoft technologies.",
     "category": "C#",
     "categories": [
       "C#"
@@ -1895,12 +2369,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "C# basics, .NET, Microsoft learning path, beginner-friendly.",
+      "whenToUse": "Learning C# or .NET from an official Microsoft source.",
+      "whenNotToUse": "When you need only advanced or third-party .NET content.",
+      "tips": "Good for absolute beginners; follow the official learning paths."
+    }
   },
   {
     "id": "youtube-dotnet-scottkendra-29",
     "name": "dotnet [Scott/Kendra]",
-    "description": "YouTube channel: C#.",
+    "description": "dotnet (Scott Hanselman, Kendra Havens) is a YouTube channel focused on .NET, C#, and Azure. Covers .NET updates, best practices, and Microsoft ecosystem with official and community content.",
     "category": "C#",
     "categories": [
       "C#"
@@ -1908,12 +2388,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": ".NET, C#, Azure, updates, best practices, community.",
+      "whenToUse": "Keeping up with .NET and C# or learning Microsoft stack.",
+      "whenNotToUse": "When you need only beginner C# from scratch.",
+      "tips": "Check .NET release and Azure episodes for latest features."
+    }
   },
   {
     "id": "youtube-traversy-media-30",
     "name": "Traversy Media",
-    "description": "YouTube channel: Node.js, Web Development.",
+    "description": "Traversy Media is a popular YouTube channel focused on web development—HTML, CSS, JavaScript, Node.js, and full-stack. Known for crash courses and project-based tutorials at a fast pace.",
     "category": "Node.js, Web Development",
     "categories": [
       "Node.js, Web Development"
@@ -1921,12 +2407,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Web dev crash courses, Node.js, React, full-stack projects.",
+      "whenToUse": "Quick intros to technologies or building full-stack projects.",
+      "whenNotToUse": "When you need deep, slow-paced theory or CS fundamentals.",
+      "tips": "Crash courses are dense; pause and code along; use project videos for portfolios."
+    }
   },
   {
     "id": "youtube-dave-gray-31",
     "name": "Dave Gray",
-    "description": "YouTube channel: React, Web Development.",
+    "description": "Dave Gray is a YouTube channel focused on React, web development, and full-stack. Covers React, Next.js, and related tools with clear, beginner-friendly tutorials and project walkthroughs.",
     "category": "React, Web Development",
     "categories": [
       "React, Web Development"
@@ -1934,12 +2426,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "React, Next.js, full-stack, beginner-friendly, project tutorials.",
+      "whenToUse": "Learning React or modern frontend/full-stack development.",
+      "whenNotToUse": "When you need only backend or non-React frontend.",
+      "tips": "His React and Next.js playlists are well structured; code along."
+    }
   },
   {
     "id": "youtube-vue-mastery-32",
     "name": "Vue Mastery",
-    "description": "YouTube channel: Vue.",
+    "description": "Vue Mastery is a YouTube channel and learning platform focused on Vue.js. Covers Vue 3, Composition API, and ecosystem (Pinia, Vue Router) with structured courses and tutorials.",
     "category": "Vue",
     "categories": [
       "Vue"
@@ -1947,12 +2445,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Vue 3, Composition API, Pinia, Vue Router, courses.",
+      "whenToUse": "Learning Vue.js or deepening Vue 3 and ecosystem knowledge.",
+      "whenNotToUse": "When you need only React or Angular content.",
+      "tips": "Use their course playlists; some premium content on their site."
+    }
   },
   {
     "id": "youtube-codingentrepreneurs-33",
     "name": "CodingEntrepreneurs",
-    "description": "YouTube channel: Django.",
+    "description": "CodingEntrepreneurs is a YouTube channel focused on Django and Python web development. Covers Django projects, REST APIs, and full-stack Python with practical, project-based tutorials.",
     "category": "Django",
     "categories": [
       "Django"
@@ -1960,12 +2464,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Django, Python web dev, REST APIs, full-stack projects.",
+      "whenToUse": "Learning Django or building Python web applications.",
+      "whenNotToUse": "When you need only frontend or Flask/FastAPI content.",
+      "tips": "Try to Code With Python/Django series for structured learning."
+    }
   },
   {
     "id": "youtube-laraveldaily-34",
     "name": "LaravelDaily",
-    "description": "YouTube channel: Laravel.",
+    "description": "LaravelDaily is a YouTube channel focused on Laravel and PHP. Covers Laravel tips, packages, and real-world development with short, focused videos and project snippets.",
     "category": "Laravel",
     "categories": [
       "Laravel"
@@ -1973,12 +2483,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Laravel tips, packages, Eloquent, Blade, real-world snippets.",
+      "whenToUse": "Learning Laravel or picking up Laravel tips and patterns.",
+      "whenNotToUse": "When you need only frontend or non-PHP content.",
+      "tips": "Short videos are great for quick tips; use playlists for deeper topics."
+    }
   },
   {
     "id": "youtube-james-montemagno-35",
     "name": "James Montemagno",
-    "description": "YouTube channel: Blazor.",
+    "description": "James Montemagno is a YouTube channel focused on .NET MAUI, Xamarin, and Blazor. Microsoft PM and advocate; covers cross-platform mobile and Blazor with official updates and demos.",
     "category": "Blazor",
     "categories": [
       "Blazor"
@@ -1986,12 +2502,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Blazor, .NET MAUI, Xamarin, cross-platform, Microsoft demos.",
+      "whenToUse": "Learning Blazor, MAUI, or .NET cross-platform mobile.",
+      "whenNotToUse": "When you need only web API or non-Microsoft stack.",
+      "tips": "Great for .NET mobile and Blazor updates; follow his live streams for Q&A."
+    }
   },
   {
     "id": "youtube-springsourcedev-36",
     "name": "SpringSourceDev",
-    "description": "YouTube channel: Spring.",
+    "description": "SpringSourceDev is a YouTube channel focused on Spring Framework and Spring Boot. Covers Java/Spring development, microservices, and Spring ecosystem with tutorials and best practices.",
     "category": "Spring",
     "categories": [
       "Spring"
@@ -1999,12 +2521,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Spring Boot, Spring MVC, microservices, Spring ecosystem.",
+      "whenToUse": "Learning Spring or Java backend development.",
+      "whenNotToUse": "When you need only frontend or non-Java content.",
+      "tips": "Use playlists for Spring Boot and microservices; code along with same Spring version."
+    }
   },
   {
     "id": "youtube-gorailstv-37",
     "name": "GorailsTV",
-    "description": "YouTube channel: Ruby on Rails.",
+    "description": "GorailsTV is a YouTube channel focused on Ruby on Rails. Companion to GoRails; covers Rails development, Hotwire, Stimulus, and modern Rails best practices with clear tutorials.",
     "category": "Ruby on Rails",
     "categories": [
       "Ruby on Rails"
@@ -2012,12 +2540,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Rails, Hotwire, Stimulus, Turbo, modern Rails patterns.",
+      "whenToUse": "Learning Rails or modernizing Rails apps with Hotwire.",
+      "whenNotToUse": "When you need only frontend SPA or non-Rails content.",
+      "tips": "Pair with GoRails site for full courses; YouTube for free snippets and updates."
+    }
   },
   {
     "id": "youtube-kevin-powell-38",
     "name": "Kevin Powell",
-    "description": "YouTube channel: HTML/CSS.",
+    "description": "Kevin Powell is a YouTube channel focused on CSS and front-end design. Covers CSS layout (Flexbox, Grid), responsiveness, and modern CSS with clear, visual explanations and challenges.",
     "category": "HTML/CSS",
     "categories": [
       "HTML/CSS"
@@ -2025,12 +2559,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "CSS, Flexbox, Grid, responsive design, modern CSS, challenges.",
+      "whenToUse": "Learning or mastering CSS and layout.",
+      "whenNotToUse": "When you need only JavaScript or backend content.",
+      "tips": "His CSS challenges and layout series are excellent; practice along."
+    }
   },
   {
     "id": "youtube-mycodeschool-39",
     "name": "mycodeschool",
-    "description": "YouTube channel: Data Structures and Algorithms.",
+    "description": "mycodeschool is a YouTube channel focused on data structures and algorithms. Covers arrays, linked lists, trees, graphs, and sorting with clear explanations and animations for interview prep and CS fundamentals.",
     "category": "Data Structures and Algorithms",
     "categories": [
       "Data Structures and Algorithms"
@@ -2038,12 +2578,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Data structures, algorithms, sorting, trees, graphs, animations.",
+      "whenToUse": "Learning DSA for interviews or CS fundamentals.",
+      "whenNotToUse": "When you need only language or framework tutorials.",
+      "tips": "Watch in order; implement in your language of choice for practice."
+    }
   },
   {
     "id": "youtube-abdul-bari-40",
     "name": "Abdul Bari",
-    "description": "YouTube channel: Data Structures and Algorithms.",
+    "description": "Abdul Bari is a YouTube channel focused on data structures, algorithms, and competitive programming. Known for clear explanations of DSA and problem-solving; popular for interview and placement prep.",
     "category": "Data Structures and Algorithms",
     "categories": [
       "Data Structures and Algorithms"
@@ -2051,12 +2597,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "DSA, competitive programming, problem-solving, interview prep.",
+      "whenToUse": "Learning DSA or preparing for placements and interviews.",
+      "whenNotToUse": "When you need only web dev or DevOps content.",
+      "tips": "Follow his DSA playlists in order; practice on coding platforms."
+    }
   },
   {
     "id": "youtube-kunal-kushwaha-41",
     "name": "Kunal Kushwaha",
-    "description": "YouTube channel: Data Structures and Algorithms, DevOps.",
+    "description": "Kunal Kushwaha is a YouTube channel focused on DSA, DevOps, and open source. Covers data structures, algorithms, Kubernetes, and career advice with structured playlists and community-driven content.",
     "category": "Data Structures and Algorithms, DevOps",
     "categories": [
       "Data Structures and Algorithms, DevOps"
@@ -2064,12 +2616,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "DSA, DevOps, Kubernetes, open source, career advice.",
+      "whenToUse": "Learning DSA or DevOps with structured playlists.",
+      "whenNotToUse": "When you need only frontend or single-topic content.",
+      "tips": "Use his DSA and DevOps playlists; join community for support."
+    }
   },
   {
     "id": "youtube-jennys-lectures-cs-it-42",
     "name": "Jenny's Lectures CS IT",
-    "description": "YouTube channel: Data Structures and Algorithms, CS IT.",
+    "description": "Jenny's Lectures CS IT is a YouTube channel focused on data structures, algorithms, and computer science fundamentals. Covers DSA, programming, and placement prep with clear, step-by-step explanations.",
     "category": "Data Structures and Algorithms, CS IT",
     "categories": [
       "Data Structures and Algorithms, CS IT"
@@ -2077,12 +2635,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "DSA, CS fundamentals, programming, placement prep.",
+      "whenToUse": "Learning DSA or CS fundamentals for placements.",
+      "whenNotToUse": "When you need only web dev or DevOps content.",
+      "tips": "Follow playlists in order; step-by-step style is beginner-friendly."
+    }
   },
   {
     "id": "youtube-codewithharry-43",
     "name": "CodeWithHarry",
-    "description": "YouTube channel: Data Structures and Algorithms, Programming.",
+    "description": "CodeWithHarry is a popular Hindi/English YouTube channel focused on programming, DSA, and web development. Covers Python, JavaScript, and full-stack with beginner-friendly tutorials and projects.",
     "category": "Data Structures and Algorithms, Programming",
     "categories": [
       "Data Structures and Algorithms, Programming"
@@ -2090,12 +2654,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Programming, DSA, Python, JavaScript, full-stack, Hindi/English.",
+      "whenToUse": "Learning programming or DSA in Hindi/English.",
+      "whenNotToUse": "When you need only advanced or English-only content.",
+      "tips": "Great for Indian students; follow his course playlists."
+    }
   },
   {
     "id": "youtube-netninja-44",
     "name": "NetNinja",
-    "description": "YouTube channel: Full Stack Web Development.",
+    "description": "NetNinja is a YouTube channel focused on full-stack web development. Covers React, Vue, Node.js, Firebase, and more with clear, project-based tutorials and crash courses.",
     "category": "Full Stack Web Development",
     "categories": [
       "Full Stack Web Development"
@@ -2103,12 +2673,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "React, Vue, Node.js, Firebase, full-stack, crash courses.",
+      "whenToUse": "Learning full-stack web development with projects.",
+      "whenNotToUse": "When you need only backend or systems content.",
+      "tips": "Use his crash course playlists; code along for best retention."
+    }
   },
   {
     "id": "youtube-webdevsimplified-45",
     "name": "WebDevSimplified",
-    "description": "YouTube channel: Web Development Projects.",
+    "description": "WebDevSimplified is a YouTube channel focused on web development with short, focused tutorials. Covers JavaScript, React, CSS, and backend concepts in an easy-to-follow, simplified style.",
     "category": "Web Development Projects",
     "categories": [
       "Web Development Projects"
@@ -2116,12 +2692,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "JavaScript, React, CSS, backend, short tutorials.",
+      "whenToUse": "Quick web dev concepts or simplified explanations.",
+      "whenNotToUse": "When you need only deep DSA or systems content.",
+      "tips": "Short videos are great for reference; use playlists for topics."
+    }
   },
   {
     "id": "youtube-designcourse-46",
     "name": "DesignCourse",
-    "description": "YouTube channel: UI Design.",
+    "description": "DesignCourse is a YouTube channel focused on UI/UX design and front-end development. Covers Figma, CSS, design systems, and building modern interfaces with a design-first approach.",
     "category": "UI Design",
     "categories": [
       "UI Design"
@@ -2129,12 +2711,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "UI/UX, Figma, CSS, design systems, front-end.",
+      "whenToUse": "Learning UI design or front-end with design focus.",
+      "whenNotToUse": "When you need only backend or pure programming.",
+      "tips": "Check his Figma and design system playlists for structured learning."
+    }
   },
   {
     "id": "youtube-the-modern-coder-47",
     "name": "The Modern Coder",
-    "description": "YouTube channel: GIT.",
+    "description": "The Modern Coder is a YouTube channel focused on Git and version control. Covers Git fundamentals, workflows, and best practices for developers and teams.",
     "category": "GIT",
     "categories": [
       "GIT"
@@ -2142,12 +2730,18 @@
     "tags": [
       "YouTube",
       "DevOps"
-    ]
+    ],
+    "details": {
+      "features": "Git fundamentals, workflows, branching, best practices.",
+      "whenToUse": "Learning Git or improving version control workflow.",
+      "whenNotToUse": "When you need only CI/CD or cloud content.",
+      "tips": "Follow Git basics playlist; practice with a small repo."
+    }
   },
   {
     "id": "youtube-learn-linux-tv-48",
     "name": "Learn Linux TV",
-    "description": "YouTube channel: Linux, Ansible.",
+    "description": "Learn Linux TV is a YouTube channel focused on Linux administration and Ansible. Covers server setup, scripting, automation, and homelab topics with clear, practical tutorials.",
     "category": "Linux, Ansible",
     "categories": [
       "Linux, Ansible"
@@ -2156,12 +2750,18 @@
       "YouTube",
       "DevOps",
       "Linux"
-    ]
+    ],
+    "details": {
+      "features": "Linux admin, Ansible, scripting, homelab, server setup.",
+      "whenToUse": "Learning Linux administration or Ansible automation.",
+      "whenNotToUse": "When you need only container or cloud-native content.",
+      "tips": "Use his Ansible and Linux playlists for structured learning."
+    }
   },
   {
     "id": "youtube-devopstoolkit-49",
     "name": "DevOpsToolkit",
-    "description": "YouTube channel: DevOps.",
+    "description": "DevOpsToolkit is a YouTube channel focused on DevOps, containers, and infrastructure. Covers Docker, Kubernetes, Terraform, and GitOps with hands-on demos and best practices.",
     "category": "DevOps",
     "categories": [
       "DevOps"
@@ -2169,12 +2769,18 @@
     "tags": [
       "YouTube",
       "DevOps"
-    ]
+    ],
+    "details": {
+      "features": "Docker, Kubernetes, Terraform, GitOps, hands-on demos.",
+      "whenToUse": "Learning DevOps, containers, or infrastructure as code.",
+      "whenNotToUse": "When you need only programming or frontend content.",
+      "tips": "Follow his Kubernetes and Terraform series; try demos in your lab."
+    }
   },
   {
     "id": "youtube-techworld-with-nana-50",
     "name": "TechWorld with Nana",
-    "description": "YouTube channel: CI/CD, DevOps.",
+    "description": "TechWorld with Nana is a YouTube channel focused on DevOps, CI/CD, and cloud. Covers Kubernetes, Docker, Jenkins, and DevOps practices with structured courses and tutorials.",
     "category": "CI/CD, DevOps",
     "categories": [
       "CI/CD, DevOps"
@@ -2182,12 +2788,18 @@
     "tags": [
       "YouTube",
       "DevOps"
-    ]
+    ],
+    "details": {
+      "features": "Kubernetes, Docker, Jenkins, CI/CD, DevOps courses.",
+      "whenToUse": "Learning DevOps or CI/CD with structured content.",
+      "whenNotToUse": "When you need only programming or frontend content.",
+      "tips": "Her DevOps course is well structured; follow playlists in order."
+    }
   },
   {
     "id": "youtube-bret-fisher-51",
     "name": "Bret Fisher",
-    "description": "YouTube channel: Docker.",
+    "description": "Bret Fisher is a YouTube channel focused on Docker and containerization. Covers Docker fundamentals, Compose, production best practices, and live Q&A for developers and DevOps.",
     "category": "Docker",
     "categories": [
       "Docker"
@@ -2195,12 +2807,18 @@
     "tags": [
       "YouTube",
       "DevOps"
-    ]
+    ],
+    "details": {
+      "features": "Docker, Compose, production best practices, live Q&A.",
+      "whenToUse": "Learning Docker or container best practices.",
+      "whenNotToUse": "When you need only Kubernetes or cloud-native content.",
+      "tips": "Join his live Q&A for questions; follow Docker deep dive series."
+    }
   },
   {
     "id": "youtube-kubesimplify-52",
     "name": "Kubesimplify",
-    "description": "YouTube channel: Kubernetes.",
+    "description": "Kubesimplify is a YouTube channel focused on Kubernetes and cloud-native. Covers K8s concepts, CKA/CKAD prep, and practical Kubernetes tutorials with clear explanations.",
     "category": "Kubernetes",
     "categories": [
       "Kubernetes"
@@ -2208,12 +2826,18 @@
     "tags": [
       "YouTube",
       "DevOps"
-    ]
+    ],
+    "details": {
+      "features": "Kubernetes, CKA/CKAD prep, cloud-native, tutorials.",
+      "whenToUse": "Learning Kubernetes or preparing for CKA/CKAD.",
+      "whenNotToUse": "When you need only Docker or non-K8s content.",
+      "tips": "Follow his K8s series; use for certification prep."
+    }
   },
   {
     "id": "youtube-freecodecamp-53",
     "name": "freeCodeCamp",
-    "description": "YouTube channel: Microservices.",
+    "description": "freeCodeCamp is a nonprofit YouTube channel offering free full-length courses on programming, microservices, web dev, and more. Huge catalog of beginner-to-advanced tutorials.",
     "category": "Microservices",
     "categories": [
       "Microservices"
@@ -2221,12 +2845,18 @@
     "tags": [
       "YouTube",
       "DevOps"
-    ]
+    ],
+    "details": {
+      "features": "Full-length courses, programming, web dev, microservices, free.",
+      "whenToUse": "Learning any topic from beginner to advanced for free.",
+      "whenNotToUse": "When you need only short tips or single-topic deep dives.",
+      "tips": "Browse by topic; courses are long—use playlists and bookmarks."
+    }
   },
   {
     "id": "youtube-edureka-54",
     "name": "edureka!",
-    "description": "YouTube channel: Selenium.",
+    "description": "edureka! is a YouTube channel focused on Selenium, test automation, and DevOps. Covers Selenium WebDriver, frameworks, and certification-style tutorials for QA and automation engineers.",
     "category": "Selenium",
     "categories": [
       "Selenium"
@@ -2234,12 +2864,18 @@
     "tags": [
       "YouTube",
       "DevOps"
-    ]
+    ],
+    "details": {
+      "features": "Selenium, test automation, frameworks, certification-style.",
+      "whenToUse": "Learning Selenium or test automation for QA.",
+      "whenNotToUse": "When you need only Playwright or Cypress content.",
+      "tips": "Use for Selenium and automation framework learning."
+    }
   },
   {
     "id": "youtube-jaydeep-karale-55",
     "name": "Jaydeep Karale",
-    "description": "YouTube channel: Playwright.",
+    "description": "Jaydeep Karale is a YouTube channel focused on Playwright for test automation. Covers Playwright with JavaScript/TypeScript, E2E testing, and automation best practices.",
     "category": "Playwright",
     "categories": [
       "Playwright"
@@ -2247,12 +2883,18 @@
     "tags": [
       "YouTube",
       "DevOps"
-    ]
+    ],
+    "details": {
+      "features": "Playwright, E2E testing, JavaScript/TypeScript, automation.",
+      "whenToUse": "Learning Playwright or E2E test automation.",
+      "whenNotToUse": "When you need only Selenium or Cypress content.",
+      "tips": "Follow his Playwright series for E2E automation."
+    }
   },
   {
     "id": "youtube-amazonwebservices-56",
     "name": "amazonwebservices",
-    "description": "YouTube channel: AWS.",
+    "description": "amazonwebservices is the official AWS YouTube channel. Covers AWS services, architecture, re:Invent sessions, and tutorials for building and deploying on Amazon Web Services.",
     "category": "AWS",
     "categories": [
       "AWS"
@@ -2260,12 +2902,18 @@
     "tags": [
       "YouTube",
       "Cloud"
-    ]
+    ],
+    "details": {
+      "features": "AWS services, architecture, re:Invent, tutorials.",
+      "whenToUse": "Learning AWS or keeping up with AWS updates.",
+      "whenNotToUse": "When you need only Azure or GCP content.",
+      "tips": "Check re:Invent and service-specific playlists for deep dives."
+    }
   },
   {
     "id": "youtube-adam-marczak-57",
     "name": "Adam Marczak",
-    "description": "YouTube channel: Azure.",
+    "description": "Adam Marczak is a YouTube channel focused on Microsoft Azure. Covers Azure services, architecture, certifications, and cloud development with clear, practical tutorials.",
     "category": "Azure",
     "categories": [
       "Azure"
@@ -2273,12 +2921,18 @@
     "tags": [
       "YouTube",
       "Cloud"
-    ]
+    ],
+    "details": {
+      "features": "Azure services, architecture, certifications, tutorials.",
+      "whenToUse": "Learning Azure or preparing for Azure certifications.",
+      "whenNotToUse": "When you need only AWS or GCP content.",
+      "tips": "Use his certification and service playlists for structured learning."
+    }
   },
   {
     "id": "youtube-serverless-58",
     "name": "Serverless",
-    "description": "YouTube channel: Serverless Computing.",
+    "description": "Serverless is a YouTube channel focused on serverless computing and the Serverless Framework. Covers AWS Lambda, serverless architecture, and building event-driven applications.",
     "category": "Serverless Computing",
     "categories": [
       "Serverless Computing"
@@ -2286,12 +2940,18 @@
     "tags": [
       "YouTube",
       "Cloud"
-    ]
+    ],
+    "details": {
+      "features": "Serverless Framework, AWS Lambda, event-driven, architecture.",
+      "whenToUse": "Learning serverless or building Lambda/serverless apps.",
+      "whenNotToUse": "When you need only container or traditional cloud content.",
+      "tips": "Follow Serverless Framework and Lambda tutorials."
+    }
   },
   {
     "id": "youtube-devops-journey-59",
     "name": "DevOps Journey",
-    "description": "YouTube channel: Jenkins.",
+    "description": "DevOps Journey is a YouTube channel focused on Jenkins and CI/CD. Covers Jenkins pipelines, automation, and DevOps workflows with practical tutorials and demos.",
     "category": "Jenkins",
     "categories": [
       "Jenkins"
@@ -2299,12 +2959,18 @@
     "tags": [
       "YouTube",
       "DevOps"
-    ]
+    ],
+    "details": {
+      "features": "Jenkins, pipelines, CI/CD, automation, demos.",
+      "whenToUse": "Learning Jenkins or CI/CD pipelines.",
+      "whenNotToUse": "When you need only GitLab CI or GitHub Actions content.",
+      "tips": "Follow his Jenkins and pipeline playlists for hands-on."
+    }
   },
   {
     "id": "youtube-simplilearn-60",
     "name": "simplilearn",
-    "description": "YouTube channel: Puppet, Chef, Cloud Computing.",
+    "description": "Simplilearn is a YouTube channel focused on certifications and cloud computing. Covers Puppet, Chef, AWS, DevOps, and various tech certifications with course-style content.",
     "category": "Puppet, Chef, Cloud Computing",
     "categories": [
       "Puppet, Chef, Cloud Computing"
@@ -2312,12 +2978,18 @@
     "tags": [
       "YouTube",
       "Cloud"
-    ]
+    ],
+    "details": {
+      "features": "Puppet, Chef, AWS, DevOps, certifications, courses.",
+      "whenToUse": "Learning cloud/DevOps or certification prep.",
+      "whenNotToUse": "When you need only programming or frontend content.",
+      "tips": "Use playlists for certification and cloud topics."
+    }
   },
   {
     "id": "youtube-3blue1brown-61",
     "name": "3Blue1Brown",
-    "description": "YouTube channel: Mathematics (Visual Explanations).",
+    "description": "3Blue1Brown is a YouTube channel focused on mathematics with visual, intuitive explanations. Covers linear algebra, calculus, neural networks, and more with animated, clear pedagogy.",
     "category": "Mathematics (Visual Explanations)",
     "categories": [
       "Mathematics (Visual Explanations)"
@@ -2325,12 +2997,18 @@
     "tags": [
       "YouTube",
       "Data Science"
-    ]
+    ],
+    "details": {
+      "features": "Math visuals, linear algebra, calculus, neural networks.",
+      "whenToUse": "Understanding math intuitively for ML or CS.",
+      "whenNotToUse": "When you need only applied coding or stats recipes.",
+      "tips": "Watch linear algebra and calculus playlists before ML."
+    }
   },
   {
     "id": "youtube-profrobbob-62",
     "name": "ProfRobBob",
-    "description": "YouTube channel: Mathematics.",
+    "description": "ProfRobBob is a YouTube channel focused on mathematics education. Covers algebra, calculus, and pre-calculus with clear, step-by-step explanations for students and self-learners.",
     "category": "Mathematics",
     "categories": [
       "Mathematics"
@@ -2338,12 +3016,18 @@
     "tags": [
       "YouTube",
       "Data Science"
-    ]
+    ],
+    "details": {
+      "features": "Algebra, calculus, pre-calculus, step-by-step.",
+      "whenToUse": "Learning or reviewing math for students and self-learners.",
+      "whenNotToUse": "When you need only applied data science or ML.",
+      "tips": "Follow playlists by topic for structured math learning."
+    }
   },
   {
     "id": "youtube-ghrist-math-63",
     "name": "Ghrist Math",
-    "description": "YouTube channel: Mathematics.",
+    "description": "Ghrist Math is a YouTube channel focused on advanced mathematics. Covers multivariable calculus, differential equations, and applied math with university-level pedagogy.",
     "category": "Mathematics",
     "categories": [
       "Mathematics"
@@ -2351,12 +3035,18 @@
     "tags": [
       "YouTube",
       "Data Science"
-    ]
+    ],
+    "details": {
+      "features": "Multivariable calculus, differential equations, applied math.",
+      "whenToUse": "Learning advanced math for engineering or research.",
+      "whenNotToUse": "When you need only intro math or applied ML.",
+      "tips": "University-level; follow course playlists for structure."
+    }
   },
   {
     "id": "youtube-sentdex-64",
     "name": "sentdex",
-    "description": "YouTube channel: Machine Learning, Python.",
+    "description": "sentdex is a YouTube channel focused on machine learning and Python. Covers ML, deep learning, finance, and data science with hands-on Python tutorials and project series.",
     "category": "Machine Learning, Python",
     "categories": [
       "Machine Learning, Python"
@@ -2364,12 +3054,18 @@
     "tags": [
       "YouTube",
       "Data Science"
-    ]
+    ],
+    "details": {
+      "features": "ML, deep learning, Python, finance, data science, projects.",
+      "whenToUse": "Learning ML or Python for data science with projects.",
+      "whenNotToUse": "When you need only theory or non-Python stack.",
+      "tips": "Follow his ML and Python series; code along for hands-on."
+    }
   },
   {
     "id": "youtube-deeplearningai-65",
     "name": "DeepLearningAI",
-    "description": "YouTube channel: Deep Learning.",
+    "description": "DeepLearningAI is Andrew Ng's YouTube channel for deep learning education. Covers neural networks, NLP, and AI with short lessons and links to Coursera specialization content.",
     "category": "Deep Learning",
     "categories": [
       "Deep Learning"
@@ -2377,12 +3073,18 @@
     "tags": [
       "YouTube",
       "Data Science"
-    ]
+    ],
+    "details": {
+      "features": "Neural networks, NLP, AI, short lessons, Coursera link.",
+      "whenToUse": "Learning deep learning with Andrew Ng's pedagogy.",
+      "whenNotToUse": "When you need only classical ML or stats.",
+      "tips": "Pair with Coursera Deep Learning specialization for full course."
+    }
   },
   {
     "id": "youtube-statquest-66",
     "name": "StatQuest",
-    "description": "YouTube channel: Statistics, Machine Learning.",
+    "description": "StatQuest is a YouTube channel focused on statistics and machine learning. Covers concepts with clear, visual explanations—great for understanding ML and stats without heavy math first.",
     "category": "Statistics, Machine Learning",
     "categories": [
       "Statistics, Machine Learning"
@@ -2390,12 +3092,18 @@
     "tags": [
       "YouTube",
       "Data Science"
-    ]
+    ],
+    "details": {
+      "features": "Statistics, ML concepts, visual explanations, accessible.",
+      "whenToUse": "Understanding ML and stats concepts intuitively.",
+      "whenNotToUse": "When you need only coding or implementation focus.",
+      "tips": "Great before diving into ML math; watch in order by topic."
+    }
   },
   {
     "id": "youtube-excelisfun-67",
     "name": "ExcelIsFun",
-    "description": "YouTube channel: Excel.",
+    "description": "ExcelIsFun is a YouTube channel focused on Microsoft Excel. Covers formulas, pivot tables, Power Query, and data analysis with extensive, beginner-friendly tutorials.",
     "category": "Excel",
     "categories": [
       "Excel"
@@ -2403,12 +3111,18 @@
     "tags": [
       "YouTube",
       "Data Science"
-    ]
+    ],
+    "details": {
+      "features": "Excel formulas, pivot tables, Power Query, data analysis.",
+      "whenToUse": "Learning Excel or improving data analysis in spreadsheets.",
+      "whenNotToUse": "When you need only Python/R or BI tools.",
+      "tips": "Extensive catalog; use playlists by topic (formulas, Power Query)."
+    }
   },
   {
     "id": "youtube-tableau-tim-68",
     "name": "Tableau Tim",
-    "description": "YouTube channel: Tableau.",
+    "description": "Tableau Tim is a YouTube channel focused on Tableau for data visualization. Covers dashboards, calculations, and best practices for analysts and data storytellers.",
     "category": "Tableau",
     "categories": [
       "Tableau"
@@ -2416,12 +3130,18 @@
     "tags": [
       "YouTube",
       "Data Science"
-    ]
+    ],
+    "details": {
+      "features": "Tableau, dashboards, calculations, best practices.",
+      "whenToUse": "Learning Tableau or building dashboards.",
+      "whenNotToUse": "When you need only Power BI or Python viz.",
+      "tips": "Use his dashboard and calculation playlists for Tableau skills."
+    }
   },
   {
     "id": "youtube-guy-in-a-cube-69",
     "name": "Guy in a Cube",
-    "description": "YouTube channel: PowerBI.",
+    "description": "Guy in a Cube is a YouTube channel focused on Power BI and Microsoft data platform. Covers Power BI, DAX, and data modeling with tips, updates, and best practices.",
     "category": "PowerBI",
     "categories": [
       "PowerBI"
@@ -2429,12 +3149,18 @@
     "tags": [
       "YouTube",
       "Data Science"
-    ]
+    ],
+    "details": {
+      "features": "Power BI, DAX, data modeling, tips, updates.",
+      "whenToUse": "Learning Power BI or improving DAX and modeling.",
+      "whenNotToUse": "When you need only Tableau or Excel content.",
+      "tips": "Check their weekly tips and DAX playlists for Power BI."
+    }
   },
   {
     "id": "youtube-simplilearn-70",
     "name": "Simplilearn",
-    "description": "YouTube channel: Various Certifications & Tech.",
+    "description": "Simplilearn (second entry) is a YouTube channel focused on tech certifications and career skills. Covers AWS, DevOps, data science, and various certification prep with course-style content.",
     "category": "Various Certifications & Tech",
     "categories": [
       "Various Certifications & Tech"
@@ -2442,12 +3168,18 @@
     "tags": [
       "YouTube",
       "Education"
-    ]
+    ],
+    "details": {
+      "features": "Certifications, AWS, DevOps, data science, career skills.",
+      "whenToUse": "Certification prep or career-focused tech learning.",
+      "whenNotToUse": "When you need only hands-on or single-topic deep dives.",
+      "tips": "Use playlists by certification or topic for structured prep."
+    }
   },
   {
     "id": "youtube-techwithtim-71",
     "name": "TechWithTim",
-    "description": "YouTube channel: Programming, Python.",
+    "description": "TechWithTim is a YouTube channel focused on Python and game development. Covers Python, Pygame, Discord bots, and programming tutorials with project-based, beginner-friendly content.",
     "category": "Programming, Python",
     "categories": [
       "Programming, Python"
@@ -2455,12 +3187,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Python, Pygame, Discord bots, game dev, projects.",
+      "whenToUse": "Learning Python or building games/Discord bots.",
+      "whenNotToUse": "When you need only web dev or advanced Python.",
+      "tips": "His game and Discord bot series are great for project learning."
+    }
   },
   {
     "id": "youtube-programmingwithmosh-72",
     "name": "programmingwithmosh",
-    "description": "YouTube channel: Programming Best Practices.",
+    "description": "programmingwithmosh is a YouTube channel focused on programming best practices and fundamentals. Covers clean code, design patterns, and language tutorials with a professional, concise style.",
     "category": "Programming Best Practices",
     "categories": [
       "Programming Best Practices"
@@ -2468,12 +3206,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Clean code, design patterns, language tutorials, concise.",
+      "whenToUse": "Learning best practices or language fundamentals.",
+      "whenNotToUse": "When you need only project-based or framework content.",
+      "tips": "His crash courses and best-practices videos are high quality."
+    }
   },
   {
     "id": "youtube-brocodez-73",
     "name": "BroCodez",
-    "description": "YouTube channel: Programming.",
+    "description": "BroCodez is a YouTube channel focused on programming tutorials. Covers multiple languages and topics with short, focused videos for quick learning and reference.",
     "category": "Programming",
     "categories": [
       "Programming"
@@ -2481,12 +3225,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Multiple languages, short tutorials, quick reference.",
+      "whenToUse": "Quick intros or reference for various languages.",
+      "whenNotToUse": "When you need only deep dives or full courses.",
+      "tips": "Use for quick overviews; combine with other channels for depth."
+    }
   },
   {
     "id": "youtube-thenewboston-74",
     "name": "thenewboston",
-    "description": "YouTube channel: Various Programming.",
+    "description": "thenewboston is a long-running YouTube channel with tutorials on various programming languages and tech. Covers Python, Java, and more with playlist-based, beginner-friendly series.",
     "category": "Various Programming",
     "categories": [
       "Various Programming"
@@ -2494,12 +3244,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Various languages, playlists, beginner-friendly.",
+      "whenToUse": "Learning a new language with playlist-based series.",
+      "whenNotToUse": "When you need only advanced or single-topic content.",
+      "tips": "Pick a language playlist and follow in order."
+    }
   },
   {
     "id": "youtube-telusko-75",
     "name": "Telusko",
-    "description": "YouTube channel: Java, Python, AI.",
+    "description": "Telusko is a popular YouTube channel focused on Java, Python, and AI. Covers programming fundamentals, frameworks, and quick tutorials with an accessible, Indian-edu style.",
     "category": "Java, Python, AI",
     "categories": [
       "Java, Python, AI"
@@ -2507,12 +3263,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "Java, Python, AI, fundamentals, frameworks, accessible.",
+      "whenToUse": "Learning Java, Python, or AI with accessible tutorials.",
+      "whenNotToUse": "When you need only advanced or English-only content.",
+      "tips": "Popular in India; follow playlists by language or topic."
+    }
   },
   {
     "id": "youtube-derek-banas-76",
     "name": "Derek Banas",
-    "description": "YouTube channel: Programming Tutorials.",
+    "description": "Derek Banas is a YouTube channel focused on programming tutorials in one-video format. Covers languages and topics in long, comprehensive single videos for quick immersion.",
     "category": "Programming Tutorials",
     "categories": [
       "Programming Tutorials"
@@ -2520,12 +3282,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "One-video tutorials, comprehensive, multiple languages.",
+      "whenToUse": "Quick immersion in a language or topic in one sitting.",
+      "whenNotToUse": "When you need only step-by-step or short clips.",
+      "tips": "Videos are long; pause and code along for best results."
+    }
   },
   {
     "id": "youtube-mysirg-com-77",
     "name": "MySirG .com",
-    "description": "YouTube channel: Programming (C, C++, Java).",
+    "description": "MySirG .com is a YouTube channel focused on C, C++, and Java programming. Covers fundamentals and placement-oriented content with clear, step-by-step tutorials.",
     "category": "Programming (C, C++, Java)",
     "categories": [
       "Programming (C, C++, Java)"
@@ -2533,12 +3301,18 @@
     "tags": [
       "YouTube",
       "Programming"
-    ]
+    ],
+    "details": {
+      "features": "C, C++, Java, fundamentals, placement prep.",
+      "whenToUse": "Learning C/C++/Java or placement preparation.",
+      "whenNotToUse": "When you need only web dev or Python content.",
+      "tips": "Follow playlists by language for structured learning."
+    }
   },
   {
     "id": "youtube-leila-gharani-78",
     "name": "Leila Gharani",
-    "description": "YouTube channel: Excel, Power BI.",
+    "description": "Leila Gharani is a YouTube channel focused on Excel and Power BI. Covers advanced Excel, Power BI dashboards, and data analysis with professional, clear tutorials.",
     "category": "Excel, Power BI",
     "categories": [
       "Excel, Power BI"
@@ -2546,12 +3320,18 @@
     "tags": [
       "YouTube",
       "Data Science"
-    ]
+    ],
+    "details": {
+      "features": "Excel, Power BI, dashboards, data analysis, professional.",
+      "whenToUse": "Learning advanced Excel or Power BI for analysis.",
+      "whenNotToUse": "When you need only Python/R or Tableau content.",
+      "tips": "Her Excel and Power BI playlists are well structured."
+    }
   },
   {
     "id": "youtube-kodekloud-79",
     "name": "KodeKloud",
-    "description": "YouTube channel: DevOps, Kubernetes.",
+    "description": "KodeKloud is a YouTube channel focused on DevOps and Kubernetes. Covers Kubernetes, Docker, Terraform, and DevOps practices with hands-on labs and certification-style content.",
     "category": "DevOps, Kubernetes",
     "categories": [
       "DevOps, Kubernetes"
@@ -2559,6 +3339,12 @@
     "tags": [
       "YouTube",
       "DevOps"
-    ]
+    ],
+    "details": {
+      "features": "Kubernetes, Docker, Terraform, hands-on labs, certifications.",
+      "whenToUse": "Learning DevOps or Kubernetes with hands-on practice.",
+      "whenNotToUse": "When you need only programming or frontend content.",
+      "tips": "Pair with KodeKloud platform for full labs and courses."
+    }
   }
 ]
