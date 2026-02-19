@@ -2,7 +2,7 @@ import { Text } from "@mantine/core";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
-const TextWithMotion = motion(Text);
+const TextWithMotion = motion.create(Text);
 
 const MotionText = ({
 	children,

@@ -2,7 +2,7 @@ import { Button, useMantineTheme } from "@mantine/core";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
-const ButtonWithMotion = motion(Button);
+const ButtonWithMotion = motion.create(Button);
 const MotionButton = ({
 	children,
 	size = "lg",

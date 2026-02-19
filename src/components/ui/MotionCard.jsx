@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import { useRef, useEffect, useState } from "react";
 
-const CardWithMotion = motion(Card);
+const CardWithMotion = motion.create(Card);
 
 const MotionCard = ({
 	children,

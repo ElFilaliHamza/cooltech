@@ -2,7 +2,7 @@ import { Badge } from "@mantine/core";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
-const BadgeWithMotion = motion(Badge);
+const BadgeWithMotion = motion.create(Badge);
 const MotionBadge = ({
 	children,
 	size = "lg",

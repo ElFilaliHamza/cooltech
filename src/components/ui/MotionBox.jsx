@@ -2,7 +2,7 @@ import { Box } from "@mantine/core";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
-const BoxWithMotion = motion(Box);
+const BoxWithMotion = motion.create(Box);
 
 const MotionBox = ({
 	children,

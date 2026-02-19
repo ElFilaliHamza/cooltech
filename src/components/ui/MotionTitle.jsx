@@ -2,7 +2,7 @@ import { Title } from "@mantine/core";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
-const TitleWithMotion = motion(Title);
+const TitleWithMotion = motion.create(Title);
 
 const MotionTitle = ({
 	children,
