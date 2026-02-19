@@ -1,4 +1,4 @@
-import { Title, Text, Box } from "@mantine/core";
+import { Title, Box } from "@mantine/core";
 import { motion } from "framer-motion";
 import TypingText from "./ui/TypingText";
 

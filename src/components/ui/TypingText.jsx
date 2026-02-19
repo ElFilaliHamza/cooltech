@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Text } from "@mantine/core";
+import PropTypes from "prop-types";
 
 const TypingText = ({
 	children,
@@ -15,8 +16,6 @@ const TypingText = ({
 	const fullText = String(children);
 
 	useEffect(() => {
-		let timeout;
-
 		// Start typing after delay
 		const startTimeout = setTimeout(() => {
 			let currentIndex = 0;
@@ -52,6 +51,13 @@ const TypingText = ({
 			)}
 		</Text>
 	);
+};
+
+TypingText.propTypes = {
+	children: PropTypes.node,
+	speed: PropTypes.number,
+	delay: PropTypes.number,
+	className: PropTypes.string,
 };
 
 export default TypingText;

@@ -1,7 +1,8 @@
 import { Box, useMantineTheme } from "@mantine/core";
 import { AnimatePresence, motion } from "framer-motion";
+import PropTypes from "prop-types";
 
-export default function ScrollToTop({ visible, onClick }) {
+function ScrollToTop({ visible, onClick }) {
 	const theme = useMantineTheme();
 	const primary =
 		theme.colors[theme.primaryColor]?.[theme.primaryShade ?? 5] ??
@@ -64,3 +65,10 @@ export default function ScrollToTop({ visible, onClick }) {
 		</AnimatePresence>
 	);
 }
+
+ScrollToTop.propTypes = {
+	visible: PropTypes.bool,
+	onClick: PropTypes.func,
+};
+
+export default ScrollToTop;

@@ -1,5 +1,6 @@
 // AnimatedSearchBar.jsx
 import { useRef, useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import {
 	TextInput,
 	Box,
@@ -282,3 +283,11 @@ export default function SearchBar({
 		</Box>
 	);
 }
+
+SearchBar.propTypes = {
+	setSearchQuery: PropTypes.func.isRequired,
+	useSemantic: PropTypes.bool,
+	setUseSemantic: PropTypes.func,
+	isSemanticLoading: PropTypes.bool,
+	semanticError: PropTypes.shape({ message: PropTypes.string }),
+};

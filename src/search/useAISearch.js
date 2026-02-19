@@ -81,7 +81,9 @@ async function runSemanticSearch(apps, query) {
  */
 export function useAISearch(apps, options = {}) {
 	const [debouncedQuery, setDebouncedQuery] = useState("");
-	const [useSemantic, setUseSemantic] = useState(false);
+	const [useSemantic, setUseSemantic] = useState(
+		options.useSemantic ?? false,
+	);
 	const [semanticResults, setSemanticResults] = useState(null);
 	const [isSemanticLoading, setIsSemanticLoading] = useState(false);
 	const [semanticError, setSemanticError] = useState(null);

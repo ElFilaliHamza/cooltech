@@ -1,7 +1,8 @@
 // ui/MorphingCircle.jsx
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
-export default function MorphingCircle({ isActive, color, size = 30 }) {
+function MorphingCircle({ isActive, color, size = 30 }) {
 	const circleVariants = {
 		inactive: {
 			scale: 1,
@@ -89,3 +90,11 @@ export default function MorphingCircle({ isActive, color, size = 30 }) {
 		</div>
 	);
 }
+
+MorphingCircle.propTypes = {
+	isActive: PropTypes.bool,
+	color: PropTypes.string,
+	size: PropTypes.number,
+};
+
+export default MorphingCircle;

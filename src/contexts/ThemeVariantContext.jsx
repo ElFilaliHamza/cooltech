@@ -5,6 +5,7 @@ import {
 	useCallback,
 	useEffect,
 } from "react";
+import PropTypes from "prop-types";
 import { THEME_NAMES } from "../theme";
 
 const STORAGE_KEY = "cooltech-theme-variant";
@@ -26,14 +27,18 @@ export function ThemeVariantProvider({ children }) {
 			const stored = localStorage.getItem(STORAGE_KEY);
 			if (stored && Object.values(THEME_NAMES).includes(stored))
 				return stored;
-		} catch (_) {}
+		} catch {
+			// ignore
+		}
 		return THEME_NAMES.TECH_BLUE;
 	});
 
 	useEffect(() => {
 		try {
 			localStorage.setItem(STORAGE_KEY, themeName);
-		} catch (_) {}
+		} catch {
+			// ignore
+		}
 	}, [themeName]);
 
 	const setThemeName = useCallback((name) => {
@@ -46,3 +51,7 @@ export function ThemeVariantProvider({ children }) {
 		</ThemeVariantContext.Provider>
 	);
 }
+
+ThemeVariantProvider.propTypes = {
+	children: PropTypes.node,
+};
