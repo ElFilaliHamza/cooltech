@@ -2,20 +2,8 @@ import { useMemo, useState, useCallback, useRef, useEffect } from "react";
 import Fuse from "fuse.js";
 
 const DEBOUNCE_MS = 300;
-
-function cosineSimilarity(a, b) {
-	if (a.length !== b.length) return 0;
-	let dot = 0;
-	let normA = 0;
-	let normB = 0;
-	for (let i = 0; i < a.length; i++) {
-		dot += a[i] * b[i];
-		normA += a[i] * a[i];
-		normB += b[i] * b[i];
-	}
-	const denom = Math.sqrt(normA) * Math.sqrt(normB);
-	return denom === 0 ? 0 : dot / denom;
-}
+const SEMANTIC_THRESHOLD = 62;
+const TOP_K = 50;
 
 function textForApp(app) {
 	const parts = [
@@ -35,51 +23,15 @@ function textForApp(app) {
 }
 
 /**
- * Lazy-load Transformers.js and run semantic search.
- * Returns { results: [{ item, similarity }], error }.
- */
-async function runSemanticSearch(apps, query) {
-	try {
-		const { pipeline } = await import("@xenova/transformers");
-		const extractor = await pipeline(
-			"feature-extraction",
-			"Xenova/all-MiniLM-L6-v2",
-			{ progress_callback: () => {} },
-		);
-		const queryEmbedding = await extractor(query, {
-			pooling: "mean",
-			normalize: true,
-		});
-		const queryVec = Array.from(queryEmbedding.data);
-
-		const results = [];
-		for (let i = 0; i < apps.length; i++) {
-			const text = textForApp(apps[i]);
-			const emb = await extractor(text, {
-				pooling: "mean",
-				normalize: true,
-			});
-			const vec = Array.from(emb.data);
-			const sim = cosineSimilarity(queryVec, vec);
-			const similarity = Math.max(0, Math.min(100, (sim + 1) * 50));
-			results.push({ item: apps[i], similarity });
-		}
-		results.sort((a, b) => b.similarity - a.similarity);
-		return { results, error: null };
-	} catch (err) {
-		return { results: [], error: err };
-	}
-}
-
-/**
- * useAISearch(apps, options)
- * - apps: array of { id, name, category, description }
- * - options: { useSemantic: boolean }
- * Returns: { query, setQuery, debouncedQuery, results, similarityMap, isSemanticLoading, semanticError, useSemantic, setUseSemantic }
- * - results: array of app items (filtered/sorted by search)
- * - similarityMap: Map<id, 0-100> when in search mode
+ * useAISearch(apps) — fuzzy + optional semantic search.
+ * Returns: setSearchQuery, results, similarityMap, useSemantic, handleSemanticChange,
+ * semanticConfirmOpened, confirmAndLoadSemantic, closeSemanticConfirm,
+ * isSemanticLoading, semanticError, semanticLoadProgress, semanticLoadStatus.
  */
 export function useAISearch(apps, options = {}) {
+	const workerRef = useRef(null);
+	const [workerReady, setWorkerReady] = useState(false);
+	const lastRequestIdRef = useRef(0);
 	const [debouncedQuery, setDebouncedQuery] = useState("");
 	const [useSemantic, setUseSemantic] = useState(
 		options.useSemantic ?? false,
@@ -87,6 +39,10 @@ export function useAISearch(apps, options = {}) {
 	const [semanticResults, setSemanticResults] = useState(null);
 	const [isSemanticLoading, setIsSemanticLoading] = useState(false);
 	const [semanticError, setSemanticError] = useState(null);
+	const [semanticConfirmOpened, setSemanticConfirmOpened] = useState(false);
+	const [semanticLoadProgress, setSemanticLoadProgress] = useState(0);
+	const [semanticLoadStatus, setSemanticLoadStatus] = useState("");
+
 	const debounceRef = useRef(null);
 
 	const setSearchQuery = useCallback((value) => {
@@ -132,51 +88,149 @@ export function useAISearch(apps, options = {}) {
 			setSemanticError(null);
 			return;
 		}
-		let cancelled = false;
+		if (!workerReady || !workerRef.current) {
+			setIsSemanticLoading(false);
+			return;
+		}
 		setIsSemanticLoading(true);
 		setSemanticError(null);
-		runSemanticSearch(apps, debouncedQuery).then(({ results, error }) => {
-			if (cancelled) return;
-			setIsSemanticLoading(false);
-			setSemanticError(error ?? null);
-			setSemanticResults(results);
+		lastRequestIdRef.current += 1;
+		const requestId = lastRequestIdRef.current;
+		workerRef.current.postMessage({
+			type: "query",
+			query: debouncedQuery.trim(),
+			requestId,
 		});
-		return () => {
-			cancelled = true;
+	}, [useSemantic, debouncedQuery, apps, workerReady]);
+
+	const { results, similarityMap } = useMemo(() => {
+		if (useSemantic && semanticResults && !semanticError) {
+			return {
+				results: semanticResults.map((r) => r.item),
+				similarityMap: (() => {
+					const m = new Map();
+					semanticResults.forEach((r) =>
+						m.set(r.item.id, Math.round(r.similarity)),
+					);
+					return m;
+				})(),
+			};
+		}
+		return fuzzyResults;
+	}, [useSemantic, semanticResults, semanticError, fuzzyResults]);
+
+	const requestEnableSemantic = useCallback(() => {
+		if (workerReady) {
+			setUseSemantic(true);
+			setSemanticConfirmOpened(false);
+			return;
+		}
+		setSemanticConfirmOpened(true);
+		setSemanticLoadProgress(0);
+		setSemanticLoadStatus("");
+		setSemanticError(null);
+	}, []);
+
+	const confirmAndLoadSemantic = useCallback(() => {
+		if (workerRef.current) return;
+
+		const worker = new Worker(
+			new URL("./embeddingWorker.js", import.meta.url),
+			{ type: "module" },
+		);
+		workerRef.current = worker;
+
+		worker.onmessage = (event) => {
+			const {
+				type: msgType,
+				percent,
+				status,
+				requestId,
+				similarities,
+				message,
+			} = event.data || {};
+			if (msgType === "progress") {
+				setSemanticLoadProgress(percent ?? 0);
+				setSemanticLoadStatus(status ?? "");
+				return;
+			}
+			if (msgType === "ready") {
+				setWorkerReady(true);
+				setUseSemantic(true);
+				setSemanticConfirmOpened(false);
+				return;
+			}
+			if (msgType === "error") {
+				setSemanticError(new Error(message || "Worker error"));
+				if (requestId !== undefined) {
+					setIsSemanticLoading(false);
+				}
+				return;
+			}
+			if (msgType === "similarities") {
+				if (requestId !== lastRequestIdRef.current) return;
+				setIsSemanticLoading(false);
+				setSemanticError(null);
+				const results = apps
+					.map((app, i) => ({
+						item: app,
+						similarity: similarities[i] ?? 0,
+					}))
+					.sort((a, b) => b.similarity - a.similarity)
+					.filter((r) => r.similarity >= SEMANTIC_THRESHOLD)
+					.slice(0, TOP_K);
+				setSemanticResults(results);
+			}
 		};
-	}, [useSemantic, debouncedQuery, apps]);
 
-	const results = useMemo(() => {
-		if (useSemantic && semanticResults && !semanticError) {
-			return semanticResults.map((r) => r.item);
-		}
-		return fuzzyResults.results;
-	}, [useSemantic, semanticResults, semanticError, fuzzyResults.results]);
+		worker.postMessage({
+			type: "init",
+			appTexts: apps.map(textForApp),
+		});
+	}, [apps]);
 
-	const similarityMap = useMemo(() => {
-		if (useSemantic && semanticResults && !semanticError) {
-			const m = new Map();
-			semanticResults.forEach((r) =>
-				m.set(r.item.id, Math.round(r.similarity)),
-			);
-			return m;
-		}
-		return fuzzyResults.similarityMap;
-	}, [
-		useSemantic,
-		semanticResults,
-		semanticError,
-		fuzzyResults.similarityMap,
-	]);
+	// When user toggles OFF: close modal, cancel any in-progress load, leave worker running if already ready
+	const handleSemanticChange = useCallback(
+		(checked) => {
+			if (!checked) {
+				setUseSemantic(false);
+				setSemanticConfirmOpened(false);
+				if (!workerReady && workerRef.current) {
+					workerRef.current.terminate();
+					workerRef.current = null;
+					setWorkerReady(false);
+				}
+				return;
+			}
+			requestEnableSemantic();
+		},
+		[requestEnableSemantic, workerReady],
+	);
+
+	// Cleanup the worker on unmount
+	useEffect(() => {
+		return () => {
+			workerRef.current?.terminate();
+			workerRef.current = null;
+		};
+	}, []);
+	const closeSemanticConfirm = useCallback(() => {
+		setSemanticConfirmOpened(false);
+		setSemanticError(null);
+	}, []);
 
 	return {
 		setSearchQuery,
-		debouncedQuery,
 		results,
 		similarityMap,
 		isSemanticLoading,
 		semanticError,
 		useSemantic,
-		setUseSemantic,
+		handleSemanticChange,
+		semanticConfirmOpened,
+		semanticLoadProgress,
+		semanticLoadStatus,
+		confirmAndLoadSemantic,
+		closeSemanticConfirm,
 	};
 }

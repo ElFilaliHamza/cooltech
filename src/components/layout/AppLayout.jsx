@@ -7,6 +7,7 @@ import { useAISearch } from "../../search/useAISearch";
 import TECH_DATA from "../../data/apps";
 import ScrollToTop from "../ui/ScrollToTop";
 import { useWindowScroll } from "@mantine/hooks";
+import { SemanticConfirmModal } from "../SemanticConfirmModal";
 
 const baseUrl = import.meta.env.BASE_URL;
 const headerLogoSrc = `${baseUrl}cooltech/cooltech-only.png`;
@@ -20,9 +21,14 @@ export default function AppLayout() {
 		results,
 		similarityMap,
 		useSemantic,
-		setUseSemantic,
 		isSemanticLoading,
 		semanticError,
+		handleSemanticChange,
+		semanticConfirmOpened,
+		confirmAndLoadSemantic,
+		semanticLoadProgress,
+		semanticLoadStatus,
+		closeSemanticConfirm,
 	} = useAISearch(TECH_DATA);
 
 	const primary = theme.colors[theme.primaryColor];
@@ -81,12 +87,25 @@ export default function AppLayout() {
 				<SearchBar
 					setSearchQuery={setSearchQuery}
 					useSemantic={useSemantic}
-					setUseSemantic={setUseSemantic}
+					handleSemanticChange={handleSemanticChange}
 					isSemanticLoading={isSemanticLoading}
 					semanticError={semanticError}
 				/>
 				<ResultsGrid results={results} similarityMap={similarityMap} />
 			</Container>
+			<SemanticConfirmModal
+				opened={semanticConfirmOpened}
+				onClose={closeSemanticConfirm}
+				onConfirm={confirmAndLoadSemantic}
+				progress={semanticLoadProgress}
+				status={semanticLoadStatus}
+				error={semanticError}
+				loading={
+					semanticLoadProgress > 0 &&
+					semanticLoadProgress < 100 &&
+					!semanticError
+				}
+			/>
 			<ScrollToTop visible={showScrollTop} />
 		</Box>
 	);

@@ -23,7 +23,7 @@ function hexToRgba(hex, alpha) {
 export default function SearchBar({
 	setSearchQuery,
 	useSemantic,
-	setUseSemantic,
+	handleSemanticChange,
 	isSemanticLoading,
 	semanticError,
 }) {
@@ -233,14 +233,13 @@ export default function SearchBar({
 			>
 				<Group mt="sm" gap="sm" wrap="nowrap" align="center">
 					<Switch
-						label="Semantic search (AI) — Coming soon"
+						label="Semantic search (AI)"
 						checked={useSemantic}
 						onChange={(e) =>
-							setUseSemantic(e.currentTarget.checked)
+							handleSemanticChange(e.currentTarget.checked)
 						}
 						size="sm"
 						color="primary"
-						disabled
 					/>
 					{isSemanticLoading && (
 						<motion.div
@@ -273,8 +272,7 @@ export default function SearchBar({
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 0.7 }}
-				whileHover={{ opacity: 1, scale: 1.05 }}
-				transition={{ delay: 0.3 }}
+				whileHover={{ opacity: 1 }}
 			>
 				<Text size="xs" c="dark.1" mt={4}>
 					Ctrl+K to focus search
