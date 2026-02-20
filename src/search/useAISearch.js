@@ -30,8 +30,13 @@ function textForApp(app) {
  */
 export function useAISearch(apps, options = {}) {
 	const workerRef = useRef(null);
+	const workerReadyRef = useRef(false);
 	const [workerReady, setWorkerReady] = useState(false);
 	const lastRequestIdRef = useRef(0);
+
+	useEffect(() => {
+		workerReadyRef.current = workerReady;
+	}, [workerReady]);
 	const [debouncedQuery, setDebouncedQuery] = useState("");
 	const [useSemantic, setUseSemantic] = useState(
 		options.useSemantic ?? false,
@@ -132,7 +137,13 @@ export function useAISearch(apps, options = {}) {
 	}, []);
 
 	const confirmAndLoadSemantic = useCallback(() => {
-		if (workerRef.current) return;
+		if (workerRef.current) {
+			if (workerReadyRef.current) {
+				setUseSemantic(true);
+				setSemanticConfirmOpened(false);
+			}
+			return;
+		}
 
 		const worker = new Worker(
 			new URL("./embeddingWorker.js", import.meta.url),
